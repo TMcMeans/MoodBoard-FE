@@ -5,9 +5,9 @@ import Journal from './src/containers/Journal/Journal';
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Journal />
-      </View>
+      <View>
+       <Journal />
+     </View>
     );
   }
 }
