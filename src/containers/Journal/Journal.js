@@ -6,13 +6,25 @@ import {
   TouchableHighlight,
   TouchableOpacity,
   Text,
-  Keyboard
+  Keyboard,
+  Alert
 } from 'react-native';
 // import Logo from '../../components/Logo/Logo';
 
 import { DefaultButton } from '../../components/Button/Button.js';
 
 export default class Journal extends Component {
+  constructor() {
+    super();
+    this.state = {
+      text: ''
+    };
+  }
+
+  handleSubmit = () => {
+    Alert.alert(this.state.text);
+  };
+
   render() {
     return (
       <View style={styles.view}>
@@ -27,10 +39,12 @@ export default class Journal extends Component {
             onSubmitEditing={Keyboard.dismiss}
             scrollEnabled={true}
             placeholder="Start writing here..."
+            onChangeText={text => this.setState({ text })}
+            value={this.state.text}
           />
         </TouchableHighlight>
         <TouchableOpacity>
-          <DefaultButton title="Save entry" style={styles.button} />
+          <DefaultButton title="Save entry" onPress={this.handleSubmit} />
         </TouchableOpacity>
       </View>
     );
@@ -44,18 +58,22 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 5
   },
-  input: {
-    borderColor: 'black',
-    borderWidth: 5,
-    fontSize: 20,
-    height: 400,
-    marginLeft: 10,
-    marginRight: 10
-  },
   text: {
     textAlign: 'center',
     paddingTop: 100,
     paddingBottom: 10,
-    fontSize: 30
+    fontSize: 20
+  },
+  input: {
+    borderColor: '#daa520',
+    borderWidth: 5,
+    fontSize: 20,
+    height: 400,
+    marginLeft: 15,
+    marginRight: 15
+  },
+  button: {
+    marginTop: 50,
+    fontSize: 20
   }
 });
