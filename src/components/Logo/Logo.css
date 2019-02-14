@@ -1,0 +1,11 @@
+h1 {
+  color: #DAA520;
+  font-family: Megrim;
+  font-size: 72px;
+  font-weight: 500;
+  margin-top: 0;
+  padding-top: 20px;
+  text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.25);
+  -webkit-text-stroke: 0.5px #000000;
+}
+
