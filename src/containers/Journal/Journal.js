@@ -9,7 +9,7 @@ import {
   Keyboard,
   Alert
 } from 'react-native';
-// import Logo from '../../components/Logo/Logo';
+import { Logo } from '../../components/Logo/Logo';
 
 import { DefaultButton } from '../../components/Button/Button.js';
 
@@ -28,6 +28,7 @@ export default class Journal extends Component {
   render() {
     return (
       <View style={styles.view}>
+        <Logo />
         <Text style={styles.text}>Feburary 14th, 2019</Text>
         <TouchableHighlight>
           <TextInput
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    paddingTop: 100,
+    paddingTop: 50,
     paddingBottom: 10,
     fontSize: 20
   },
