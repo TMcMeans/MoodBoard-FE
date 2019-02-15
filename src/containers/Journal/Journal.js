@@ -88,9 +88,11 @@ class Journal extends Component {
   };
 
   render() {
+    const dateText = 'June 16, 2018';
     return (
       <div className="journal">
         <Logo />
+        <h1 className="date">{dateText}</h1>
         <Fragment>
           <FormatToolbar>
             <button
