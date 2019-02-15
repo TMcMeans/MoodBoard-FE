@@ -8,7 +8,7 @@ export default class Home extends Component {
   render() {
     const name = 'Ash'
     return (
-      <div>
+      <div className="home">
         <Logo />
         <h1 className="welcome">Welcome {name}!</h1>
         <h3 className="this-month">this month...</h3>
