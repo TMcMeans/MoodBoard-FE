@@ -13,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Journal />
         {/* <Button text="home" /> */}
         {/*<Journal />*/}
         {/* <CalendarView /> */}

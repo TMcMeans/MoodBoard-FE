@@ -8,8 +8,9 @@ import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
 
-import Button from '../../components/Button/Button.js';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
+import Button from '../../components/Button/Button';
+import Logo from '../../components/Logo/Logo';
 
 import './Journal.css';
 
@@ -88,8 +89,11 @@ class Journal extends Component {
   };
 
   render() {
+    const dateText = 'June 16, 2018';
     return (
-      <div>
+      <div className="journal">
+        <Logo />
+        <h1 className="date">{dateText}</h1>
         <Fragment>
           <FormatToolbar>
             <button
@@ -125,6 +129,7 @@ class Journal extends Component {
           </FormatToolbar>
 
           <Editor
+            className="editor"
             autoFocus={true}
             ref={editor => (this.editor = editor)}
             value={this.state.value}
@@ -132,7 +137,9 @@ class Journal extends Component {
             renderMark={this.renderMark}
           />
         </Fragment>
-        <Button text="Save entry" />
+
+        <Button text="save entry" />
+ 
       </div>
     );
   }
