@@ -1,3 +1,27 @@
+.journal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .tooltip-icon-button {
-  border: 0;
+  color: #2a2a2a;
+  background-color: rgba(221,170,68, 0.5);
+  border: 1px solid;
+  height: 2.5rem;
+  width: 4.5rem;
+}
+
+.editor {
+  background-color: #f2ebe8;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  height: 20rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  padding: 5px;
+  text-align: left;
+  width: 85%;
 }

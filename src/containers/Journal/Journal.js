@@ -7,8 +7,9 @@ import { italic } from 'react-icons-kit/feather/italic';
 import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
-
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
+import Button from '../../components/Button/Button';
+import Logo from '../../components/Logo/Logo';
 
 import './Journal.css';
 
@@ -88,48 +89,53 @@ class Journal extends Component {
 
   render() {
     return (
-      <Fragment>
-        <FormatToolbar>
-          <button
-            onPointerDown={e => this.onMarkClick(e, 'bold')}
-            className="tooltip-icon-button"
-          >
-            <Icon icon={bold} />
-          </button>
-          <button
-            onPointerDown={e => this.onMarkClick(e, 'italic')}
-            className="tooltip-icon-button"
-          >
-            <Icon icon={italic} />
-          </button>
-          <button
-            onPointerDown={e => this.onMarkClick(e, 'list-item')}
-            className="tooltip-icon-button"
-          >
-            <Icon icon={list} />
-          </button>
-          <button
-            onPointerDown={e => this.onMarkClick(e, 'underline')}
-            className="tooltip-icon-button"
-          >
-            <Icon icon={underline} />
-          </button>
-          <button
-            onPointerDown={e => this.onMarkClick(e, 'heading-one')}
-            className="tooltip-icon-button"
-          >
-            <Icon icon={plus} />
-          </button>
-        </FormatToolbar>
+      <div className="journal">
+        <Logo />
+        <Fragment>
+          <FormatToolbar>
+            <button
+              onPointerDown={e => this.onMarkClick(e, 'bold')}
+              className="tooltip-icon-button"
+            >
+              <Icon icon={bold} />
+            </button>
+            <button
+              onPointerDown={e => this.onMarkClick(e, 'italic')}
+              className="tooltip-icon-button"
+            >
+              <Icon icon={italic} />
+            </button>
+            <button
+              onPointerDown={e => this.onMarkClick(e, 'list-item')}
+              className="tooltip-icon-button"
+            >
+              <Icon icon={list} />
+            </button>
+            <button
+              onPointerDown={e => this.onMarkClick(e, 'underline')}
+              className="tooltip-icon-button"
+            >
+              <Icon icon={underline} />
+            </button>
+            <button
+              onPointerDown={e => this.onMarkClick(e, 'heading-one')}
+              className="tooltip-icon-button"
+            >
+              <Icon icon={plus} />
+            </button>
+          </FormatToolbar>
 
-        <Editor
-          autoFocus={true}
-          ref={editor => (this.editor = editor)}
-          value={this.state.value}
-          onChange={this.onChange}
-          renderMark={this.renderMark}
-        />
-      </Fragment>
+          <Editor
+            className="editor"
+            autoFocus={true}
+            ref={editor => (this.editor = editor)}
+            value={this.state.value}
+            onChange={this.onChange}
+            renderMark={this.renderMark}
+          />
+        </Fragment>
+        <Button text="save entry" />
+      </div>
     );
   }
 }
