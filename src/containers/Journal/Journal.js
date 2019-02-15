@@ -7,6 +7,7 @@ import { italic } from 'react-icons-kit/feather/italic';
 import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
+
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
@@ -136,7 +137,9 @@ class Journal extends Component {
             renderMark={this.renderMark}
           />
         </Fragment>
+
         <Button text="save entry" />
+ 
       </div>
     );
   }
