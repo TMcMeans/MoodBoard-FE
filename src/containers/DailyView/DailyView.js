@@ -10,15 +10,7 @@ class DailyView extends Component {
   render() {
     return (
       <div className="daily-view">
-        <Logo />
-        <h2>Today's Mood</h2>
-        <h1>anxiety</h1>
-        <p>
-          Based on today's journal entry response, would you like to write a
-          affirmation?
-        </p>
-        <Button text="yes" />
-        <Button text="no" />
+        <h1>DAILYVIEW</h1>
       </div>
     );
   }
