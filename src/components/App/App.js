@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
 
 import Journal from '../../containers/Journal/Journal.js';
-import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
@@ -15,12 +15,16 @@ class App extends Component {
       <div className="App">
         {/*<Journal />*/}
         <Switch>
-          <Route exact path="/" render={() => {/*UserForm*/}} />
+          <Route exact path="/userForm" render={() => {/*UserForm*/}} />
           <Route exact path="/home" render={() => <Home />} />
+          <Route exact path="/calendarView" render={() => {/*CalendarView*/}} />
+          <Route exact path="/dailyView" render={() => {/*DailyView*/}} />
+          <Route exact path="/journal" render={() => {/*Journal*/}} />
+          <Route exact path="/dailyMood" render={() => {/*DailyMood*/}} />
         </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
