@@ -56,7 +56,7 @@ class Journal extends Component {
         return <li {...attributes}>{children}</li>;
       }
 
-      //NOT WORKING
+      //NOT WORKING CHANGE TO CENTER ALIGN TEXT
       case 'underlined': {
         return (
           <p {...attributes} style={{ borderBottom: '1px soid black' }}>
@@ -139,7 +139,6 @@ class Journal extends Component {
         </Fragment>
 
         <Button text="save entry" />
- 
       </div>
     );
   }
