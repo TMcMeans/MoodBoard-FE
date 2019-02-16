@@ -20,7 +20,8 @@ class App extends Component {
           <Route exact path="/calendarView" render={() => {/*CalendarView*/}} />
           <Route exact path="/dailyView" render={() => {/*DailyView*/}} />
           <Route exact path="/journal" render={() => {/*Journal*/}} />
-          <Route exact path="/dailyMood" render={() => {/*DailyMood*/}} />
+          <Route exact path="/todayMood" render={() => {/*TodayMood*/}} />
+          <Route exact path="/affirmations" render={() => {/*Affirmations*/}} />
         </Switch>
       </div>
     );
