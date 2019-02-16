@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Journal from '../../containers/Journal/Journal.js';
-
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
@@ -13,11 +13,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Journal />
-        {/* <Button text="home" /> */}
         {/*<Journal />*/}
-        {/* <CalendarView /> */}
-        <Home />
+        <Switch>
+          <Route exact path="/" render={() => {/*UserForm*/}} />
+          <Route exact path="/home" render={() => <Home />} />
+        </Switch>
       </div>
     );
   }
