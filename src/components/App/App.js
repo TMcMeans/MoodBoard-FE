@@ -17,12 +17,12 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path="/userForm" render={() => <UserForm />} />
+          <Route exact path="/userform" render={() => <UserForm />} />
           <Route exact path="/home" render={() => <Home />} />
-          <Route exact path="/calendarView" render={() => <CalendarView />} />
-          <Route exact path="/dailyView" render={() => <DailyView />} />
+          <Route exact path="/calendarview" render={() => <CalendarView />} />
+          <Route exact path="/dailyview" render={() => <DailyView />} />
           <Route exact path="/journal" render={() => <Journal />} />
-          <Route exact path="/todayMood" render={() => <TodayMood />} />
+          <Route exact path="/todaymood" render={() => <TodayMood />} />
           <Route exact path="/affirmations" render={() => <Affirmations />} />
         </Switch>
       </div>
