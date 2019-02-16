@@ -13,3 +13,5 @@ class Affirmations extends Component {
     );
   }
 }
+
+export default Affirmations;
