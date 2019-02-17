@@ -10,6 +10,7 @@ class Affirmations extends Component {
     super();
     this.state = {};
   }
+
   render() {
     const monthText = 'June';
     return (
