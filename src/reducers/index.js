@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import { journalReducer } from './journalReducer';
 import { errorReducer } from './errorReducer';
 import { loadingReducer } from './loadingReducer';
+import { userReducer } from './userReducer';
 
 export const rootReducer = combineReducers({
   journal: journalReducer,
