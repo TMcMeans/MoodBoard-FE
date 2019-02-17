@@ -1,0 +1,21 @@
+.month {
+  width: 300px;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.single-affirmation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.mood-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: auto 10px auto 0;
+}
