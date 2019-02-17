@@ -71,7 +71,7 @@ class Journal extends Component {
         return;
       }
     }
-  };
+  }
 
   onChange = ({ value }) => {
     this.setState({ value });
@@ -79,14 +79,19 @@ class Journal extends Component {
     //How to access text inside of text editor
     console.log(value.document.text);
     //Call a method to send journal entry to database
-  };
+  }
 
   onMarkClick = (e, type) => {
     e.preventDefault();
     const change = this.editor.toggleMark(type);
 
     this.onChange(change);
-  };
+  }
+
+  componentDidMount = () => {
+    // call getJournalEntry thunk
+    // set response to local state
+  }
 
   render() {
     const dateText = 'June 16, 2018';
@@ -143,5 +148,13 @@ class Journal extends Component {
     );
   }
 }
+
+// mapstatetoprops 
+  // adds the journal entry to global state
+  // need the user : id to send
+
+// mapdispatchtoprops
+  // name the getjournalthunk
+  // patch to send journal entry onClick
 
 export default Journal;

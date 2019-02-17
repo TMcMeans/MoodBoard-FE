@@ -3,7 +3,7 @@ import { hasErrored } from '../actions';
 export const patchJournalEntry = (url, entry_text) => {
   return async dispatch => {
     try {
-      const responst = await fetch(url, {
+      const response = await fetch(url, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
