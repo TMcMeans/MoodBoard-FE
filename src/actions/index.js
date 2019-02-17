@@ -17,12 +17,7 @@ export const logoutUser = () => ({
   type: 'LOGOUT_USER'
 });
 
-export const getJournalEntry = journal_entry => ({
-  type: 'GET_JOURNAL_ENTRY',
-  journal_entry
-});
-
-export const sendJournalEntry = journal_entry => ({
-  type: 'SEND_JOURNAL_ENTRY',
+export const saveJournalEntry = journal_entry => ({
+  type: 'SAVE_JOURNAL_ENTRY',
   journal_entry
 });

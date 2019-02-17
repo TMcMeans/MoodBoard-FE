@@ -8,7 +8,7 @@ export const fetchJournalEntry = url => {
         throw Error(response.statusText);
       }
       const journal_entry = await response.json();
-      dispatch(getJournalEntry(journal_entry));
+      dispatch(saveJournalEntry(journal_entry));
     } catch (error) {
       dispatch(hasErrored(error.message));
     }
