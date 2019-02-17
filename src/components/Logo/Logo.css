@@ -1,5 +1,5 @@
 .logo {
-  color: #DAA520;
+  color: #daa520;
   font-family: Megrim;
   font-size: 72px;
   font-weight: 500;
@@ -8,4 +8,3 @@
   text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.25);
   -webkit-text-stroke: 0.5px #000000;
 }
-
