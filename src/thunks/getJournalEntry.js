@@ -1,6 +1,6 @@
-import { addJournalEntry, hasErrored } from '../actions';
+import { saveJournalEntry, hasErrored } from '../actions';
 
-export const fetchJournalEntry = url => {
+export const getJournalEntry = url => {
   return async dispatch => {
     try {
       const response = await fetch(url);

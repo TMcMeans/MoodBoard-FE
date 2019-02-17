@@ -7,11 +7,13 @@ import { italic } from 'react-icons-kit/feather/italic';
 import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
-
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
+import { connect } from 'react-redux';
+
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
-
+import { getJournalEntry } from '../../thunks/getJournalEntry';
+import { patchJournalEntry } from '../../thunks/patchJournalEntry';
 import './Journal.css';
 
 const initialValue = Value.fromJSON({
@@ -149,12 +151,14 @@ class Journal extends Component {
   }
 }
 
-// mapstatetoprops 
-  // adds the journal entry to global state
-  // need the user : id to send
+const mapStateToProps = (state) => ({
+  journal: state.journal,
+  user: state.user
+})
 
-// mapdispatchtoprops
-  // name the getjournalthunk
-  // patch to send journal entry onClick
+const mapDispatchToProps = (dispatch) => ({
+  getJournalEntry: (url) => dispatch(getJournalEntry(url)),
+  patchJournalEntry: (url, entry) => dispatch(patchJournalEntry(url, entry))
+})
 
-export default Journal;
+export default connect(mapStateToProps, mapDispatchToProps)(Journal);
