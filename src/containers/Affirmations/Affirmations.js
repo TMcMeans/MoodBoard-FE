@@ -15,7 +15,7 @@ class Affirmations extends Component {
   render() {
     const monthText = 'June';
     return (
-      <div>
+      <div className="month-affirmations">
         <Logo />
         <h1 className="month">{monthText} Affirmations</h1>
         <ul className="affirmation-list">
