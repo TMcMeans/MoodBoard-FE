@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaCircle } from 'react-icons/fa';
 
 import Logo from '../../components/Logo/Logo';
 import Button from '../../components/Button/Button';
@@ -17,22 +18,32 @@ class Affirmations extends Component {
       <div>
         <Logo />
         <h1 className="month">{monthText} Affirmations</h1>
-        <div className="single-affirmation">
-          <div className="mood-color" style={{ backgroundColor: 'green' }} />
-          <p>6/3: "You got this."</p>
-        </div>
-        <div className="single-affirmation">
-          <div className="mood-color" style={{ backgroundColor: 'red' }} />
-          <p>6/3: "You got this."</p>
-        </div>
-        <div className="single-affirmation">
-          <div className="mood-color" style={{ backgroundColor: 'purple' }} />
-          <p>6/3: "You got this."</p>
-        </div>
-        <div className="single-affirmation">
-          <div className="mood-color" style={{ backgroundColor: 'gold' }} />
-          <p>6/3: 'You got this.'</p>
-        </div>
+        <ul className="affirmation-list">
+          <li className="single-affirmation" id="1">
+            <FaCircle className="circle" />
+            <span className="affirmation-text">
+              6/3: "You got this."
+            </span>
+          </li>
+          <li className="single-affirmation" id="2">
+            <FaCircle className="circle" />
+            <span className="affirmation-text">
+              6/3: "You got this."
+            </span>
+          </li>
+          <li className="single-affirmation" id="3">
+            <FaCircle className="circle" />
+            <span className="affirmation-text">
+              6/3: "You got this."
+            </span>
+          </li>
+          <li className="single-affirmation" id="4">
+            <FaCircle className="circle" />
+            <span className="affirmation-text">
+              6/3: "You got this."
+            </span>
+          </li>
+        </ul>
         <Button text="Calendar" />
       </div>
     );
