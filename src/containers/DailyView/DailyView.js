@@ -11,17 +11,17 @@ class DailyView extends Component {
   }
 
   render() {
-    const toneWord = 'confident';
+    const toneWord = 'tentative';
     const entry =
       'Now, when you do this without getting punched in the chest, you will have more fun. Get me a vodka rocks. And a piece of toast. Now, when you do this without getting punched in the chest, you will have more fun. Get me a vodka rocks...';
 
     const affirmation = 'I got this.';
     const dateText = 'June 16, 2018';
     return (
-      <div className="daily-view confident-bg">
+      <div className="daily-view tentative-bg">
         <Logo />
         <h2 className="date">{dateText}</h2>
-        <h1 className="tone-word confident">{toneWord}</h1>
+        <h1 className="tone-word tentative">{toneWord}</h1>
         <div class="daily-entry">{entry}</div>
         <div class="daily-affirmation">
           <p>{affirmation}</p>

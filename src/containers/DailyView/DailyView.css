@@ -18,6 +18,10 @@
   background: rgba(98,74,121, 0.8);
 }
 
+.tentative-bg {
+  background: rgba(235,123,162, 0.8);
+}
+
 .tone-word {
   font-weight: bold;
   font-size: 54px;
@@ -47,6 +51,7 @@
 
 .tentative {
   color: #E02F6D;
+  text-shadow: 0px 4px 4px rgba(42, 42, 42, 0.8);
 }
 
 .anger {
