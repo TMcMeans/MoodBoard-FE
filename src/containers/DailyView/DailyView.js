@@ -20,11 +20,11 @@ class DailyView extends Component {
     return (
       <div className="daily-view sadness-bg">
         <Logo />
-        <h2 className="date">{dateText}</h2>
+        <h2 className="daily-date">{dateText}</h2>
         <h1 className="tone-word sadness">{toneWord}</h1>
         <div class="daily-entry">{entry}</div>
         <div class="daily-affirmation">
-          <p>{affirmation}</p>
+          <p className="daily-affirmation-text">{affirmation}</p>
         </div>
         <div className="btn-wrapper">
           <Button text="<" />

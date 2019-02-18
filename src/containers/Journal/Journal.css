@@ -20,31 +20,15 @@
 }
 
 .editor {
-  background-color: #f2ebe8;
+  background-color: #f5f1e7;
+  background-image: url('../../assets/paper2.png');
+  border: 1px solid #b5b5b5;
   border-radius: 5px;
+  color: #282625;
   font-size: 1.4rem;
   height: 20rem;
-  margin: 1rem;
   margin: 0 0 2rem;
-  padding: 5px;
+  padding: 20px;
   text-align: left;
-  width: 85%;
-
-  padding: 37px 55px 27px;
-  position: relative;
-  border: 1px solid #b5b5b5;
-  background: white;
-  background: -webkit-linear-gradient(top, #dfe8ec 0%, white 8%) 0 57px;
-  background: -moz-linear-gradient(top, #dfe8ec 0%, white 8%) 0 57px;
-  background: linear-gradient(top, #dfe8ec 0%, white 8%) 0 57px;
-  -webkit-background-size: 100% 30px;
-  -moz-background-size: 100% 30px;
-  -ms-background-size: 100% 30px;
-  background-size: 100% 30px;
-  width: 50%;
-  color: #282625;
-  border: solid 1px #ccc;
-  -moz-box-shadow: 5px 5px 0px #999;
-  -webkit-box-shadow: 5px 5px 0px #999;
-  box-shadow: 5px 5px 0px #999;
+  width: 75%;
 }

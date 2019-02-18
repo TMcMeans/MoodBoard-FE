@@ -1,5 +1,10 @@
+/*COMPONENT STYLES*/
 .daily-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .analytical-bg {
@@ -30,6 +35,13 @@
   background: rgba(106,164,203, 0.9);
 }
 
+/*DATE*/
+.daily-date {
+  color: #ffffff;
+  margin: 0;
+}
+
+/*DAILY TONE*/
 .tone-word {
   font-weight: bold;
   font-size: 54px;
@@ -71,27 +83,23 @@
   text-shadow: 0px 4px 4px rgba(42, 42, 42, 0.8);
 }
 
+/*JOURNAL AND AFFIRMATION*/
 .daily-entry,
 .daily-affirmation {
-  padding: 37px 55px 27px;
-  position: relative;
+  background-color: #f5f1e7;
+  background-image: url('../../assets/paper2.png');
   border: 1px solid #b5b5b5;
-  background: white;
-  background: -webkit-linear-gradient(top, #dfe8ec 5%, white 8%) 0 57px;
-  background: -moz-linear-gradient(top, #dfe8ec 5%, white 8%) 0 57px;
-  background: linear-gradient(top, #dfe8ec 5%, white 8%) 0 57px;
-  -webkit-background-size: 100% 30px;
-  -moz-background-size: 100% 30px;
-  -ms-background-size: 100% 30px;
-  background-size: 100% 30px;
-  width: 50%;
-  margin: 0 auto 50px auto;
-  color: #282625;
-  border: solid 1px #ccc;
-  -moz-box-shadow: 5px 5px 0px #999;
-  -webkit-box-shadow: 5px 5px 0px #999;
-  box-shadow: 5px 5px 0px #999;
-  text-align: justify;
-  font-size: 1.2em;
   border-radius: 5px;
+  color: #282625;
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  padding: 20px;
+  overflow: scroll;
+  text-align: left;
+  width: 75%;
+}
+
+/*AFFIRMATION*/
+.daily-affirmation-text {
+  margin: 0;
 }
