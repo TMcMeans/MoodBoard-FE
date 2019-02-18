@@ -103,3 +103,11 @@
 .daily-affirmation-text {
   margin: 0;
 }
+
+/*BUTTONS*/
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+}
