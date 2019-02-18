@@ -42,10 +42,8 @@ class UserForm extends Component {
           />
           <Button text={text} />
         </form>
-        <div className="user-login">
-          <h2>Already a user?</h2>
-          <Button text="i" />
-        </div>
+        <h2>Already a user? Log in <span>here</span>.</h2>
+        <button className="info-btn">i</button>
       </div>
     );
   }

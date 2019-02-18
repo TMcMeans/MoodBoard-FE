@@ -65,8 +65,13 @@
   margin: 0 auto 20px auto;
 }
 
-.user-login {
-  display: flex;
-  flex-direction: column;
+/*INFO BUTTON*/
+.info-btn {
+  color: #ffffff;
+  background-color: #2A2A2A;
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
 }
 
