@@ -90,9 +90,17 @@ class Journal extends Component {
     this.onChange(change);
   }
 
-  componentDidMount = () => {
+  componentDidMount = async () => {
     // call getJournalEntry thunk
+    const userID = 1;
+    const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/journal_entries?date=today`;
+    const entry = await getJournalEntry(url);
+    console.log(entry)
+    
     // set response to local state
+    // this.setState({
+    //   value: entry
+    // })
   }
 
   render() {
