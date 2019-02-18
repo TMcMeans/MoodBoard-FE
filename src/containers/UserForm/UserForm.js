@@ -21,7 +21,7 @@ class UserForm extends Component {
     return (
       <div className="user-form">
         <Logo />
-        <h1>{text}</h1>
+        <h1 className="form-title">{text}!</h1>
         <form action="" className="user-info">
           <input
             type="text"

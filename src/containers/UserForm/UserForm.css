@@ -45,6 +45,10 @@
   }
 }
 
+.form-title {
+  font-size: 2.5rem;
+}
+
 /*FORM STYLES*/
 .user-info {
   background: #2A2A2A;
@@ -71,7 +75,9 @@
   background-color: #2A2A2A;
   border: none;
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 3rem;
+  width: 3rem;
 }
 
