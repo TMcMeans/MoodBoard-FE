@@ -7,11 +7,13 @@ import { italic } from 'react-icons-kit/feather/italic';
 import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
-
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
+import { connect } from 'react-redux';
+
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
-
+import { getJournalEntry } from '../../thunks/getJournalEntry';
+import { patchJournalEntry } from '../../thunks/patchJournalEntry';
 import './Journal.css';
 
 const initialValue = Value.fromJSON({
@@ -71,7 +73,7 @@ class Journal extends Component {
         return;
       }
     }
-  };
+  }
 
   onChange = ({ value }) => {
     this.setState({ value });
@@ -79,14 +81,27 @@ class Journal extends Component {
     //How to access text inside of text editor
     console.log(value.document.text);
     //Call a method to send journal entry to database
-  };
+  }
 
   onMarkClick = (e, type) => {
     e.preventDefault();
     const change = this.editor.toggleMark(type);
 
     this.onChange(change);
-  };
+  }
+
+  componentDidMount = async () => {
+    // call getJournalEntry thunk
+    const userID = 1;
+    const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/journal_entries?date=today`;
+    const entry = await getJournalEntry(url);
+    console.log(entry)
+    
+    // set response to local state
+    // this.setState({
+    //   value: entry
+    // })
+  }
 
   render() {
     const dateText = 'June 16, 2018';
@@ -144,4 +159,14 @@ class Journal extends Component {
   }
 }
 
-export default Journal;
+const mapStateToProps = (state) => ({
+  journal: state.journal,
+  user: state.user
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  getJournalEntry: (url) => dispatch(getJournalEntry(url)),
+  patchJournalEntry: (url, entry) => dispatch(patchJournalEntry(url, entry))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Journal);
