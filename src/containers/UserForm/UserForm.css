@@ -78,6 +78,9 @@
   font-size: 2rem;
   font-weight: bold;
   height: 3rem;
+  position: relative;
+    top: 3rem;
+    left: 10rem;
   width: 3rem;
 }
 
