@@ -1,5 +1,5 @@
+/*COMPONENT STYLES*/
 .user-form {
-  width: 100wh;
   height: 100vh;
   color: #fff;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -9,31 +9,19 @@
   animation: Gradient 15s ease infinite;
 }
 
-.user-info {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 300px;
-  margin: 0 auto;
-  background: #000;
-  padding: 20px 0 20px 0;
-  border-radius: 10px;
-}
-
-.user-input {
-  width: 400px;
-  height: 40px;
-  font-size: 1.5em;
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
-}
-
-.user-login {
-  display: flex;
-  flex-direction: column;
-}
-
 @-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -57,14 +45,28 @@
   }
 }
 
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/*FORM STYLES*/
+.user-info {
+  background: #2A2A2A;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  width: 80%;
 }
+
+.user-input {
+  width: 90%;
+  height: 40px;
+  font-size: 1.5em;
+  margin: 0 auto 20px auto;
+}
+
+.user-login {
+  display: flex;
+  flex-direction: column;
+}
+

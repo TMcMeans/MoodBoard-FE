@@ -16,11 +16,12 @@ class UserForm extends Component {
 
   render() {
     const { name, email } = this.state;
+    const text = 'sign up'
 
     return (
       <div className="user-form">
         <Logo />
-        <h1>Sign up</h1>
+        <h1>{text}</h1>
         <form action="" className="user-info">
           <input
             type="text"
@@ -39,11 +40,10 @@ class UserForm extends Component {
             placeholder="password"
             className="user-input"
           />
-          <Button text="Sign in" />
+          <Button text={text} />
         </form>
         <div className="user-login">
           <h2>Already a user?</h2>
-          <Button text="Log in" />
           <Button text="i" />
         </div>
       </div>
