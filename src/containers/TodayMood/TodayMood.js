@@ -14,6 +14,7 @@ class TodayMood extends Component {
 
   render() {
     const { primary_tone } = this.props.journal.tones;
+
     let componentClass;
     let toneClass;
     if (primary_tone === 'anger') {
@@ -40,10 +41,31 @@ class TodayMood extends Component {
     }
 
     let messageText;
+    let toneResponse;
     if (primary_tone === 'anger' || 'sadness' || 'tentative' || 'fear') {
       messageText = 'would you like to write an affirmation?';
+      toneResponse = (
+        <div className="quote-btns-container">
+          <Link to="/writeaffirmation">
+              <button>yes</button>
+          </Link>
+          <Link to="/home">
+            <button>no</button>
+          </Link>
+        </div>
+      )
     } else {
-      messageText = 'here is a nice quote for your day.'
+      messageText = 'here is a nice quote for your day.';
+      toneResponse = (
+        <div className="quote-btns-container">
+          <p className="quote">
+            {quoteText}
+          </p>
+          <Link to="/home">
+            home
+          </Link>
+        </div>
+      )
     }
 
     let quoteText = 'Happy'
@@ -57,18 +79,8 @@ class TodayMood extends Component {
           Based on your mood today,
           <br /> 
           {messageText}
-          <span className="quote">
-            {quoteText}
-          </span>
         </p>
-        <div className="today-btns-container">
-          <Link to="/writeaffirmation">
-            <button>yes</button>
-          </Link>
-          <Link to="/home">
-            <button>no</button>
-          </Link>
-        </div>
+        {toneResponse}
       </div>
     );
   }
