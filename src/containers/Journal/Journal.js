@@ -219,7 +219,7 @@ class Journal extends Component {
         </Fragment>
         <Link to="/todaymood">
           <button className="save-entry-btn" onClick={() => this.handleSubmit()}>
-            Save entry
+            save entry
           </button>
         </Link>
       </div>

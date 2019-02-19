@@ -36,7 +36,7 @@ let initialValue = Value.fromJSON({
   }
 });
 
-class Journal extends Component {
+class WriteAffirmation extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -99,11 +99,14 @@ class Journal extends Component {
   };
 
   render() {
-    const dateText = 'June 16, 2018';
+    const { primary_tone } = this.props.journal.
+    let prompt;
+
+
     return (
-      <div className="journal">
+      <div className="write-affirmation">
         <Logo />
-        <h1 className="date">{dateText}</h1>
+        <h1 className="prompt">{prompt}</h1>
         <Fragment>
           <FormatToolbar>
             <button
@@ -148,26 +151,20 @@ class Journal extends Component {
           />
         </Fragment>
 
-        <button className="save-entry-btn" onClick={() => this.handleSubmit()}>
-          Save entry
+        <button className="save-prompt-btn" onClick={() => this.handleSubmit()}>
+          save affirmation
         </button>
       </div>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  journal: state.journal,
-  user: state.user
-});
 
 const mapDispatchToProps = dispatch => ({
-  getJournalEntry: url => dispatch(getJournalEntry(url)),
-  patchJournalEntry: (url, entry_text) =>
-    dispatch(patchJournalEntry(url, entry_text))
+  // need to send affirmation to db
 });
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
-)(Journal);
+)(WriteAffirmation);
