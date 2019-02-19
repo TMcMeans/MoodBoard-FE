@@ -42,7 +42,7 @@ class TodayMood extends Component {
 
     let messageText;
     let toneResponse;
-    if (primary_tone === 'anger' || 'sadness' || 'tentative' || 'fear') {
+    if (primary_tone === 'anger' || primary_tone === 'sadness' || primary_tone === 'tentative' || primary_tone === 'fear') {
       messageText = 'would you like to write an affirmation?';
       toneResponse = (
         <div className="quote-btns-container">
@@ -54,7 +54,7 @@ class TodayMood extends Component {
           </Link>
         </div>
       )
-    } else {
+    } else if (primary_tone === 'joy' || primary_tone === 'confident' || primary_tone === 'analytical') {
       messageText = 'here is a nice quote for your day.';
       toneResponse = (
         <div className="quote-btns-container">

@@ -1,5 +1,5 @@
 /*COMPONENT STYLES*/
-.journal {
+.write-affirmation {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,42 +7,37 @@
   margin: 0;
 }
 
-/*DATE STYLES*/
-.date {
+/*PROMPT TEXT*/
+.prompt {
   color: #f2ebe8;
   margin: 0px 0px 1rem;
 }
 
 /*EDITOR STYLES*/
-.tooltip-icon-button {
+.prompt-tooltip-icon-button {
   color: #2a2a2a;
   background-color: rgba(221, 170, 68, 0.5);
   border: 1px solid;
   height: 2.5rem;
-  width: 4.5rem;
+  width: 3.5rem;
   cursor: pointer;
 }
 
-.editor {
+.prompt-editor {
   background-color: #f5f1e7;
   background-image: url('../../assets/paper2.png');
   border: 1px solid #b5b5b5;
   border-radius: 5px;
   color: #282625;
   font-size: 1.4rem;
-  height: 20rem;
+  height: 15rem;
   margin: 0 0 2rem;
   padding: 20px;
   text-align: left;
   width: 75%;
 }
 
-.underline {
-  text-decoration: underline;
-  display: inline;
-}
-
 /*BUTTON*/
-.save-entry-btn {
+.save-prompt-btn {
   cursor: pointer;
 }

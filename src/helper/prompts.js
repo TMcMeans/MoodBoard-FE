@@ -3,7 +3,6 @@ export const prompts = {
     'My courage is stronger than my fear.',
     'Although I am afraid, I can learn to be confident in myself and my abilities.',
     'There is more to me than this battle.',
-    'I can learn to accept and embrace fear as a sign that I am being faced with an opportunity to grow.',
     'I am the artist and creator of my life story.',
     'I forgive myself for not being perfect.',
     'I have the courage to say, no.',
@@ -47,6 +46,5 @@ export const prompts = {
     'I am prioritizing my physical, mental health and self care today.',
     'I deserve love, compassion and empathy.',
     'I accept myself unconditionally.',
-    'This '
   ]
 };

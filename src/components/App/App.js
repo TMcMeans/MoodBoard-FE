@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 import Affirmations from '../../containers/Affirmations/Affirmations';
-import CalendarView from '../../containers/CalendarView/CalendarView.js';
+import CalendarView from '../../containers/CalendarView/CalendarView';
 import DailyView from '../../containers/DailyView/DailyView';
 import Home from '../../containers/Home/Home';
-import Journal from '../../containers/Journal/Journal.js';
+import Journal from '../../containers/Journal/Journal';
 import TodayMood from '../../containers/TodayMood/TodayMood';
 import UserForm from '../../containers/UserForm/UserForm';
+import WriteAffirmation from '../../containers/WriteAffirmation/WriteAffirmation';
 
 import './App.css';
-// import Calendar from 'react-calendar';
 
 class App extends Component {
   render() {
@@ -24,6 +24,7 @@ class App extends Component {
           <Route exact path="/journal" render={() => <Journal />} />
           <Route exact path="/todaymood" render={() => <TodayMood />} />
           <Route exact path="/affirmations" render={() => <Affirmations />} />
+          <Route exact path="/writeaffirmation" render={() => <WriteAffirmation />} />
         </Switch>
       </div>
     );
