@@ -16,8 +16,7 @@ export const postAffirmation = (url, affirmation_text) => {
         throw Error(response.statusText);
       }
 
-      const statusCode = await response.json();
-      return statusCode;
+      return response.status;
     } catch (error) {
       dispatch(hasErrored(error.message));
     }
