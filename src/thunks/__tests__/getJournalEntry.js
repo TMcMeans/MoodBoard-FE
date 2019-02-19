@@ -10,22 +10,18 @@ describe('getJournalEntry', () => {
     mockUrl = 'www.journals.com';
     mockDispatch = jest.fn();
     mockJournalEntry = {
-      journal: {
-        id: '10',
-        type: 'journal_entry',
-        attributes: {
-          created_at: '2019-02-19T00:00:00.000Z',
-          entry_text: 'I am upset today. I slipped on ice and my back hurts.',
-          tones: {
-            id: 9,
-            primary_tone: 'sadness',
-            secondary_tone: 'analytical',
-            journal_entry_id: 10,
-            created_at: '2019-02-19T00:40:00.018Z',
-            updated_at: '2019-02-19T00:51:18.180Z',
-            primary_score: '0.796933',
-            secondary_score: '0.824412'
-          }
+      attributes: {
+        created_at: '2019-02-19T00:00:00.000Z',
+        entry_text: 'I am upset today. I slipped on ice and my back hurts.',
+        tones: {
+          id: 9,
+          primary_tone: 'sadness',
+          secondary_tone: 'analytical',
+          journal_entry_id: 10,
+          created_at: '2019-02-19T00:40:00.018Z',
+          updated_at: '2019-02-19T00:51:18.180Z',
+          primary_score: '0.796933',
+          secondary_score: '0.824412'
         }
       }
     };
@@ -67,7 +63,7 @@ describe('getJournalEntry', () => {
     await thunk(mockDispatch);
 
     expect(mockDispatch).toHaveBeenCalledWith(
-      Actions.saveJournalEntry(mockJournalEntry)
+      Actions.saveJournalEntry(mockJournalEntry.attributes)
     );
   });
 });

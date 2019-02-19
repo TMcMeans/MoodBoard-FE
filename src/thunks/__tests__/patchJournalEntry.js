@@ -49,14 +49,17 @@ describe('patchJournalEntry', () => {
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
         ok: true,
-        json: () => Promise.resolve({ data: mockEntryText })
+        json: () =>
+          Promise.resolve({
+            data: { attributes: { entry_text: mockEntryText } }
+          })
       });
     });
 
     const thunk = patchJournalEntry(mockUrl, mockEntryText);
     await thunk(mockDispatch);
     expect(mockDispatch).toHaveBeenCalledWith(
-      Actions.saveJournalEntry({ data: 'I am happy.' })
+      Actions.saveJournalEntry({ entry_text: 'I am happy.' })
     );
   });
 });
