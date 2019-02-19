@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import Button from './Button';
 
-describe('App', () => {
+describe('Button', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<Button text="Sign in" />);
   });
   it('should render a snapshot with correct data passed in', () => {
     expect(wrapper).toMatchSnapshot();

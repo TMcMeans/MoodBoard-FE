@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import { FormatToolbar } from './FormatToolbar';
 
-describe('App', () => {
+describe('FormatToolbar', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<FormatToolbar />);
   });
   it('should render a snapshot with correct data passed in', () => {
     expect(wrapper).toMatchSnapshot();
