@@ -21,27 +21,19 @@ class Affirmations extends Component {
         <ul className="affirmation-list">
           <li className="single-affirmation" id="1">
             <FaCircle className="circle" />
-            <span className="affirmation-text">
-              6/3: "You got this."
-            </span>
+            <span className="affirmation-text">6/3: "You got this."</span>
           </li>
           <li className="single-affirmation" id="2">
             <FaCircle className="circle" />
-            <span className="affirmation-text">
-              6/3: "You got this."
-            </span>
+            <span className="affirmation-text">6/3: "You got this."</span>
           </li>
           <li className="single-affirmation" id="3">
             <FaCircle className="circle" />
-            <span className="affirmation-text">
-              6/3: "You got this."
-            </span>
+            <span className="affirmation-text">6/3: "You got this."</span>
           </li>
           <li className="single-affirmation" id="4">
             <FaCircle className="circle" />
-            <span className="affirmation-text">
-              6/3: "You got this."
-            </span>
+            <span className="affirmation-text">6/3: "You got this."</span>
           </li>
         </ul>
         <Button text="Calendar" />
