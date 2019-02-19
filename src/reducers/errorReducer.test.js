@@ -7,6 +7,7 @@ describe('errorReducer', () => {
     const result = errorReducer(undefined, {});
     expect(result).toEqual(expected);
   });
+
   it('should return state with a new error message', () => {
     const mockAction = {
       type: 'HAS_ERRORED',
