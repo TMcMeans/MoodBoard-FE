@@ -10,6 +10,7 @@ import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { prompts } from '../../helper/prompts';
 import { postAffirmation } from '../../thunks/postAffirmation';
@@ -156,10 +157,11 @@ class WriteAffirmation extends Component {
             renderMark={this.renderMark}
           />
         </Fragment>
-
-        <button className="save-prompt-btn" onClick={() => this.handleSubmit()}>
-          save affirmation
-        </button>
+        <Link to="/home">
+          <button className="save-prompt-btn" onClick={() => this.handleSubmit()}>
+            save affirmation
+          </button>
+        </Link>
       </div>
     );
   }
