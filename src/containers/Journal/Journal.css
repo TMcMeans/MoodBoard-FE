@@ -34,6 +34,11 @@
   width: 75%;
 }
 
-.center-align {
-  text-align: center;
+.underline {
+  text-decoration: underline;
+  display: inline;
+}
+
+.save-entry-btn {
+  cursor: pointer;
 }
