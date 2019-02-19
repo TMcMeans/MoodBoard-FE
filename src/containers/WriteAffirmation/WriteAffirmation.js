@@ -9,9 +9,8 @@ import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
-import { connect } from 'react-redux';
 
-// import Button from '../../components/Button/Button';
+import { prompts } from '../../helper/prompts';
 import Logo from '../../components/Logo/Logo';
 import './WriteAffirmation.css';
 
@@ -41,11 +40,16 @@ class WriteAffirmation extends Component {
     super(props);
     this.state = {
       value: initialValue
+      prompt: '',
     };
   }
 
   componentDidMount = () => {
-    
+    const { primary_tone } = this.props.journal.tones;
+    const promptTone = prompts.find(prompt => prompt[tone] === primary_tone);
+    const promptIndex = Math.round(Math.random() * (promptTone.length - 1));
+    let prompt = promptTone[promptIndex];
+    this.setState({ prompt })
   };
 
   renderMark = props => {
@@ -99,10 +103,8 @@ class WriteAffirmation extends Component {
   };
 
   render() {
-    const { primary_tone } = this.props.journal.
-    let prompt;
-
-
+    const { prompt } = this.state;
+    
     return (
       <div className="write-affirmation">
         <Logo />
@@ -159,12 +161,4 @@ class WriteAffirmation extends Component {
   }
 }
 
-
-const mapDispatchToProps = dispatch => ({
-  // need to send affirmation to db
-});
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(WriteAffirmation);
+export default WriteAffirmation;
