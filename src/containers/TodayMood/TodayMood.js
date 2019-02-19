@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
+import { inspirationalQuotes } from '../../helper/inspirationalQuotes';
 import './TodayMood.css';
 
 class TodayMood extends Component {
@@ -42,6 +42,9 @@ class TodayMood extends Component {
 
     let messageText;
     let toneResponse;
+    let quoteText;
+    let quoteAuthor;
+
     if (primary_tone === 'anger' || primary_tone === 'sadness' || primary_tone === 'tentative' || primary_tone === 'fear') {
       messageText = 'would you like to write an affirmation?';
       toneResponse = (
@@ -54,12 +57,20 @@ class TodayMood extends Component {
           </Link>
         </div>
       )
-    } else if (primary_tone === 'joy' || primary_tone === 'confident' || primary_tone === 'analytical') {
+    } else if (primary_tone === 'joy' || primary_tone === 'analytical' || primary_tone === 'confident') {
+      const quoteTone = inspirationalQuotes[primary_tone];
+      const quoteIndex = Math.round(Math.random() * (quoteTone.length - 1));
+      quoteText = quoteTone[quoteIndex].quote;
+      quoteAuthor = quoteTone[quoteIndex].author;
+
       messageText = 'here is a nice quote for your day.';
+
       toneResponse = (
         <div className="quote-btns-container">
           <p className="quote">
             {quoteText}
+            <br />
+            - {quoteAuthor}
           </p>
           <Link to="/home">
             home
@@ -67,8 +78,6 @@ class TodayMood extends Component {
         </div>
       )
     }
-
-    let quoteText = 'Happy'
 
     return (
       <div className={componentClass}>
