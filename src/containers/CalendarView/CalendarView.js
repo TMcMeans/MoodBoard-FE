@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Calendar from 'react-calendar/dist/entry.nostyle';
 import { Link } from 'react-router-dom';
 
-import Button from '../../components/Button/Button.js';
+import Logo from '../../components/Logo/Logo';
+import Button from '../../components/Button/Button';
+import './CalendarView.css';
 
 class CalendarView extends Component {
   constructor() {
@@ -18,9 +20,12 @@ class CalendarView extends Component {
 
   render() {
     return (
-      <div>
+      <div className="calendar">
+        <Logo />
         <Calendar value={this.state.value} onChange={this.onChange} />
-        <Link to="/affirmations"><Button text="View affirmations" /></Link>
+        <Link to="/affirmations">
+          <Button text="your affirmations" />
+        </Link>
       </div>
     );
   }
