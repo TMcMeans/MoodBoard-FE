@@ -132,11 +132,47 @@ class Journal extends Component {
   };
 
   render() {
-    const dateText = 'June 16, 2018';
+    let today = new Date();
+    let month = today.getMonth(); //January is 0!
+    let day = today.getDate();
+    let year = today.getFullYear();
+
+    if (day < 10) {
+      day = '0' + day;
+    }
+
+    if (month === 0) {
+      month = 'January';
+    } else if (month === 1) {
+      month = 'February'
+    } else if (month === 2) {
+      month = 'March'
+    } else if (month === 3) {
+      month = 'April'
+    } else if (month === 4) {
+      month = 'May'
+    } else if (month === 5) {
+      month = 'June'
+    } else if (month === 6) {
+      month = 'July'
+    } else if (month === 7) {
+      month = 'August'
+    } else if (month === 8) {
+      month = 'September'
+    } else if (month === 9) {
+      month = 'October'
+    } else if (month === 10) {
+      month = 'November'
+    } else if (month === 11) {
+      month = 'December'
+    } 
+
+    today = month + ' ' + day + ', ' + year;
+
     return (
       <div className="journal">
         <Logo />
-        <h1 className="date">{dateText}</h1>
+        <h1 className="date">{today}</h1>
         <Fragment>
           <FormatToolbar>
             <button
