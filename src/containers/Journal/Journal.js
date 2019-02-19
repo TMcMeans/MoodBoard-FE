@@ -12,7 +12,6 @@ import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-// import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
 import { getJournalEntry } from '../../thunks/getJournalEntry';
 import { patchJournalEntry } from '../../thunks/patchJournalEntry';
