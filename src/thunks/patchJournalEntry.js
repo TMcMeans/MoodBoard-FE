@@ -1,4 +1,4 @@
-import { hasErrored } from '../actions';
+import { hasErrored, saveJournalEntry } from '../actions';
 
 export const patchJournalEntry = (url, entry_text) => {
   return async dispatch => {
@@ -12,6 +12,13 @@ export const patchJournalEntry = (url, entry_text) => {
           journal_entry: { entry_text }
         })
       });
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+
+      const journal_entry = await response.json();
+
+      dispatch(saveJournalEntry(journal_entry));
     } catch (error) {
       dispatch(hasErrored(error.message));
     }
