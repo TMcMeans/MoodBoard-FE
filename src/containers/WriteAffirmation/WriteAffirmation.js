@@ -109,43 +109,46 @@ class WriteAffirmation extends Component {
     return (
       <div className="write-affirmation">
         <Logo />
-        <h1 className="prompt">{prompt}</h1>
+        <h2 className="prompt">
+          PROMPT: 
+          <br />
+          {prompt}</h2>
         <Fragment>
           <FormatToolbar>
             <button
               onPointerDown={e => this.onMarkClick(e, 'bold')}
-              className="tooltip-icon-button"
+              className="prompt-tooltip-icon-button"
             >
               <Icon icon={bold} />
             </button>
             <button
               onPointerDown={e => this.onMarkClick(e, 'italic')}
-              className="tooltip-icon-button"
+              className="prompt-tooltip-icon-button"
             >
               <Icon icon={italic} />
             </button>
             <button
               onPointerDown={e => this.onMarkClick(e, 'list-item')}
-              className="tooltip-icon-button"
+              className="prompt-tooltip-icon-button"
             >
               <Icon icon={list} />
             </button>
             <button
               onPointerDown={e => this.onMarkClick(e, 'underline')}
-              className="tooltip-icon-button"
+              className="prompt-tooltip-icon-button"
             >
               <Icon icon={underline} />
             </button>
             <button
               onPointerDown={e => this.onMarkClick(e, 'heading-one')}
-              className="tooltip-icon-button"
+              className="prompt-tooltip-icon-button"
             >
               <Icon icon={plus} />
             </button>
           </FormatToolbar>
 
           <Editor
-            className="editor"
+            className="prompt-editor"
             autoFocus={true}
             ref={editor => (this.editor = editor)}
             value={this.state.value}

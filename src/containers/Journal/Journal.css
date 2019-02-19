@@ -1,3 +1,4 @@
+/*COMPONENT STYLES*/
 .journal {
   display: flex;
   flex-direction: column;
@@ -6,11 +7,13 @@
   margin: 0;
 }
 
+/*DATE STYLES*/
 .date {
   color: #f2ebe8;
   margin: 0px 0px 1rem;
 }
 
+/*EDITOR STYLES*/
 .tooltip-icon-button {
   color: #2a2a2a;
   background-color: rgba(221, 170, 68, 0.5);
@@ -39,6 +42,7 @@
   display: inline;
 }
 
+/*BUTTON*/
 .save-entry-btn {
   cursor: pointer;
 }
