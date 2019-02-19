@@ -11,7 +11,7 @@ import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
 
-import Button from '../../components/Button/Button';
+// import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
 import { getJournalEntry } from '../../thunks/getJournalEntry';
 import { patchJournalEntry } from '../../thunks/patchJournalEntry';
@@ -51,9 +51,9 @@ class Journal extends Component {
     const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/journal_entries?date=today`;
     await this.props.getJournalEntry(url);
 
-    const { entry_text } = this.props.journal.attributes;
-    //if there is an entry- display entry on page. Needs to be tested
-    if (entry_text) {
+    const { entry_text } = await this.props.journal;
+
+    if (entry_text.length) {
       initialValue = Value.fromJSON({
         document: {
           nodes: [
@@ -65,7 +65,7 @@ class Journal extends Component {
                   object: 'text',
                   leaves: [
                     {
-                      text: this.props.journal.attributes.entry_text
+                      text: entry_text
                     }
                   ]
                 }
@@ -75,6 +75,10 @@ class Journal extends Component {
         }
       });
     }
+
+    this.setState({
+      value: initialValue
+    });
   };
 
   renderMark = props => {
@@ -90,10 +94,10 @@ class Journal extends Component {
         return <li {...attributes}>{children}</li>;
       }
 
-      //NOT WORKING CHANGE TO CENTER ALIGN TEXT
-      case 'underlined': {
+      //ADD OPTION TO CENTER TEXT
+      case 'underline': {
         return (
-          <p {...attributes} className="center-align">
+          <p {...attributes} className="underline">
             {children}
           </p>
         );
@@ -111,17 +115,13 @@ class Journal extends Component {
     this.setState({ value });
   };
 
-  onSubmit = async e => {
-    e.preventDefault();
-
+  handleSubmit = async () => {
     const journal_entry = this.state.value.document.text;
 
     const userID = 1;
     const url = `https://mood-board-be.herokuapp.com//api/v1/users/${userID}/journal_entries?date=today`;
-    const response = await patchJournalEntry(url, journal_entry);
 
-    //dispatch the saveJournalEntry action to update journal entry (with tone words) in global state tree
-    console.log(response);
+    await this.props.patchJournalEntry(url, journal_entry);
   };
 
   onMarkClick = (e, type) => {
@@ -181,7 +181,9 @@ class Journal extends Component {
           />
         </Fragment>
 
-        <Button text="save entry" onClick={e => this.onSubmit} />
+        <button className="save-entry-btn" onClick={() => this.handleSubmit()}>
+          Save entry
+        </button>
       </div>
     );
   }

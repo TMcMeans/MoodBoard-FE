@@ -18,7 +18,7 @@ export const patchJournalEntry = (url, entry_text) => {
 
       const journal_entry = await response.json();
 
-      dispatch(saveJournalEntry(journal_entry));
+      dispatch(saveJournalEntry(journal_entry.data.attributes));
     } catch (error) {
       dispatch(hasErrored(error.message));
     }
