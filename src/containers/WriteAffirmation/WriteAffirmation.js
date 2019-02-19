@@ -9,6 +9,7 @@ import { list } from 'react-icons-kit/feather/list';
 import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
+import { connect } from 'react-redux';
 
 import { prompts } from '../../helper/prompts';
 import Logo from '../../components/Logo/Logo';
@@ -46,7 +47,7 @@ class WriteAffirmation extends Component {
 
   componentDidMount = () => {
     const { primary_tone } = this.props.journal.tones;
-    const promptTone = prompts.find(prompt => prompt.tone === primary_tone);
+    const promptTone = prompts[primary_tone];
     const promptIndex = Math.round(Math.random() * (promptTone.length - 1));
     let prompt = promptTone[promptIndex];
     this.setState({ prompt })
@@ -161,4 +162,8 @@ class WriteAffirmation extends Component {
   }
 }
 
-export default WriteAffirmation;
+const mapStateToProps = state => ({
+  journal: state.journal
+})
+
+export default connect(mapStateToProps, null)(WriteAffirmation);
