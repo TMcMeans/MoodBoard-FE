@@ -10,8 +10,10 @@ import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { prompts } from '../../helper/prompts';
+import { postAffirmation } from '../../thunks/postAffirmation';
 import Logo from '../../components/Logo/Logo';
 import './WriteAffirmation.css';
 
@@ -88,12 +90,11 @@ class WriteAffirmation extends Component {
   };
 
   handleSubmit = async () => {
-    // const affirmation = this.state.value.document.text;
+    const affirmation_text = this.state.prompt;
+    const userID = 1;
+    const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/affirmations?date=today`;
 
-    // const userID = 1;
-    // const url = `https://mood-board-be.herokuapp.com//api/v1/users/${userID}/journal_entries?date=today`;
-
-    // await this.props.patchJournalEntry(url, journal_entry);
+    await this.props.postAffirmation(url, affirmation_text);
   };
 
   onMarkClick = (e, type) => {
@@ -156,10 +157,11 @@ class WriteAffirmation extends Component {
             renderMark={this.renderMark}
           />
         </Fragment>
-
-        <button className="save-prompt-btn" onClick={() => this.handleSubmit()}>
-          save affirmation
-        </button>
+        <Link to="/home">
+          <button className="save-prompt-btn" onClick={() => this.handleSubmit()}>
+            save affirmation
+          </button>
+        </Link>
       </div>
     );
   }
@@ -169,4 +171,8 @@ const mapStateToProps = state => ({
   journal: state.journal
 })
 
-export default connect(mapStateToProps, null)(WriteAffirmation);
+const mapDispatchToProps = dispatch => ({
+  postAffirmation: (url, affirmation_text) => dispatch(postAffirmation(url, affirmation_text)) 
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(WriteAffirmation);
