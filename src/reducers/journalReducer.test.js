@@ -18,7 +18,7 @@ describe('journalReducer', () => {
       {},
       {
         type: 'SAVE_JOURNAL_ENTRY',
-        journal: {
+        journal_entry: {
           attributes: {
             entry_text: 'Hello world'
           }
