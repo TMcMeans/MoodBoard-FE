@@ -13,18 +13,52 @@ class TodayMood extends Component {
   }
 
   render() {
-    const toneWord = 'analytical';
-    const messageText = 'would you like to write an affirmation?'
+    const { primary_tone } = this.props.journal.tones;
+    let componentClass;
+    let toneClass;
+    if (primary_tone === 'anger') {
+      componentClass = 'anger-bg today-mood';
+      toneClass = 'anger tone-word';
+    } else if (primary_tone === 'sadness') {
+      componentClass = 'sadness-bg today-mood';
+      toneClass = 'sadness tone-word';
+    } else if (primary_tone === 'tentative') {
+      componentClass = 'tentative-bg today-mood';
+      toneClass = 'tentative tone-word';
+    } else if (primary_tone === 'fear') {
+      componentClass = 'fear-bg today-mood';
+      toneClass = 'fear tone-word';
+    } else if (primary_tone === 'joy') {
+      componentClass = 'joy-bg today-mood';
+      toneClass = 'joy tone-word';
+    } else if (primary_tone === 'confident') {
+      componentClass = 'confident-bg today-mood';
+      toneClass = 'confident tone-word';
+    } else if (primary_tone === 'analytical') {
+      componentClass = 'analytical-bg today-mood';
+      toneClass = 'analytical tone-word';
+    }
+
+    let messageText;
+    if (primary_tone === 'anger' || 'sadness' || 'tentative' || 'fear') {
+      messageText = 'would you like to write an affirmation?';
+    } else {
+      messageText = 'here is a nice quote for your day.'
+    }
+
+    let quoteText = 'Happy'
+
     return (
-      <div className="today-mood analytical-bg">
+      <div className={componentClass}>
         <Logo />
         <h2 className="today-title">Today's Mood</h2>
-        <h1 className="tone-word analytical">{toneWord}</h1>
+        <h1 className={toneClass}>{primary_tone}</h1>
         <p className="message">
           Based on your mood today,
           <br /> 
-          <span className="message-text">
-            {messageText}
+          {messageText}
+          <span className="quote">
+            {quoteText}
           </span>
         </p>
         <div className="today-btns-container">
