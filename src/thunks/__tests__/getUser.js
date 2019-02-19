@@ -1,12 +1,14 @@
-import { hasErrored, loginUser } from '../actions';
+import { getUser } from '../getUser';
 
-export const fetchUser = (url, user) => {
-  return async dispatch => {
-    try {
-      //Write async logic once endpoint has been solidified on BE
-      dispatch(loginUser(user));
-    } catch (error) {
-      dispatch(hasErrored(error.message));
-    }
-  };
-};
+import * as Actions from '../../actions';
+
+describe('getUser', () => {
+  let mockUrl;
+  let mockDispatch;
+  let mockUserID;
+  beforeEach(() => {
+    mockUrl = 'www.journals.com';
+    mockDispatch = jest.fn();
+    mockUserID = 1;
+  });
+});
