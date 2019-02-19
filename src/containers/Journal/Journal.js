@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Editor } from 'slate-react';
 import { Value } from 'slate';
+import Plain from 'slate-plain-serializer';
 import Icon from 'react-icons-kit';
 import { bold } from 'react-icons-kit/feather/bold';
 import { italic } from 'react-icons-kit/feather/italic';
@@ -16,7 +17,7 @@ import { getJournalEntry } from '../../thunks/getJournalEntry';
 import { patchJournalEntry } from '../../thunks/patchJournalEntry';
 import './Journal.css';
 
-const initialValue = Value.fromJSON({
+let initialValue = Value.fromJSON({
   document: {
     nodes: [
       {
@@ -45,6 +46,37 @@ class Journal extends Component {
     };
   }
 
+  componentDidMount = async () => {
+    const userID = 1;
+    const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/journal_entries?date=today`;
+    await this.props.getJournalEntry(url);
+
+    const { entry_text } = this.props.journal.attributes;
+    //if there is an entry- display entry on page. Needs to be tested
+    if (entry_text) {
+      initialValue = Value.fromJSON({
+        document: {
+          nodes: [
+            {
+              object: 'block',
+              type: 'paragraph',
+              nodes: [
+                {
+                  object: 'text',
+                  leaves: [
+                    {
+                      text: this.props.journal.attributes.entry_text
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      });
+    }
+  };
+
   renderMark = props => {
     const { attributes, children } = props;
     switch (props.mark.type) {
@@ -61,7 +93,7 @@ class Journal extends Component {
       //NOT WORKING CHANGE TO CENTER ALIGN TEXT
       case 'underlined': {
         return (
-          <p {...attributes} style={{ borderBottom: '1px soid black' }}>
+          <p {...attributes} className="center-align">
             {children}
           </p>
         );
@@ -73,35 +105,31 @@ class Journal extends Component {
         return;
       }
     }
-  }
+  };
 
   onChange = ({ value }) => {
     this.setState({ value });
+  };
 
-    //How to access text inside of text editor
-    console.log(value.document.text);
-    //Call a method to send journal entry to database
-  }
+  onSubmit = async e => {
+    e.preventDefault();
+
+    const journal_entry = this.state.value.document.text;
+
+    const userID = 1;
+    const url = `https://mood-board-be.herokuapp.com//api/v1/users/${userID}/journal_entries?date=today`;
+    const response = await patchJournalEntry(url, journal_entry);
+
+    //dispatch the saveJournalEntry action to update journal entry (with tone words) in global state tree
+    console.log(response);
+  };
 
   onMarkClick = (e, type) => {
     e.preventDefault();
     const change = this.editor.toggleMark(type);
 
     this.onChange(change);
-  }
-
-  componentDidMount = async () => {
-    // call getJournalEntry thunk
-    const userID = 1;
-    const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/journal_entries?date=today`;
-    const entry = await getJournalEntry(url);
-    console.log(entry)
-    
-    // set response to local state
-    // this.setState({
-    //   value: entry
-    // })
-  }
+  };
 
   render() {
     const dateText = 'June 16, 2018';
@@ -153,20 +181,24 @@ class Journal extends Component {
           />
         </Fragment>
 
-        <Button text="save entry" />
+        <Button text="save entry" onClick={e => this.onSubmit} />
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   journal: state.journal,
   user: state.user
-})
+});
 
-const mapDispatchToProps = (dispatch) => ({
-  getJournalEntry: (url) => dispatch(getJournalEntry(url)),
-  patchJournalEntry: (url, entry) => dispatch(patchJournalEntry(url, entry))
-})
+const mapDispatchToProps = dispatch => ({
+  getJournalEntry: url => dispatch(getJournalEntry(url)),
+  patchJournalEntry: (url, entry_text) =>
+    dispatch(patchJournalEntry(url, entry_text))
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Journal);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Journal);

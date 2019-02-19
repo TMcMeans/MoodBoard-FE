@@ -17,6 +17,7 @@
   border: 1px solid;
   height: 2.5rem;
   width: 4.5rem;
+  cursor: pointer;
 }
 
 .editor {
@@ -31,4 +32,8 @@
   padding: 20px;
   text-align: left;
   width: 75%;
+}
+
+.center-align {
+  text-align: center;
 }
