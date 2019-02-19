@@ -39,14 +39,14 @@ class WriteAffirmation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: initialValue
+      value: initialValue,
       prompt: '',
     };
   }
 
   componentDidMount = () => {
     const { primary_tone } = this.props.journal.tones;
-    const promptTone = prompts.find(prompt => prompt[tone] === primary_tone);
+    const promptTone = prompts.find(prompt => prompt.tone === primary_tone);
     const promptIndex = Math.round(Math.random() * (promptTone.length - 1));
     let prompt = promptTone[promptIndex];
     this.setState({ prompt })
@@ -104,7 +104,7 @@ class WriteAffirmation extends Component {
 
   render() {
     const { prompt } = this.state;
-    
+
     return (
       <div className="write-affirmation">
         <Logo />
