@@ -9,8 +9,6 @@ describe('actions', () => {
     };
 
     const result = actions.isLoading(isLoading);
-
-    // Expectation
     expect(result).toEqual(expectedAction);
   });
 
