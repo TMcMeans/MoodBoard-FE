@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 import Logo from '../../components/Logo/Logo';
 import Button from '../../components/Button/Button';
 import './TodayMood.css';
@@ -25,12 +28,25 @@ class TodayMood extends Component {
           </span>
         </p>
         <div className="today-btns-container">
-          <Button text="yes" />
-          <Button text="no" />
+          <Link to="/writeaffirmation">
+            <button>yes</button>
+          </Link>
+          <Link to="/home">
+            <button>no</button>
+          </Link>
         </div>
       </div>
     );
   }
 }
 
-export default TodayMood;
+const mapStateToProps = state => ({
+  isLoading: state.isLoading,
+  journal: state.journal
+})
+
+const mapDispatchToProps = dispatch => ({
+  // will need to dispatch isLoading
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodayMood);

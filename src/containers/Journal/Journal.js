@@ -10,6 +10,7 @@ import { underline } from 'react-icons-kit/feather/underline';
 import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 // import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
@@ -180,10 +181,11 @@ class Journal extends Component {
             renderMark={this.renderMark}
           />
         </Fragment>
-
-        <button className="save-entry-btn" onClick={() => this.handleSubmit()}>
-          Save entry
-        </button>
+        <Link to="/todaymood">
+          <button className="save-entry-btn" onClick={() => this.handleSubmit()}>
+            Save entry
+          </button>
+        </Link>
       </div>
     );
   }
