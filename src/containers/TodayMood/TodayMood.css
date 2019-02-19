@@ -1,5 +1,5 @@
 /*COMPONENT STYLES*/
-.daily-view {
+.today-mood {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,13 +35,12 @@
   background: rgba(106,164,203, 0.9);
 }
 
-/*DATE*/
-.daily-date {
-  color: #ffffff;
-  margin: 0;
+/*TITLE*/
+.today-title {
+  font-size: 2rem;
 }
 
-/*DAILY TONE*/
+/*TODAY'S TONE*/
 .tone-word {
   font-weight: bold;
   font-size: 54px;
@@ -83,31 +82,17 @@
   text-shadow: 0px 4px 4px rgba(42, 42, 42, 0.8);
 }
 
-/*JOURNAL AND AFFIRMATION*/
-.daily-entry,
-.daily-affirmation {
-  background-color: #f5f1e7;
-  background-image: url('../../assets/paper2.png');
-  border: 1px solid #b5b5b5;
-  border-radius: 5px;
-  color: #282625;
-  font-size: 1.4rem;
-  margin: 0 0 1rem;
-  padding: 20px;
-  overflow: scroll;
-  text-align: left;
-  width: 75%;
-}
-
-/*AFFIRMATION*/
-.daily-affirmation-text {
-  margin: 0;
+/*MESSAGE*/
+.message {
+  font-size: 2rem;
+  width: 80%;
 }
 
 /*BUTTONS*/
-.btn-wrapper {
+.today-btns-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 55%;
+  margin-top: 2rem;
+  width: 45%;
 }

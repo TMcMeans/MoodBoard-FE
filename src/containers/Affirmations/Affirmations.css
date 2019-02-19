@@ -1,3 +1,7 @@
+.month-affirmations {
+  height: 100vh;
+}
+
 .month {
   width: 300px;
   border-bottom: 1px solid #fff;
@@ -5,12 +9,26 @@
   color: #fff;
 }
 
+.affirmation-list {
+  height: 55%;
+  padding: 0;
+}
+
 .single-affirmation {
+  color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   font-size: 1.5em;
-  color: #fff;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.circle {
+  color: #4BCE8F;
+}
+
+.affirmation-text {
+  margin-left: 1.5rem;
 }
 
 .mood-color {
