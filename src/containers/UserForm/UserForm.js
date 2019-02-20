@@ -62,7 +62,11 @@ class UserForm extends Component {
             placeholder="password"
             className="user-input"
           />
-          <button className="standard-btn light form-btn">{text}</button>
+          <Link to="/home">
+            <button className="standard-btn light form-btn">
+              {text}
+            </button>
+          </Link>
         </form>
         <h2>
           {switchText}
