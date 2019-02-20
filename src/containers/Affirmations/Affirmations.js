@@ -36,7 +36,7 @@ class Affirmations extends Component {
             <span className="affirmation-text">6/3: "You got this."</span>
           </li>
         </ul>
-        <button className="light back-to-calendar-btn">calendar</button>
+        <button className="standard-btn light back-to-calendar-btn">calendar</button>
       </div>
     );
   }
