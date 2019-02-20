@@ -17,7 +17,28 @@ class UserForm extends Component {
 
   render() {
     const { name, email } = this.state;
-    const text = 'sign up'
+    const { type } = this.props;
+    let text;
+    let switchText;
+    let formBtn;
+
+    if (type === 'login') {
+      text = 'log in';
+      switchText = 'First time at MoodBoard? Sign up ';
+      formBtn = (
+        <Link to="/signup" className="login-link">
+          here
+        </Link>
+      )
+    } else if (type === 'signup') {
+      text = 'sign up';
+      switchText = 'Already a user? Log in ';
+      formBtn = (
+        <Link to="/" className="login-link">
+          here
+        </Link>
+      )
+    }
 
     return (
       <div className="user-form">
@@ -43,7 +64,10 @@ class UserForm extends Component {
           />
           <button className="standard-btn light form-btn">{text}</button>
         </form>
-        <h2>Already a user? Log in <Link to="/" className="login-link">here</Link>.</h2>
+        <h2>
+          {switchText}
+          {formBtn}
+          .</h2>
         <button className="info-btn">i</button>
       </div>
     );
