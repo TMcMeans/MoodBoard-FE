@@ -17,7 +17,8 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path="/" render={() => <UserForm />} />
+          <Route exact path="/" render={() => <UserForm type="login" />} />
+          <Route exact path="/signup" render={() => <UserForm type="signup" />} />
           <Route exact path="/home" render={() => <Home />} />
           <Route exact path="/calendarview" render={() => <CalendarView />} />
           <Route exact path="/dailyview" render={() => <DailyView />} />

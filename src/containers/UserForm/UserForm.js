@@ -7,8 +7,8 @@ import Logo from '../../components/Logo/Logo';
 import './UserForm.css';
 
 class UserForm extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: '',
       email: ''
