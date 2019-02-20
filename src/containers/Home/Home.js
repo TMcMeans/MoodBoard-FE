@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 
 import './Home.css';
 import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
 
-export default class Home extends Component {
+class Home extends Component {
   render() {
     const name = 'Ash';
     return (
@@ -15,12 +14,14 @@ export default class Home extends Component {
         <h3 className="this-month">This month...</h3>
         <div className="bubbles" />
         <Link to="/journal">
-          <Button text="journal" />
+          <button>journal</button>
         </Link>
         <Link to="/calendarView">
-          <Button text="calendar" />
+          <button>calendar</button>
         </Link>
       </div>
     );
   }
 }
+
+export default Home;

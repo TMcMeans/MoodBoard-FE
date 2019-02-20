@@ -21,3 +21,8 @@ export const saveJournalEntry = journal_entry => ({
   type: 'SAVE_JOURNAL_ENTRY',
   journal_entry
 });
+
+export const saveMonthTones = month_tones => ({
+  type: 'SAVE_MONTH_TONES',
+  month_tones
+})
