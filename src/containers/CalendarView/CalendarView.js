@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
 import { getTonesByMonth } from '../../thunks/getTonesByMonth';
 import './CalendarView.css';
 
