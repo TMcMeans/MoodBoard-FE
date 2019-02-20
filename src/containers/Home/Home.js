@@ -13,12 +13,14 @@ class Home extends Component {
         <h1 className="welcome">Welcome, {name}!</h1>
         <h3 className="this-month">This month...</h3>
         <div className="bubbles" />
-        <Link to="/journal">
-          <button>journal</button>
-        </Link>
-        <Link to="/calendarView">
-          <button>calendar</button>
-        </Link>
+        <div className="home-btns-container">
+          <Link to="/journal">
+            <button className="standard-btn light home-btns">journal</button>
+          </Link>
+          <Link to="/calendarView">
+            <button className="standard-btn light home-btns">calendar</button>
+          </Link>
+        </div>
       </div>
     );
   }

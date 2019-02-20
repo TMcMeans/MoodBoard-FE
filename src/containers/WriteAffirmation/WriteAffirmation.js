@@ -158,7 +158,7 @@ class WriteAffirmation extends Component {
           />
         </Fragment>
         <Link to="/home">
-          <button className="save-prompt-btn" onClick={() => this.handleSubmit()}>
+          <button className="standard-btn light save-prompt-btn" onClick={() => this.handleSubmit()}>
             save affirmation
           </button>
         </Link>

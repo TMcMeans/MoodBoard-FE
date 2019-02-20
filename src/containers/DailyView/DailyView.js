@@ -27,9 +27,9 @@ class DailyView extends Component {
           <p className="daily-affirmation-text">{affirmation}</p>
         </div>
         <div className="btn-wrapper">
-          <Button text="<" />
-          <Button text="back" />
-          <Button text=">" />
+          <button className="standard-btn dark left-arrow">&#60;</button>
+          <button className="standard-btn dark back-to-calendar-btn">calendar</button>
+          <button className="standard-btn dark right-arrow">&#62;</button>
         </div>
       </div>
     );

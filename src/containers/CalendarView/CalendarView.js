@@ -34,7 +34,7 @@ class CalendarView extends Component {
         <Logo />
         <Calendar value={this.state.value} onChange={this.onChange} />
         <Link to="/affirmations">
-          <Button text="your affirmations" />
+          <button className="standard-btn light affirmations-btn">your affirmations</button>
         </Link>
       </div>
     );
