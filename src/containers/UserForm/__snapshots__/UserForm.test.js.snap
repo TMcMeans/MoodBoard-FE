@@ -47,15 +47,22 @@ ShallowWrapper {
             placeholder="password"
             type="password"
           />
-          <Button
-            text="sign up"
-          />
+          <button
+            className="standard-btn light form-btn"
+          >
+            sign up
+          </button>
         </form>,
         <h2>
-          Already a user? Log in 
-          <span>
+          Already a user? Log in
+           
+          <Link
+            className="login-link"
+            replace={false}
+            to="/"
+          >
             here
-          </span>
+          </Link>
           .
         </h2>,
         <button
@@ -119,9 +126,11 @@ ShallowWrapper {
               placeholder="password"
               type="password"
             />,
-            <Button
-              text="sign up"
-            />,
+            <button
+              className="standard-btn light form-btn"
+            >
+              sign up
+            </button>,
           ],
           "className": "user-info",
         },
@@ -171,13 +180,14 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "text": "sign up",
+              "children": "sign up",
+              "className": "standard-btn light form-btn",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": "sign up",
+            "type": "button",
           },
         ],
         "type": "form",
@@ -188,26 +198,35 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Already a user? Log in ",
-            <span>
+            "Already a user? Log in",
+            " ",
+            <Link
+              className="login-link"
+              replace={false}
+              to="/"
+            >
               here
-            </span>,
+            </Link>,
             ".",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Already a user? Log in ",
+          "Already a user? Log in",
+          " ",
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": "here",
+              "className": "login-link",
+              "replace": false,
+              "to": "/",
             },
             "ref": null,
             "rendered": "here",
-            "type": "span",
+            "type": [Function],
           },
           ".",
         ],
@@ -263,15 +282,22 @@ ShallowWrapper {
               placeholder="password"
               type="password"
             />
-            <Button
-              text="sign up"
-            />
+            <button
+              className="standard-btn light form-btn"
+            >
+              sign up
+            </button>
           </form>,
           <h2>
-            Already a user? Log in 
-            <span>
+            Already a user? Log in
+             
+            <Link
+              className="login-link"
+              replace={false}
+              to="/"
+            >
               here
-            </span>
+            </Link>
             .
           </h2>,
           <button
@@ -335,9 +361,11 @@ ShallowWrapper {
                 placeholder="password"
                 type="password"
               />,
-              <Button
-                text="sign up"
-              />,
+              <button
+                className="standard-btn light form-btn"
+              >
+                sign up
+              </button>,
             ],
             "className": "user-info",
           },
@@ -387,13 +415,14 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "text": "sign up",
+                "children": "sign up",
+                "className": "standard-btn light form-btn",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": "sign up",
+              "type": "button",
             },
           ],
           "type": "form",
@@ -404,26 +433,35 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Already a user? Log in ",
-              <span>
+              "Already a user? Log in",
+              " ",
+              <Link
+                className="login-link"
+                replace={false}
+                to="/"
+              >
                 here
-              </span>,
+              </Link>,
               ".",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Already a user? Log in ",
+            "Already a user? Log in",
+            " ",
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "children": "here",
+                "className": "login-link",
+                "replace": false,
+                "to": "/",
               },
               "ref": null,
               "rendered": "here",
-              "type": "span",
+              "type": [Function],
             },
             ".",
           ],

@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Editor } from 'slate-react';
 import { Value } from 'slate';
-import Plain from 'slate-plain-serializer';
 import Icon from 'react-icons-kit';
 import { bold } from 'react-icons-kit/feather/bold';
 import { italic } from 'react-icons-kit/feather/italic';
@@ -11,6 +10,7 @@ import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { prompts } from '../../helper/prompts';
 import { postAffirmation } from '../../thunks/postAffirmation';
@@ -43,7 +43,7 @@ class WriteAffirmation extends Component {
     super(props);
     this.state = {
       value: initialValue,
-      prompt: '',
+      prompt: ''
     };
   }
 
@@ -52,7 +52,7 @@ class WriteAffirmation extends Component {
     const promptTone = prompts[primary_tone];
     const promptIndex = Math.round(Math.random() * (promptTone.length - 1));
     let prompt = promptTone[promptIndex];
-    this.setState({ prompt })
+    this.setState({ prompt });
   };
 
   renderMark = props => {
@@ -111,9 +111,10 @@ class WriteAffirmation extends Component {
       <div className="write-affirmation">
         <Logo />
         <h2 className="prompt">
-          PROMPT: 
+          PROMPT:
           <br />
-          {prompt}</h2>
+          {prompt}
+        </h2>
         <Fragment>
           <FormatToolbar>
             <button
@@ -158,7 +159,10 @@ class WriteAffirmation extends Component {
           />
         </Fragment>
         <Link to="/home">
-          <button className="standard-btn light save-prompt-btn" onClick={() => this.handleSubmit()}>
+          <button
+            className="standard-btn light save-prompt-btn"
+            onClick={() => this.handleSubmit()}
+          >
             save affirmation
           </button>
         </Link>
@@ -169,10 +173,19 @@ class WriteAffirmation extends Component {
 
 const mapStateToProps = state => ({
   journal: state.journal
-})
+});
 
 const mapDispatchToProps = dispatch => ({
-  postAffirmation: (url, affirmation_text) => dispatch(postAffirmation(url, affirmation_text)) 
-})
+  postAffirmation: (url, affirmation_text) =>
+    dispatch(postAffirmation(url, affirmation_text))
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(WriteAffirmation);
+WriteAffirmation.propTypes = {
+  journal: PropTypes.object,
+  postAffirmation: PropTypes.func
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(WriteAffirmation);

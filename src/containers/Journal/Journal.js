@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Editor } from 'slate-react';
 import { Value } from 'slate';
-import Plain from 'slate-plain-serializer';
 import Icon from 'react-icons-kit';
 import { bold } from 'react-icons-kit/feather/bold';
 import { italic } from 'react-icons-kit/feather/italic';
@@ -11,6 +10,7 @@ import { plus } from 'react-icons-kit/feather/plus';
 import { FormatToolbar } from '../../components/FormatToolbar/FormatToolbar.js';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import Logo from '../../components/Logo/Logo';
 import { getJournalEntry } from '../../thunks/getJournalEntry';
@@ -144,28 +144,28 @@ class Journal extends Component {
     if (month === 0) {
       month = 'January';
     } else if (month === 1) {
-      month = 'February'
+      month = 'February';
     } else if (month === 2) {
-      month = 'March'
+      month = 'March';
     } else if (month === 3) {
-      month = 'April'
+      month = 'April';
     } else if (month === 4) {
-      month = 'May'
+      month = 'May';
     } else if (month === 5) {
-      month = 'June'
+      month = 'June';
     } else if (month === 6) {
-      month = 'July'
+      month = 'July';
     } else if (month === 7) {
-      month = 'August'
+      month = 'August';
     } else if (month === 8) {
-      month = 'September'
+      month = 'September';
     } else if (month === 9) {
-      month = 'October'
+      month = 'October';
     } else if (month === 10) {
-      month = 'November'
+      month = 'November';
     } else if (month === 11) {
-      month = 'December'
-    } 
+      month = 'December';
+    }
 
     today = month + ' ' + day + ', ' + year;
 
@@ -217,7 +217,10 @@ class Journal extends Component {
           />
         </Fragment>
         <Link to="/todaymood">
-          <button className="standard-btn light save-entry-btn" onClick={() => this.handleSubmit()}>
+          <button
+            className="standard-btn light save-entry-btn"
+            onClick={() => this.handleSubmit()}
+          >
             save entry
           </button>
         </Link>
@@ -236,6 +239,14 @@ const mapDispatchToProps = dispatch => ({
   patchJournalEntry: (url, entry_text) =>
     dispatch(patchJournalEntry(url, entry_text))
 });
+
+Journal.propTypes = {
+  getJournalEntry: PropTypes.func,
+  journal: PropTypes.object,
+  patchJournalEntry: PropTypes.func,
+  user: PropTypes.object,
+  value: PropTypes.object
+};
 
 export default connect(
   mapStateToProps,

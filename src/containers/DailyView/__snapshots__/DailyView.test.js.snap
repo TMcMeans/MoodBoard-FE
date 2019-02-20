@@ -47,15 +47,21 @@ ShallowWrapper {
         <div
           className="btn-wrapper"
         >
-          <Button
-            text="<"
-          />
-          <Button
-            text="back"
-          />
-          <Button
-            text=">"
-          />
+          <button
+            className="standard-btn dark left-arrow"
+          >
+            &lt;
+          </button>
+          <button
+            className="standard-btn dark back-to-calendar-btn"
+          >
+            calendar
+          </button>
+          <button
+            className="standard-btn dark right-arrow"
+          >
+            &gt;
+          </button>
         </div>,
       ],
       "className": "daily-view sadness-bg",
@@ -140,15 +146,21 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Button
-              text="<"
-            />,
-            <Button
-              text="back"
-            />,
-            <Button
-              text=">"
-            />,
+            <button
+              className="standard-btn dark left-arrow"
+            >
+              &lt;
+            </button>,
+            <button
+              className="standard-btn dark back-to-calendar-btn"
+            >
+              calendar
+            </button>,
+            <button
+              className="standard-btn dark right-arrow"
+            >
+              &gt;
+            </button>,
           ],
           "className": "btn-wrapper",
         },
@@ -157,35 +169,38 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "text": "<",
+              "children": "<",
+              "className": "standard-btn dark left-arrow",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": "<",
+            "type": "button",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "text": "back",
+              "children": "calendar",
+              "className": "standard-btn dark back-to-calendar-btn",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": "calendar",
+            "type": "button",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "text": ">",
+              "children": ">",
+              "className": "standard-btn dark right-arrow",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": ">",
+            "type": "button",
           },
         ],
         "type": "div",
@@ -228,15 +243,21 @@ ShallowWrapper {
           <div
             className="btn-wrapper"
           >
-            <Button
-              text="<"
-            />
-            <Button
-              text="back"
-            />
-            <Button
-              text=">"
-            />
+            <button
+              className="standard-btn dark left-arrow"
+            >
+              &lt;
+            </button>
+            <button
+              className="standard-btn dark back-to-calendar-btn"
+            >
+              calendar
+            </button>
+            <button
+              className="standard-btn dark right-arrow"
+            >
+              &gt;
+            </button>
           </div>,
         ],
         "className": "daily-view sadness-bg",
@@ -321,15 +342,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Button
-                text="<"
-              />,
-              <Button
-                text="back"
-              />,
-              <Button
-                text=">"
-              />,
+              <button
+                className="standard-btn dark left-arrow"
+              >
+                &lt;
+              </button>,
+              <button
+                className="standard-btn dark back-to-calendar-btn"
+              >
+                calendar
+              </button>,
+              <button
+                className="standard-btn dark right-arrow"
+              >
+                &gt;
+              </button>,
             ],
             "className": "btn-wrapper",
           },
@@ -338,35 +365,38 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "text": "<",
+                "children": "<",
+                "className": "standard-btn dark left-arrow",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": "<",
+              "type": "button",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "text": "back",
+                "children": "calendar",
+                "className": "standard-btn dark back-to-calendar-btn",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": "calendar",
+              "type": "button",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "text": ">",
+                "children": ">",
+                "className": "standard-btn dark right-arrow",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": ">",
+              "type": "button",
             },
           ],
           "type": "div",

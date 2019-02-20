@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Calendar from 'react-calendar/dist/entry.nostyle';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Logo from '../../components/Logo/Logo';
 import Button from '../../components/Button/Button';
 import { getTonesByMonth } from '../../thunks/getTonesByMonth';
 import './CalendarView.css';
 
-class CalendarView extends Component {
+export class CalendarView extends Component {
   constructor() {
     super();
     this.state = {
@@ -22,11 +23,11 @@ class CalendarView extends Component {
 
   componentDidMount = async () => {
     // get the date (mo, yr)
-    console.log(this.state.date)
+    console.log(this.state.date);
     // get the tones
     // set the tones to colors
     // assign colors to individual days (by the day's value)
-  }
+  };
 
   render() {
     return (
@@ -34,7 +35,9 @@ class CalendarView extends Component {
         <Logo />
         <Calendar value={this.state.value} onChange={this.onChange} />
         <Link to="/affirmations">
-          <button className="standard-btn light affirmations-btn">your affirmations</button>
+          <button className="standard-btn light affirmations-btn">
+            your affirmations
+          </button>
         </Link>
       </div>
     );
@@ -42,9 +45,15 @@ class CalendarView extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  getTonesByMonth: (url) => dispatch(getTonesByMonth(url))
-})
+  getTonesByMonth: url => dispatch(getTonesByMonth(url))
+});
 
-export default connect(null, mapDispatchToProps)(CalendarView);
+CalendarView.propTypes = {
+  getTonesByMonth: PropTypes.func,
+  date: PropTypes.string
+};
 
-///api/v1/users/1/tone_responses?date=YYYY-MM
+export default connect(
+  null,
+  mapDispatchToProps
+)(CalendarView);

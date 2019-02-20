@@ -12,7 +12,7 @@ import WriteAffirmation from '../../containers/WriteAffirmation/WriteAffirmation
 
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">
@@ -24,7 +24,11 @@ class App extends Component {
           <Route exact path="/journal" render={() => <Journal />} />
           <Route exact path="/todaymood" render={() => <TodayMood />} />
           <Route exact path="/affirmations" render={() => <Affirmations />} />
-          <Route exact path="/writeaffirmation" render={() => <WriteAffirmation />} />
+          <Route
+            exact
+            path="/writeaffirmation"
+            render={() => <WriteAffirmation />}
+          />
         </Switch>
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
 
 import './UserForm.css';
@@ -17,7 +17,7 @@ class UserForm extends Component {
 
   render() {
     const { name, email } = this.state;
-    const text = 'sign up'
+    const text = 'sign up';
 
     return (
       <div className="user-form">
@@ -43,7 +43,13 @@ class UserForm extends Component {
           />
           <button className="standard-btn light form-btn">{text}</button>
         </form>
-        <h2>Already a user? Log in <Link to="/" className="login-link">here</Link>.</h2>
+        <h2>
+          Already a user? Log in{' '}
+          <Link to="/" className="login-link">
+            here
+          </Link>
+          .
+        </h2>
         <button className="info-btn">i</button>
       </div>
     );
