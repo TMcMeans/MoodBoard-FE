@@ -48,12 +48,12 @@ class TodayMood extends Component {
     if (primary_tone === 'anger' || primary_tone === 'sadness' || primary_tone === 'tentative' || primary_tone === 'fear') {
       messageText = 'would you like to write an affirmation?';
       toneResponse = (
-        <div className="quote-btns-container">
+        <div className="today-btns-container">
           <Link to="/writeaffirmation">
-              <button className="standard-btn light">yes</button>
+              <button className="standard-btn dark yes-no-btns">yes</button>
           </Link>
           <Link to="/home">
-            <button className="standard-btn light">no</button>
+            <button className="standard-btn dark yes-no-btns">no</button>
           </Link>
         </div>
       )
@@ -63,7 +63,7 @@ class TodayMood extends Component {
       quoteText = quoteTone[quoteIndex].quote;
       quoteAuthor = quoteTone[quoteIndex].author;
 
-      messageText = 'here is a nice quote for your day.';
+      messageText = 'have a quote:';
 
       toneResponse = (
         <div className="quote-btns-container">
@@ -73,7 +73,7 @@ class TodayMood extends Component {
             - {quoteAuthor}
           </p>
           <Link to="/home">
-            <button className="standard-btn light">home</button>
+            <button className="standard-btn dark go-home-btn">home</button>
           </Link>
         </div>
       )
