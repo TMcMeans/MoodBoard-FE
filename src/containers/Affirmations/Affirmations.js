@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { FaCircle } from 'react-icons/fa';
 
 import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
 
 import './Affirmations.css';
 
