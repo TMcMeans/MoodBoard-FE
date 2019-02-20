@@ -68,11 +68,8 @@ class UserForm extends Component {
             </button>
           </Link>
         </form>
-        <h2>
-          {switchText}
-          {formBtn}
-          .</h2>
-        <button className="info-btn">i</button>
+        <h2>Already a user? Log in <Link to="/" className="login-link">here</Link>.</h2>
+        <Link to='/info'><button className="info-btn">i</button></Link>
       </div>
     );
   }
