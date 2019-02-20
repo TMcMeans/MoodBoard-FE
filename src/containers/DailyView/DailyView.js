@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+
 import Logo from '../../components/Logo/Logo';
 
 import './DailyView.css';

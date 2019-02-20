@@ -83,6 +83,7 @@
 
 /*INFO BUTTON*/
 .info-btn {
+  display: none;
   color: #ffffff;
   background-color: #2A2A2A;
   border: none;

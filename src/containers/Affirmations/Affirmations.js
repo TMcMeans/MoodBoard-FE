@@ -3,7 +3,6 @@ import { FaCircle } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
 import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
 
 import './Affirmations.css';
 

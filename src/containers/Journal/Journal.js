@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Editor } from 'slate-react';
 import { Value } from 'slate';
+
 import Icon from 'react-icons-kit';
 import { bold } from 'react-icons-kit/feather/bold';
 import { italic } from 'react-icons-kit/feather/italic';

@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
 import { getTonesByMonth } from '../../thunks/getTonesByMonth';
 import './CalendarView.css';
 
