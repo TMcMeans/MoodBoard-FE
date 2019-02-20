@@ -50,10 +50,10 @@ class TodayMood extends Component {
       toneResponse = (
         <div className="quote-btns-container">
           <Link to="/writeaffirmation">
-              <button>yes</button>
+              <button className="standard-btn light">yes</button>
           </Link>
           <Link to="/home">
-            <button>no</button>
+            <button className="standard-btn light">no</button>
           </Link>
         </div>
       )
@@ -73,7 +73,7 @@ class TodayMood extends Component {
             - {quoteAuthor}
           </p>
           <Link to="/home">
-            home
+            <button className="standard-btn light">home</button>
           </Link>
         </div>
       )
