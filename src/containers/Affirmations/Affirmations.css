@@ -1,7 +1,9 @@
+/*COMPONENT STYLES*/
 .month-affirmations {
   height: 100vh;
 }
 
+/*TITLE STYLES*/
 .month {
   width: 300px;
   border-bottom: 1px solid #fff;
@@ -9,6 +11,7 @@
   color: #fff;
 }
 
+/*AFFIRMATIONS*/
 .affirmation-list {
   height: 55%;
   padding: 0;
@@ -36,4 +39,9 @@
   height: 20px;
   border-radius: 20px;
   margin: auto 10px auto 0;
+}
+
+/*BUTTON*/
+.back-to-calendar-btn {
+  
 }
