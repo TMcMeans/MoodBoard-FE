@@ -11,6 +11,7 @@ describe('patchJournalEntry', () => {
     mockDispatch = jest.fn();
     mockEntryText = 'I am happy.';
   });
+
   it('should call fetch with the correct params', () => {
     window.fetch = jest.fn();
 
@@ -45,7 +46,6 @@ describe('patchJournalEntry', () => {
   });
 
   it('should dispatch saveJournalEntry with an entry object if response is ok', async () => {
-    //Write test to mock dispatch the saveJournalEntry action
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
         ok: true,
