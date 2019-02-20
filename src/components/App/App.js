@@ -11,7 +11,7 @@ import WriteAffirmation from '../../containers/WriteAffirmation/WriteAffirmation
 
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">

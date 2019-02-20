@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 import Logo from '../../components/Logo/Logo';
 
 import './DailyView.css';
 
-class DailyView extends Component {
+export class DailyView extends Component {
   constructor() {
     super();
     this.state = {};
@@ -28,7 +30,9 @@ class DailyView extends Component {
         </div>
         <div className="btn-wrapper">
           <button className="standard-btn dark left-arrow">&#60;</button>
-          <button className="standard-btn dark back-to-calendar-btn">calendar</button>
+          <button className="standard-btn dark back-to-calendar-btn">
+            calendar
+          </button>
           <button className="standard-btn dark right-arrow">&#62;</button>
         </div>
       </div>

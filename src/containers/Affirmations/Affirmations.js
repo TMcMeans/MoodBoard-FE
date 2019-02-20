@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { FaCircle } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 import Logo from '../../components/Logo/Logo';
 
 import './Affirmations.css';
 
-class Affirmations extends Component {
+export class Affirmations extends Component {
   constructor() {
     super();
     this.state = {};
@@ -35,7 +36,9 @@ class Affirmations extends Component {
             <span className="affirmation-text">6/3: "You got this."</span>
           </li>
         </ul>
-        <button className="standard-btn light back-to-calendar-btn">calendar</button>
+        <button className="standard-btn light back-to-calendar-btn">
+          calendar
+        </button>
       </div>
     );
   }

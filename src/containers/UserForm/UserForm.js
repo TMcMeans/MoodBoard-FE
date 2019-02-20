@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
 
 import './UserForm.css';

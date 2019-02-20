@@ -35,22 +35,30 @@ ShallowWrapper {
         <div
           className="bubbles"
         />,
-        <Link
-          replace={false}
-          to="/journal"
+        <div
+          className="home-btns-container"
         >
-          <button>
-            journal
-          </button>
-        </Link>,
-        <Link
-          replace={false}
-          to="/calendarView"
-        >
-          <button>
-            calendar
-          </button>
-        </Link>,
+          <Link
+            replace={false}
+            to="/journal"
+          >
+            <button
+              className="standard-btn light home-btns"
+            >
+              journal
+            </button>
+          </Link>
+          <Link
+            replace={false}
+            to="/calendarView"
+          >
+            <button
+              className="standard-btn light home-btns"
+            >
+              calendar
+            </button>
+          </Link>
+        </div>,
       ],
       "className": "home",
     },
@@ -111,52 +119,92 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "children": <button>
-            journal
-          </button>,
-          "replace": false,
-          "to": "/journal",
+          "children": Array [
+            <Link
+              replace={false}
+              to="/journal"
+            >
+              <button
+                className="standard-btn light home-btns"
+              >
+                journal
+              </button>
+            </Link>,
+            <Link
+              replace={false}
+              to="/calendarView"
+            >
+              <button
+                className="standard-btn light home-btns"
+              >
+                calendar
+              </button>
+            </Link>,
+          ],
+          "className": "home-btns-container",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "journal",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="standard-btn light home-btns"
+              >
+                journal
+              </button>,
+              "replace": false,
+              "to": "/journal",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "journal",
+                "className": "standard-btn light home-btns",
+              },
+              "ref": null,
+              "rendered": "journal",
+              "type": "button",
+            },
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": "journal",
-          "type": "button",
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <button>
-            calendar
-          </button>,
-          "replace": false,
-          "to": "/calendarView",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "calendar",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="standard-btn light home-btns"
+              >
+                calendar
+              </button>,
+              "replace": false,
+              "to": "/calendarView",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "calendar",
+                "className": "standard-btn light home-btns",
+              },
+              "ref": null,
+              "rendered": "calendar",
+              "type": "button",
+            },
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": "calendar",
-          "type": "button",
-        },
-        "type": [Function],
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -184,22 +232,30 @@ ShallowWrapper {
           <div
             className="bubbles"
           />,
-          <Link
-            replace={false}
-            to="/journal"
+          <div
+            className="home-btns-container"
           >
-            <button>
-              journal
-            </button>
-          </Link>,
-          <Link
-            replace={false}
-            to="/calendarView"
-          >
-            <button>
-              calendar
-            </button>
-          </Link>,
+            <Link
+              replace={false}
+              to="/journal"
+            >
+              <button
+                className="standard-btn light home-btns"
+              >
+                journal
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="/calendarView"
+            >
+              <button
+                className="standard-btn light home-btns"
+              >
+                calendar
+              </button>
+            </Link>
+          </div>,
         ],
         "className": "home",
       },
@@ -260,52 +316,92 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "children": <button>
-              journal
-            </button>,
-            "replace": false,
-            "to": "/journal",
+            "children": Array [
+              <Link
+                replace={false}
+                to="/journal"
+              >
+                <button
+                  className="standard-btn light home-btns"
+                >
+                  journal
+                </button>
+              </Link>,
+              <Link
+                replace={false}
+                to="/calendarView"
+              >
+                <button
+                  className="standard-btn light home-btns"
+                >
+                  calendar
+                </button>
+              </Link>,
+            ],
+            "className": "home-btns-container",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "journal",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="standard-btn light home-btns"
+                >
+                  journal
+                </button>,
+                "replace": false,
+                "to": "/journal",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "journal",
+                  "className": "standard-btn light home-btns",
+                },
+                "ref": null,
+                "rendered": "journal",
+                "type": "button",
+              },
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": "journal",
-            "type": "button",
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <button>
-              calendar
-            </button>,
-            "replace": false,
-            "to": "/calendarView",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "calendar",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="standard-btn light home-btns"
+                >
+                  calendar
+                </button>,
+                "replace": false,
+                "to": "/calendarView",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "calendar",
+                  "className": "standard-btn light home-btns",
+                },
+                "ref": null,
+                "rendered": "calendar",
+                "type": "button",
+              },
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": "calendar",
-            "type": "button",
-          },
-          "type": [Function],
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
