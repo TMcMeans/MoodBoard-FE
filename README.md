@@ -53,7 +53,7 @@ Planned enhancements include:
 
 ## 🚀 Core Contributors
 **Ashton Bailey**
-Github:[https://github.com/amypetrie/](https://github.com/ashtonkbailey/)
+Github:[https://github.com/ashtonkbailey/](https://github.com/ashtonkbailey/)
 
 **Tanjie Mcmeans**
-Github:[https://github.com/normanrs](https://github.com/TMcMeans/)
+Github:[https://github.com/TMcMeans](https://github.com/TMcMeans/)
