@@ -43,5 +43,7 @@
 
 /*BUTTON*/
 .back-to-calendar-btn {
-  
+  font-size: 2rem;
+  height: 5rem;
+  width: 10rem;
 }
