@@ -3,5 +3,13 @@
   font-family: 'Raleway', sans-serif;
   height: 100vh;
   margin: 0;
+  color: red;
   text-align: center;
+}
+.info-heading{
+  color: white;
+}
+
+.info-paragraph{
+  color: white;
 }
