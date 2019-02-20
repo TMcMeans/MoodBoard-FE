@@ -26,6 +26,11 @@ ShallowWrapper {
         />
         <Route
           exact={true}
+          path="/signup"
+          render={[Function]}
+        />
+        <Route
+          exact={true}
           path="/home"
           render={[Function]}
         />
@@ -59,6 +64,15 @@ ShallowWrapper {
           path="/writeaffirmation"
           render={[Function]}
         />
+        <Route
+          exact={true}
+          path="/info"
+          render={[Function]}
+        />
+        <Route
+          path=""
+          render={[Function]}
+        />
       </Switch>,
       "className": "App",
     },
@@ -72,6 +86,11 @@ ShallowWrapper {
           <Route
             exact={true}
             path="/"
+            render={[Function]}
+          />,
+          <Route
+            exact={true}
+            path="/signup"
             render={[Function]}
           />,
           <Route
@@ -109,6 +128,15 @@ ShallowWrapper {
             path="/writeaffirmation"
             render={[Function]}
           />,
+          <Route
+            exact={true}
+            path="/info"
+            render={[Function]}
+          />,
+          <Route
+            path=""
+            render={[Function]}
+          />,
         ],
       },
       "ref": null,
@@ -120,6 +148,19 @@ ShallowWrapper {
           "props": Object {
             "exact": true,
             "path": "/",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/signup",
             "render": [Function],
           },
           "ref": null,
@@ -217,6 +258,31 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/info",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "path": "",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": [Function],
     },
@@ -232,6 +298,11 @@ ShallowWrapper {
           <Route
             exact={true}
             path="/"
+            render={[Function]}
+          />
+          <Route
+            exact={true}
+            path="/signup"
             render={[Function]}
           />
           <Route
@@ -269,6 +340,15 @@ ShallowWrapper {
             path="/writeaffirmation"
             render={[Function]}
           />
+          <Route
+            exact={true}
+            path="/info"
+            render={[Function]}
+          />
+          <Route
+            path=""
+            render={[Function]}
+          />
         </Switch>,
         "className": "App",
       },
@@ -282,6 +362,11 @@ ShallowWrapper {
             <Route
               exact={true}
               path="/"
+              render={[Function]}
+            />,
+            <Route
+              exact={true}
+              path="/signup"
               render={[Function]}
             />,
             <Route
@@ -319,6 +404,15 @@ ShallowWrapper {
               path="/writeaffirmation"
               render={[Function]}
             />,
+            <Route
+              exact={true}
+              path="/info"
+              render={[Function]}
+            />,
+            <Route
+              path=""
+              render={[Function]}
+            />,
           ],
         },
         "ref": null,
@@ -330,6 +424,19 @@ ShallowWrapper {
             "props": Object {
               "exact": true,
               "path": "/",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/signup",
               "render": [Function],
             },
             "ref": null,
@@ -421,6 +528,31 @@ ShallowWrapper {
             "props": Object {
               "exact": true,
               "path": "/writeaffirmation",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/info",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "",
               "render": [Function],
             },
             "ref": null,
