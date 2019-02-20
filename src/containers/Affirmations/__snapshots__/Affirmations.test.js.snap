@@ -1,0 +1,776 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Affirmations should render a snapshot with correct data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Affirmations />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Logo />,
+        <h1
+          className="month"
+        >
+          June
+           Affirmations
+        </h1>,
+        <ul
+          className="affirmation-list"
+        >
+          <li
+            className="single-affirmation"
+            id="1"
+          >
+            <FaCircle
+              className="circle"
+            />
+            <span
+              className="affirmation-text"
+            >
+              6/3: "You got this."
+            </span>
+          </li>
+          <li
+            className="single-affirmation"
+            id="2"
+          >
+            <FaCircle
+              className="circle"
+            />
+            <span
+              className="affirmation-text"
+            >
+              6/3: "You got this."
+            </span>
+          </li>
+          <li
+            className="single-affirmation"
+            id="3"
+          >
+            <FaCircle
+              className="circle"
+            />
+            <span
+              className="affirmation-text"
+            >
+              6/3: "You got this."
+            </span>
+          </li>
+          <li
+            className="single-affirmation"
+            id="4"
+          >
+            <FaCircle
+              className="circle"
+            />
+            <span
+              className="affirmation-text"
+            >
+              6/3: "You got this."
+            </span>
+          </li>
+        </ul>,
+        <Button
+          text="Calendar"
+        />,
+      ],
+      "className": "month-affirmations",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "June",
+            " Affirmations",
+          ],
+          "className": "month",
+        },
+        "ref": null,
+        "rendered": Array [
+          "June",
+          " Affirmations",
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="single-affirmation"
+              id="1"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>,
+            <li
+              className="single-affirmation"
+              id="2"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>,
+            <li
+              className="single-affirmation"
+              id="3"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>,
+            <li
+              className="single-affirmation"
+              id="4"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>,
+          ],
+          "className": "affirmation-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FaCircle
+                  className="circle"
+                />,
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>,
+              ],
+              "className": "single-affirmation",
+              "id": "1",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "circle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "6/3: \\"You got this.\\"",
+                  "className": "affirmation-text",
+                },
+                "ref": null,
+                "rendered": "6/3: \\"You got this.\\"",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FaCircle
+                  className="circle"
+                />,
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>,
+              ],
+              "className": "single-affirmation",
+              "id": "2",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "circle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "6/3: \\"You got this.\\"",
+                  "className": "affirmation-text",
+                },
+                "ref": null,
+                "rendered": "6/3: \\"You got this.\\"",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FaCircle
+                  className="circle"
+                />,
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>,
+              ],
+              "className": "single-affirmation",
+              "id": "3",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "circle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "6/3: \\"You got this.\\"",
+                  "className": "affirmation-text",
+                },
+                "ref": null,
+                "rendered": "6/3: \\"You got this.\\"",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FaCircle
+                  className="circle"
+                />,
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>,
+              ],
+              "className": "single-affirmation",
+              "id": "4",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "circle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "6/3: \\"You got this.\\"",
+                  "className": "affirmation-text",
+                },
+                "ref": null,
+                "rendered": "6/3: \\"You got this.\\"",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "text": "Calendar",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Logo />,
+          <h1
+            className="month"
+          >
+            June
+             Affirmations
+          </h1>,
+          <ul
+            className="affirmation-list"
+          >
+            <li
+              className="single-affirmation"
+              id="1"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>
+            <li
+              className="single-affirmation"
+              id="2"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>
+            <li
+              className="single-affirmation"
+              id="3"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>
+            <li
+              className="single-affirmation"
+              id="4"
+            >
+              <FaCircle
+                className="circle"
+              />
+              <span
+                className="affirmation-text"
+              >
+                6/3: "You got this."
+              </span>
+            </li>
+          </ul>,
+          <Button
+            text="Calendar"
+          />,
+        ],
+        "className": "month-affirmations",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "June",
+              " Affirmations",
+            ],
+            "className": "month",
+          },
+          "ref": null,
+          "rendered": Array [
+            "June",
+            " Affirmations",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="single-affirmation"
+                id="1"
+              >
+                <FaCircle
+                  className="circle"
+                />
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>
+              </li>,
+              <li
+                className="single-affirmation"
+                id="2"
+              >
+                <FaCircle
+                  className="circle"
+                />
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>
+              </li>,
+              <li
+                className="single-affirmation"
+                id="3"
+              >
+                <FaCircle
+                  className="circle"
+                />
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>
+              </li>,
+              <li
+                className="single-affirmation"
+                id="4"
+              >
+                <FaCircle
+                  className="circle"
+                />
+                <span
+                  className="affirmation-text"
+                >
+                  6/3: "You got this."
+                </span>
+              </li>,
+            ],
+            "className": "affirmation-list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FaCircle
+                    className="circle"
+                  />,
+                  <span
+                    className="affirmation-text"
+                  >
+                    6/3: "You got this."
+                  </span>,
+                ],
+                "className": "single-affirmation",
+                "id": "1",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "6/3: \\"You got this.\\"",
+                    "className": "affirmation-text",
+                  },
+                  "ref": null,
+                  "rendered": "6/3: \\"You got this.\\"",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FaCircle
+                    className="circle"
+                  />,
+                  <span
+                    className="affirmation-text"
+                  >
+                    6/3: "You got this."
+                  </span>,
+                ],
+                "className": "single-affirmation",
+                "id": "2",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "6/3: \\"You got this.\\"",
+                    "className": "affirmation-text",
+                  },
+                  "ref": null,
+                  "rendered": "6/3: \\"You got this.\\"",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FaCircle
+                    className="circle"
+                  />,
+                  <span
+                    className="affirmation-text"
+                  >
+                    6/3: "You got this."
+                  </span>,
+                ],
+                "className": "single-affirmation",
+                "id": "3",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "6/3: \\"You got this.\\"",
+                    "className": "affirmation-text",
+                  },
+                  "ref": null,
+                  "rendered": "6/3: \\"You got this.\\"",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FaCircle
+                    className="circle"
+                  />,
+                  <span
+                    className="affirmation-text"
+                  >
+                    6/3: "You got this."
+                  </span>,
+                ],
+                "className": "single-affirmation",
+                "id": "4",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "6/3: \\"You got this.\\"",
+                    "className": "affirmation-text",
+                  },
+                  "ref": null,
+                  "rendered": "6/3: \\"You got this.\\"",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "text": "Calendar",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

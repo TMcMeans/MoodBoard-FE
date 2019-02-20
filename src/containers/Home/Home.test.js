@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Journal from './Journal';
+import Home from './Home';
 
-describe('Journal', () => {
+describe('Home', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Journal />);
+    wrapper = shallow(<Home />);
   });
   it('should render a snapshot with correct data passed in', () => {
     expect(wrapper).toMatchSnapshot();
