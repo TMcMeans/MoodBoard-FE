@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
@@ -40,9 +41,9 @@ class UserForm extends Component {
             placeholder="password"
             className="user-input"
           />
-          <Button text={text} />
+          <button className="standard-btn light form-btn">{text}</button>
         </form>
-        <h2>Already a user? Log in <span>here</span>.</h2>
+        <h2>Already a user? Log in <Link to="/" className="login-link">here</Link>.</h2>
         <button className="info-btn">i</button>
       </div>
     );
