@@ -11,7 +11,9 @@ import './Affirmations.css';
 export class Affirmations extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      affirmations: []
+    };
   }
 
   async componentDidMount() {
@@ -19,35 +21,29 @@ export class Affirmations extends Component {
     const affirmations = await this.props.getAffirmationsByMonth(
       `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/affirmations?date=2019-02`
     );
-    console.log(affirmations);
+
+    this.setState({
+      affirmations: affirmations
+    });
   }
 
   render() {
     const monthText = 'Febuary';
+    const affirmations = this.state.affirmations.map((affirmation, i) => {
+      return (
+        <li className="single-affirmation" id={i}>
+          <FaCircle className="circle" />
+          <span className="affirmation-text">
+            {affirmation.date}: {affirmation.affirmation_text}
+          </span>
+        </li>
+      );
+    });
     return (
       <div className="month-affirmations">
         <Logo />
         <h1 className="month">{monthText} Affirmations</h1>
-        <ul className="affirmation-list">
-          <li className="single-affirmation" id="1">
-            <FaCircle className="circle" />
-            <span className="affirmation-text">2/3: "You got this."</span>
-          </li>
-          <li className="single-affirmation" id="2">
-            <FaCircle className="circle" />
-            <span className="affirmation-text">2/4: "You are not alone."</span>
-          </li>
-          <li className="single-affirmation" id="3">
-            <FaCircle className="circle" />
-            <span className="affirmation-text">
-              2/5: "You can pull through."
-            </span>
-          </li>
-          <li className="single-affirmation" id="4">
-            <FaCircle className="circle" />
-            <span className="affirmation-text">2/6: "Practice self care."</span>
-          </li>
-        </ul>
+        <ul className="affirmation-list">{affirmations}</ul>
         <button className="standard-btn light back-to-calendar-btn">
           calendar
         </button>
