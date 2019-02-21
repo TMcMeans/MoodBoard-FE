@@ -73,12 +73,21 @@
 }
 
 .form-btn {
+  font-size: 1.4rem;
   height: 3rem;
   line-height: 1rem;
   margin-top: 1rem;
+  width: 6rem;
 }
 
 /*LINK*/
+.form-msg {
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 5px;
+  width: 80%;
+}
+
 .login-link {
   color: #ffffff;
 }
@@ -93,7 +102,6 @@
   font-weight: bold;
   height: 3rem;
   position: relative;
-    top: 3rem;
     left: 10rem;
   width: 3rem;
 }
