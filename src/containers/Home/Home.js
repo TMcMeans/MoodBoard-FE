@@ -54,13 +54,18 @@ export class Home extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   tones: state.tones
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   getTonesByMonth: url => dispatch(getTonesByMonth(url))
 });
+
+Home.propTypes = {
+  tones: PropTypes.array,
+  getTonesByMonth: PropTypes.func
+};
 
 export default connect(
   mapStateToProps,
