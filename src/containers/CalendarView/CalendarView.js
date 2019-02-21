@@ -10,28 +10,38 @@ import { getTonesByMonth } from '../../thunks/getTonesByMonth';
 import './CalendarView.css';
 
 export class CalendarView extends Component {
-  // will need this to make calendar dynamic
-  // constructor() {
-  //   super();
+  constructor(props) {
+    super();
     // this.state = {
+    // will need this to make calendar dynamic
     //   date: new Date()
     // };
-  // }
+  }
 
   render() {
-    const prevDays = [28, 29, 30, 31];
-    const days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28];
+    // const { primary_}
+    const prevDays = ['28', '29', '30', '31'];
+    const days = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28'];
 
-    const nextDays = [1, 2, 3];
+    const nextDays = ['1', '2', '3'];
     const prevDayBtns = prevDays.map((day) => {
       return (
         <button className="calendar-day-prev" key={day}>{day}</button>
       )
     });
     const dayBtns = days.map((day) => {
+      const matchingDate = this.props.tones.find((tone) => tone.id === day);
+      let className;
+
+      if (matchingDate) {
+        className = 'calendar-day ' + matchingDate.attributes.primary_tone;
+      } else {
+        className = 'calendar-day'
+      }
+
       return (
-        <Link to="/dailyview">
-          <button className="calendar-day" key={day}>{day}</button>
+        <Link to="/dailyview" key={day}>
+          <button className={className}>{day}</button>
         </Link>
       )
     });
@@ -70,6 +80,10 @@ export class CalendarView extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  tones: state.tones
+})
+
 const mapDispatchToProps = dispatch => ({
   getTonesByMonth: url => dispatch(getTonesByMonth(url))
 });
@@ -79,6 +93,6 @@ CalendarView.propTypes = {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(CalendarView);
