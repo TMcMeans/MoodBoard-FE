@@ -3,6 +3,7 @@ import Calendar from 'react-calendar/dist/entry.nostyle';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 import Logo from '../../components/Logo/Logo';
 import { getTonesByMonth } from '../../thunks/getTonesByMonth';
@@ -47,14 +48,18 @@ export class CalendarView extends Component {
         <button className="calendar-day-next">{day}</button>
       )
     });
-        // <Logo />
     return (
       <div className="calendar">
+        <Logo />
         <div className="calendar-container">
           <div className="calendar-nav-btns">
-            <button className="nav-arrow">&#60;</button>
+            <button className="nav-arrow">
+              <FaAngleLeft />
+            </button>
             <button className="nav-label">February 2019</button>
-            <button className="nav-arrow">&#62;</button>
+            <button className="nav-arrow">
+              <FaAngleRight />
+            </button>
           </div>
           <div className="month-container">
             {prevDayBtns}
@@ -62,15 +67,14 @@ export class CalendarView extends Component {
             {nextDayBtns}
           </div>
         </div>
-        <Calendar value={this.state.value} onChange={this.onChange} />
+        <Link to="/affirmations">
+          <button className="standard-btn light affirmations-btn">
+            your affirmations
+          </button>
+        </Link>
       </div>
     );
   }
-        // <Link to="/affirmations">
-        //   <button className="standard-btn light affirmations-btn">
-        //     your affirmations
-        //   </button>
-        // </Link>
 }
 
 const mapDispatchToProps = dispatch => ({
