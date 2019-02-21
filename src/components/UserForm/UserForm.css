@@ -1,14 +1,16 @@
 /*COMPONENT STYLES*/
 .user-form {
-  height: 100vh;
   color: #fff;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
+  height: 100vh;
+  
+  animation: Gradient 15s ease infinite;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
 }
 
+/*BACKGROUND ANIMATION*/
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -51,23 +53,23 @@
 
 /*FORM STYLES*/
 .user-info {
+  align-items: center;
   background: #2A2A2A;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   height: 290px;
-  align-items: center;
   margin: 0 auto;
   padding: 35px 0 0;
   width: 80%;
 }
 
 .user-input {
-  width: 75%;
-  height: 40px;
   font-size: 1.5em;
-  padding-left: 10px;
+  height: 40px;
   margin: 0 auto 20px auto;
+  padding-left: 10px;
+  width: 75%;
 }
 
 .form-btn {
@@ -83,10 +85,10 @@
 
 /*INFO BUTTON*/
 .info-btn {
-  color: #ffffff;
   background-color: #2A2A2A;
   border: none;
   border-radius: 50%;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   height: 3rem;
