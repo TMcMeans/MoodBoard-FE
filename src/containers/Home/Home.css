@@ -33,7 +33,8 @@
 }
 
 .home-btns {
+  font-size: 1.7rem;
   height: 3rem;
   line-height: 1rem;
-  width: 150px;
+  width: 130px;
 }
