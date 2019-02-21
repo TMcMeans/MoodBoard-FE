@@ -14,9 +14,9 @@
 
 /*CALENDAR NAVIGATION*/
 .react-calendar__navigation {
-  width: 80%;
   margin: auto;
   margin-top: 4rem;
+  width: 80%;
 }
 
 /*NAVIGATION ARROWS*/
@@ -43,8 +43,8 @@
 
 /*NAVIGATION MONTH*/
 .react-calendar__navigation__label {
-  font-size: 2rem;
   color: #ffffff;
+  font-size: 2rem;
   font-family: 'Raleway', sans-serif;
 }
 
