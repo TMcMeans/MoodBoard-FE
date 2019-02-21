@@ -10,24 +10,13 @@ import { getTonesByMonth } from '../../thunks/getTonesByMonth';
 import './CalendarView.css';
 
 export class CalendarView extends Component {
-  constructor() {
-    super();
-    this.state = {
-      date: new Date()
-    };
-  }
-
-  onChange = date => {
-    this.setState({ date });
-  };
-
-  componentDidMount = async () => {
-    // get the date (mo, yr)
-    console.log(this.state.date);
-    // get the tones
-    // set the tones to colors
-    // assign colors to individual days (by the day's value)
-  };
+  // will need this to make calendar dynamic
+  // constructor() {
+  //   super();
+    // this.state = {
+    //   date: new Date()
+    // };
+  // }
 
   render() {
     const prevDays = [28, 29, 30, 31];
@@ -36,19 +25,19 @@ export class CalendarView extends Component {
     const nextDays = [1, 2, 3];
     const prevDayBtns = prevDays.map((day) => {
       return (
-        <button className="calendar-day-prev">{day}</button>
+        <button className="calendar-day-prev" key={day}>{day}</button>
       )
     });
     const dayBtns = days.map((day) => {
       return (
         <Link to="/dailyview">
-          <button className="calendar-day">{day}</button>
+          <button className="calendar-day" key={day}>{day}</button>
         </Link>
       )
     });
     const nextDayBtns = nextDays.map((day) => {
       return (
-        <button className="calendar-day-next">{day}</button>
+        <button className="calendar-day-next" key={day}>{day}</button>
       )
     });
 
@@ -86,8 +75,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 CalendarView.propTypes = {
-  getTonesByMonth: PropTypes.func,
-  date: PropTypes.string
+  getTonesByMonth: PropTypes.func
 };
 
 export default connect(
