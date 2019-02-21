@@ -8,6 +8,8 @@ import Journal from '../../containers/Journal/Journal';
 import TodayMood from '../../containers/TodayMood/TodayMood';
 import UserForm from '../../containers/UserForm/UserForm';
 import WriteAffirmation from '../../containers/WriteAffirmation/WriteAffirmation';
+import Info from '../Info/Info.js';
+
 
 import './App.css';
 
@@ -25,6 +27,7 @@ export class App extends Component {
           <Route exact path="/todaymood" render={() => <TodayMood />} />
           <Route exact path="/affirmations" render={() => <Affirmations />} />
           <Route exact path="/writeaffirmation" render={() => <WriteAffirmation />} />
+          <Route exact path="/info" render={() => <Info />} />
           <Route path='' render={() =>
             (<div id="four-oh-four">
               <h1>Oops! We couldn't find that page.</h1>
