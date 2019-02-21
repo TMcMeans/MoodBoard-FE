@@ -3,7 +3,23 @@
 exports[`Journal should render a snapshot with correct data passed in 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Journal) />,
+  Symbol(enzyme.__unrendered__): <Journal
+    getJournalEntry={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "https://mood-board-be.herokuapp.com/api/v1/users/1/journal_entries?date=today",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,59 +32,3239 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <Logo />,
+        <h1
+          className="date"
+        >
+          February 20, 2019
+        </h1>,
+        <React.Fragment>
+          <FormatToolbar>
+            <button
+              className="tooltip-icon-button"
+              onPointerDown={[Function]}
+            >
+              <Icon
+                fill="currentColor"
+                icon={
+                  Object {
+                    "attribs": Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                        },
+                        "children": Array [],
+                        "name": "path",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                        },
+                        "children": Array [],
+                        "name": "path",
+                      },
+                    ],
+                    "viewBox": "0 0 24 24",
+                  }
+                }
+                size={16}
+              />
+            </button>
+            <button
+              className="tooltip-icon-button"
+              onPointerDown={[Function]}
+            >
+              <Icon
+                fill="currentColor"
+                icon={
+                  Object {
+                    "attribs": Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "x1": "19",
+                          "x2": "10",
+                          "y1": "4",
+                          "y2": "4",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "14",
+                          "x2": "5",
+                          "y1": "20",
+                          "y2": "20",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "15",
+                          "x2": "9",
+                          "y1": "4",
+                          "y2": "20",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                    ],
+                    "viewBox": "0 0 24 24",
+                  }
+                }
+                size={16}
+              />
+            </button>
+            <button
+              className="tooltip-icon-button"
+              onPointerDown={[Function]}
+            >
+              <Icon
+                fill="currentColor"
+                icon={
+                  Object {
+                    "attribs": Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "x1": "8",
+                          "x2": "21",
+                          "y1": "6",
+                          "y2": "6",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "8",
+                          "x2": "21",
+                          "y1": "12",
+                          "y2": "12",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "8",
+                          "x2": "21",
+                          "y1": "18",
+                          "y2": "18",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "3",
+                          "x2": "3",
+                          "y1": "6",
+                          "y2": "6",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "3",
+                          "x2": "3",
+                          "y1": "12",
+                          "y2": "12",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "3",
+                          "x2": "3",
+                          "y1": "18",
+                          "y2": "18",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                    ],
+                    "viewBox": "0 0 24 24",
+                  }
+                }
+                size={16}
+              />
+            </button>
+            <button
+              className="tooltip-icon-button"
+              onPointerDown={[Function]}
+            >
+              <Icon
+                fill="currentColor"
+                icon={
+                  Object {
+                    "attribs": Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                        },
+                        "children": Array [],
+                        "name": "path",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "4",
+                          "x2": "20",
+                          "y1": "21",
+                          "y2": "21",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                    ],
+                    "viewBox": "0 0 24 24",
+                  }
+                }
+                size={16}
+              />
+            </button>
+            <button
+              className="tooltip-icon-button"
+              onPointerDown={[Function]}
+            >
+              <Icon
+                fill="currentColor"
+                icon={
+                  Object {
+                    "attribs": Object {
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "x1": "12",
+                          "x2": "12",
+                          "y1": "5",
+                          "y2": "19",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                      Object {
+                        "attribs": Object {
+                          "x1": "5",
+                          "x2": "19",
+                          "y1": "12",
+                          "y2": "12",
+                        },
+                        "children": Array [],
+                        "name": "line",
+                      },
+                    ],
+                    "viewBox": "0 0 24 24",
+                  }
+                }
+                size={16}
+              />
+            </button>
+          </FormatToolbar>
+          <Editor
+            autoCorrect={true}
+            autoFocus={true}
+            className="editor"
+            onChange={[Function]}
+            options={Object {}}
+            placeholder=""
+            plugins={Array []}
+            readOnly={false}
+            renderMark={[Function]}
+            schema={Object {}}
+            spellCheck={true}
+            value={
+              Immutable.Record {
+                "data": Immutable.Map {},
+                "decorations": Immutable.List [],
+                "document": Immutable.Record {
+                  "data": Immutable.Map {},
+                  "key": "0",
+                  "nodes": Immutable.List [
+                    Immutable.Record {
+                      "data": Immutable.Map {},
+                      "key": "1",
+                      "nodes": Immutable.List [
+                        Immutable.Record {
+                          "leaves": Immutable.List [
+                            Immutable.Record {
+                              "marks": Immutable.Set [],
+                              "text": "Start writing here...",
+                            },
+                          ],
+                          "key": "2",
+                        },
+                      ],
+                      "type": "paragraph",
+                    },
+                  ],
+                },
+                "selection": Immutable.Record {
+                  "anchor": Immutable.Record {
+                    "key": "2",
+                    "offset": 0,
+                    "path": Immutable.List [
+                      0,
+                      0,
+                    ],
+                  },
+                  "focus": Immutable.Record {
+                    "key": "2",
+                    "offset": 0,
+                    "path": Immutable.List [
+                      0,
+                      0,
+                    ],
+                  },
+                  "isFocused": false,
+                  "marks": null,
+                },
+              }
+            }
+          />
+        </React.Fragment>,
+        <Link
+          replace={false}
+          to="/todaymood"
+        >
+          <button
+            className="standard-btn light save-entry-btn"
+            onClick={[Function]}
+          >
+            save entry
+          </button>
+        </Link>,
+      ],
+      "className": "journal",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "February 20, 2019",
+          "className": "date",
+        },
+        "ref": null,
+        "rendered": "February 20, 2019",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <FormatToolbar>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "19",
+                            "x2": "10",
+                            "y1": "4",
+                            "y2": "4",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "14",
+                            "x2": "5",
+                            "y1": "20",
+                            "y2": "20",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "15",
+                            "x2": "9",
+                            "y1": "4",
+                            "y2": "20",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "6",
+                            "y2": "6",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "18",
+                            "y2": "18",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "6",
+                            "y2": "6",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "18",
+                            "y2": "18",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "4",
+                            "x2": "20",
+                            "y1": "21",
+                            "y2": "21",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "12",
+                            "x2": "12",
+                            "y1": "5",
+                            "y2": "19",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "5",
+                            "x2": "19",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+            </FormatToolbar>,
+            <Editor
+              autoCorrect={true}
+              autoFocus={true}
+              className="editor"
+              onChange={[Function]}
+              options={Object {}}
+              placeholder=""
+              plugins={Array []}
+              readOnly={false}
+              renderMark={[Function]}
+              schema={Object {}}
+              spellCheck={true}
+              value={
+                Immutable.Record {
+                  "data": Immutable.Map {},
+                  "decorations": Immutable.List [],
+                  "document": Immutable.Record {
+                    "data": Immutable.Map {},
+                    "key": "0",
+                    "nodes": Immutable.List [
+                      Immutable.Record {
+                        "data": Immutable.Map {},
+                        "key": "1",
+                        "nodes": Immutable.List [
+                          Immutable.Record {
+                            "leaves": Immutable.List [
+                              Immutable.Record {
+                                "marks": Immutable.Set [],
+                                "text": "Start writing here...",
+                              },
+                            ],
+                            "key": "2",
+                          },
+                        ],
+                        "type": "paragraph",
+                      },
+                    ],
+                  },
+                  "selection": Immutable.Record {
+                    "anchor": Immutable.Record {
+                      "key": "2",
+                      "offset": 0,
+                      "path": Immutable.List [
+                        0,
+                        0,
+                      ],
+                    },
+                    "focus": Immutable.Record {
+                      "key": "2",
+                      "offset": 0,
+                      "path": Immutable.List [
+                        0,
+                        0,
+                      ],
+                    },
+                    "isFocused": false,
+                    "marks": null,
+                  },
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>,
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "19",
+                              "x2": "10",
+                              "y1": "4",
+                              "y2": "4",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "14",
+                              "x2": "5",
+                              "y1": "20",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "15",
+                              "x2": "9",
+                              "y1": "4",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>,
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>,
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "4",
+                              "x2": "20",
+                              "y1": "21",
+                              "y2": "21",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>,
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "12",
+                              "x2": "12",
+                              "y1": "5",
+                              "y2": "19",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "5",
+                              "x2": "19",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />,
+                  "className": "tooltip-icon-button",
+                  "onPointerDown": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "fill": "currentColor",
+                    "icon": Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    },
+                    "size": 16,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "19",
+                              "x2": "10",
+                              "y1": "4",
+                              "y2": "4",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "14",
+                              "x2": "5",
+                              "y1": "20",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "15",
+                              "x2": "9",
+                              "y1": "4",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />,
+                  "className": "tooltip-icon-button",
+                  "onPointerDown": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "fill": "currentColor",
+                    "icon": Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "19",
+                            "x2": "10",
+                            "y1": "4",
+                            "y2": "4",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "14",
+                            "x2": "5",
+                            "y1": "20",
+                            "y2": "20",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "15",
+                            "x2": "9",
+                            "y1": "4",
+                            "y2": "20",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    },
+                    "size": 16,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />,
+                  "className": "tooltip-icon-button",
+                  "onPointerDown": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "fill": "currentColor",
+                    "icon": Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "6",
+                            "y2": "6",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "18",
+                            "y2": "18",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "6",
+                            "y2": "6",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "18",
+                            "y2": "18",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    },
+                    "size": 16,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "4",
+                              "x2": "20",
+                              "y1": "21",
+                              "y2": "21",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />,
+                  "className": "tooltip-icon-button",
+                  "onPointerDown": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "fill": "currentColor",
+                    "icon": Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "4",
+                            "x2": "20",
+                            "y1": "21",
+                            "y2": "21",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    },
+                    "size": 16,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "12",
+                              "x2": "12",
+                              "y1": "5",
+                              "y2": "19",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "5",
+                              "x2": "19",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />,
+                  "className": "tooltip-icon-button",
+                  "onPointerDown": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "fill": "currentColor",
+                    "icon": Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "12",
+                            "x2": "12",
+                            "y1": "5",
+                            "y2": "19",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "5",
+                            "x2": "19",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    },
+                    "size": 16,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "button",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoCorrect": true,
+              "autoFocus": true,
+              "className": "editor",
+              "onChange": [Function],
+              "options": Object {},
+              "placeholder": "",
+              "plugins": Array [],
+              "readOnly": false,
+              "renderMark": [Function],
+              "schema": Object {},
+              "spellCheck": true,
+              "value": Immutable.Record {
+                "data": Immutable.Map {},
+                "decorations": Immutable.List [],
+                "document": Immutable.Record {
+                  "data": Immutable.Map {},
+                  "key": "0",
+                  "nodes": Immutable.List [
+                    Immutable.Record {
+                      "data": Immutable.Map {},
+                      "key": "1",
+                      "nodes": Immutable.List [
+                        Immutable.Record {
+                          "leaves": Immutable.List [
+                            Immutable.Record {
+                              "marks": Immutable.Set [],
+                              "text": "Start writing here...",
+                            },
+                          ],
+                          "key": "2",
+                        },
+                      ],
+                      "type": "paragraph",
+                    },
+                  ],
+                },
+                "selection": Immutable.Record {
+                  "anchor": Immutable.Record {
+                    "key": "2",
+                    "offset": 0,
+                    "path": Immutable.List [
+                      0,
+                      0,
+                    ],
+                  },
+                  "focus": Immutable.Record {
+                    "key": "2",
+                    "offset": 0,
+                    "path": Immutable.List [
+                      0,
+                      0,
+                    ],
+                  },
+                  "isFocused": false,
+                  "marks": null,
+                },
+              },
+            },
+            "ref": [Function],
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <button
+            className="standard-btn light save-entry-btn"
+            onClick={[Function]}
+          >
+            save entry
+          </button>,
+          "replace": false,
+          "to": "/todaymood",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "save entry",
+            "className": "standard-btn light save-entry-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "save entry",
+          "type": "button",
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <Logo />,
+          <h1
+            className="date"
+          >
+            February 20, 2019
+          </h1>,
+          <React.Fragment>
+            <FormatToolbar>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "19",
+                            "x2": "10",
+                            "y1": "4",
+                            "y2": "4",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "14",
+                            "x2": "5",
+                            "y1": "20",
+                            "y2": "20",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "15",
+                            "x2": "9",
+                            "y1": "4",
+                            "y2": "20",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "6",
+                            "y2": "6",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "8",
+                            "x2": "21",
+                            "y1": "18",
+                            "y2": "18",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "6",
+                            "y2": "6",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "3",
+                            "x2": "3",
+                            "y1": "18",
+                            "y2": "18",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "4",
+                            "x2": "20",
+                            "y1": "21",
+                            "y2": "21",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+              <button
+                className="tooltip-icon-button"
+                onPointerDown={[Function]}
+              >
+                <Icon
+                  fill="currentColor"
+                  icon={
+                    Object {
+                      "attribs": Object {
+                        "fill": "none",
+                        "stroke": "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "x1": "12",
+                            "x2": "12",
+                            "y1": "5",
+                            "y2": "19",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                        Object {
+                          "attribs": Object {
+                            "x1": "5",
+                            "x2": "19",
+                            "y1": "12",
+                            "y2": "12",
+                          },
+                          "children": Array [],
+                          "name": "line",
+                        },
+                      ],
+                      "viewBox": "0 0 24 24",
+                    }
+                  }
+                  size={16}
+                />
+              </button>
+            </FormatToolbar>
+            <Editor
+              autoCorrect={true}
+              autoFocus={true}
+              className="editor"
+              onChange={[Function]}
+              options={Object {}}
+              placeholder=""
+              plugins={Array []}
+              readOnly={false}
+              renderMark={[Function]}
+              schema={Object {}}
+              spellCheck={true}
+              value={
+                Immutable.Record {
+                  "data": Immutable.Map {},
+                  "decorations": Immutable.List [],
+                  "document": Immutable.Record {
+                    "data": Immutable.Map {},
+                    "key": "0",
+                    "nodes": Immutable.List [
+                      Immutable.Record {
+                        "data": Immutable.Map {},
+                        "key": "1",
+                        "nodes": Immutable.List [
+                          Immutable.Record {
+                            "leaves": Immutable.List [
+                              Immutable.Record {
+                                "marks": Immutable.Set [],
+                                "text": "Start writing here...",
+                              },
+                            ],
+                            "key": "2",
+                          },
+                        ],
+                        "type": "paragraph",
+                      },
+                    ],
+                  },
+                  "selection": Immutable.Record {
+                    "anchor": Immutable.Record {
+                      "key": "2",
+                      "offset": 0,
+                      "path": Immutable.List [
+                        0,
+                        0,
+                      ],
+                    },
+                    "focus": Immutable.Record {
+                      "key": "2",
+                      "offset": 0,
+                      "path": Immutable.List [
+                        0,
+                        0,
+                      ],
+                    },
+                    "isFocused": false,
+                    "marks": null,
+                  },
+                }
+              }
+            />
+          </React.Fragment>,
+          <Link
+            replace={false}
+            to="/todaymood"
+          >
+            <button
+              className="standard-btn light save-entry-btn"
+              onClick={[Function]}
+            >
+              save entry
+            </button>
+          </Link>,
+        ],
+        "className": "journal",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "February 20, 2019",
+            "className": "date",
+          },
+          "ref": null,
+          "rendered": "February 20, 2019",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <FormatToolbar>
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "19",
+                              "x2": "10",
+                              "y1": "4",
+                              "y2": "4",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "14",
+                              "x2": "5",
+                              "y1": "20",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "15",
+                              "x2": "9",
+                              "y1": "4",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "4",
+                              "x2": "20",
+                              "y1": "21",
+                              "y2": "21",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>
+                <button
+                  className="tooltip-icon-button"
+                  onPointerDown={[Function]}
+                >
+                  <Icon
+                    fill="currentColor"
+                    icon={
+                      Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "12",
+                              "x2": "12",
+                              "y1": "5",
+                              "y2": "19",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "5",
+                              "x2": "19",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      }
+                    }
+                    size={16}
+                  />
+                </button>
+              </FormatToolbar>,
+              <Editor
+                autoCorrect={true}
+                autoFocus={true}
+                className="editor"
+                onChange={[Function]}
+                options={Object {}}
+                placeholder=""
+                plugins={Array []}
+                readOnly={false}
+                renderMark={[Function]}
+                schema={Object {}}
+                spellCheck={true}
+                value={
+                  Immutable.Record {
+                    "data": Immutable.Map {},
+                    "decorations": Immutable.List [],
+                    "document": Immutable.Record {
+                      "data": Immutable.Map {},
+                      "key": "0",
+                      "nodes": Immutable.List [
+                        Immutable.Record {
+                          "data": Immutable.Map {},
+                          "key": "1",
+                          "nodes": Immutable.List [
+                            Immutable.Record {
+                              "leaves": Immutable.List [
+                                Immutable.Record {
+                                  "marks": Immutable.Set [],
+                                  "text": "Start writing here...",
+                                },
+                              ],
+                              "key": "2",
+                            },
+                          ],
+                          "type": "paragraph",
+                        },
+                      ],
+                    },
+                    "selection": Immutable.Record {
+                      "anchor": Immutable.Record {
+                        "key": "2",
+                        "offset": 0,
+                        "path": Immutable.List [
+                          0,
+                          0,
+                        ],
+                      },
+                      "focus": Immutable.Record {
+                        "key": "2",
+                        "offset": 0,
+                        "path": Immutable.List [
+                          0,
+                          0,
+                        ],
+                      },
+                      "isFocused": false,
+                      "marks": null,
+                    },
+                  }
+                }
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="tooltip-icon-button"
+                    onPointerDown={[Function]}
+                  >
+                    <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                              },
+                              "children": Array [],
+                              "name": "path",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                              },
+                              "children": Array [],
+                              "name": "path",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />
+                  </button>,
+                  <button
+                    className="tooltip-icon-button"
+                    onPointerDown={[Function]}
+                  >
+                    <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "x1": "19",
+                                "x2": "10",
+                                "y1": "4",
+                                "y2": "4",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "14",
+                                "x2": "5",
+                                "y1": "20",
+                                "y2": "20",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "15",
+                                "x2": "9",
+                                "y1": "4",
+                                "y2": "20",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />
+                  </button>,
+                  <button
+                    className="tooltip-icon-button"
+                    onPointerDown={[Function]}
+                  >
+                    <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "x1": "8",
+                                "x2": "21",
+                                "y1": "6",
+                                "y2": "6",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "8",
+                                "x2": "21",
+                                "y1": "12",
+                                "y2": "12",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "8",
+                                "x2": "21",
+                                "y1": "18",
+                                "y2": "18",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "3",
+                                "x2": "3",
+                                "y1": "6",
+                                "y2": "6",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "3",
+                                "x2": "3",
+                                "y1": "12",
+                                "y2": "12",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "3",
+                                "x2": "3",
+                                "y1": "18",
+                                "y2": "18",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />
+                  </button>,
+                  <button
+                    className="tooltip-icon-button"
+                    onPointerDown={[Function]}
+                  >
+                    <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                              },
+                              "children": Array [],
+                              "name": "path",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "4",
+                                "x2": "20",
+                                "y1": "21",
+                                "y2": "21",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />
+                  </button>,
+                  <button
+                    className="tooltip-icon-button"
+                    onPointerDown={[Function]}
+                  >
+                    <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "x1": "12",
+                                "x2": "12",
+                                "y1": "5",
+                                "y2": "19",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "5",
+                                "x2": "19",
+                                "y1": "12",
+                                "y2": "12",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />
+                  </button>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                              },
+                              "children": Array [],
+                              "name": "path",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                              },
+                              "children": Array [],
+                              "name": "path",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />,
+                    "className": "tooltip-icon-button",
+                    "onPointerDown": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "fill": "currentColor",
+                      "icon": Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      },
+                      "size": 16,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "x1": "19",
+                                "x2": "10",
+                                "y1": "4",
+                                "y2": "4",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "14",
+                                "x2": "5",
+                                "y1": "20",
+                                "y2": "20",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "15",
+                                "x2": "9",
+                                "y1": "4",
+                                "y2": "20",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />,
+                    "className": "tooltip-icon-button",
+                    "onPointerDown": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "fill": "currentColor",
+                      "icon": Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "19",
+                              "x2": "10",
+                              "y1": "4",
+                              "y2": "4",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "14",
+                              "x2": "5",
+                              "y1": "20",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "15",
+                              "x2": "9",
+                              "y1": "4",
+                              "y2": "20",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      },
+                      "size": 16,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "x1": "8",
+                                "x2": "21",
+                                "y1": "6",
+                                "y2": "6",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "8",
+                                "x2": "21",
+                                "y1": "12",
+                                "y2": "12",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "8",
+                                "x2": "21",
+                                "y1": "18",
+                                "y2": "18",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "3",
+                                "x2": "3",
+                                "y1": "6",
+                                "y2": "6",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "3",
+                                "x2": "3",
+                                "y1": "12",
+                                "y2": "12",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "3",
+                                "x2": "3",
+                                "y1": "18",
+                                "y2": "18",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />,
+                    "className": "tooltip-icon-button",
+                    "onPointerDown": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "fill": "currentColor",
+                      "icon": Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "8",
+                              "x2": "21",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "6",
+                              "y2": "6",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "3",
+                              "x2": "3",
+                              "y1": "18",
+                              "y2": "18",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      },
+                      "size": 16,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                              },
+                              "children": Array [],
+                              "name": "path",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "4",
+                                "x2": "20",
+                                "y1": "21",
+                                "y2": "21",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />,
+                    "className": "tooltip-icon-button",
+                    "onPointerDown": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "fill": "currentColor",
+                      "icon": Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "d": "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
+                            },
+                            "children": Array [],
+                            "name": "path",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "4",
+                              "x2": "20",
+                              "y1": "21",
+                              "y2": "21",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      },
+                      "size": 16,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Icon
+                      fill="currentColor"
+                      icon={
+                        Object {
+                          "attribs": Object {
+                            "fill": "none",
+                            "stroke": "currentColor",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "x1": "12",
+                                "x2": "12",
+                                "y1": "5",
+                                "y2": "19",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                            Object {
+                              "attribs": Object {
+                                "x1": "5",
+                                "x2": "19",
+                                "y1": "12",
+                                "y2": "12",
+                              },
+                              "children": Array [],
+                              "name": "line",
+                            },
+                          ],
+                          "viewBox": "0 0 24 24",
+                        }
+                      }
+                      size={16}
+                    />,
+                    "className": "tooltip-icon-button",
+                    "onPointerDown": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "fill": "currentColor",
+                      "icon": Object {
+                        "attribs": Object {
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "x1": "12",
+                              "x2": "12",
+                              "y1": "5",
+                              "y2": "19",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                          Object {
+                            "attribs": Object {
+                              "x1": "5",
+                              "x2": "19",
+                              "y1": "12",
+                              "y2": "12",
+                            },
+                            "children": Array [],
+                            "name": "line",
+                          },
+                        ],
+                        "viewBox": "0 0 24 24",
+                      },
+                      "size": 16,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "button",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "autoCorrect": true,
+                "autoFocus": true,
+                "className": "editor",
+                "onChange": [Function],
+                "options": Object {},
+                "placeholder": "",
+                "plugins": Array [],
+                "readOnly": false,
+                "renderMark": [Function],
+                "schema": Object {},
+                "spellCheck": true,
+                "value": Immutable.Record {
+                  "data": Immutable.Map {},
+                  "decorations": Immutable.List [],
+                  "document": Immutable.Record {
+                    "data": Immutable.Map {},
+                    "key": "0",
+                    "nodes": Immutable.List [
+                      Immutable.Record {
+                        "data": Immutable.Map {},
+                        "key": "1",
+                        "nodes": Immutable.List [
+                          Immutable.Record {
+                            "leaves": Immutable.List [
+                              Immutable.Record {
+                                "marks": Immutable.Set [],
+                                "text": "Start writing here...",
+                              },
+                            ],
+                            "key": "2",
+                          },
+                        ],
+                        "type": "paragraph",
+                      },
+                    ],
+                  },
+                  "selection": Immutable.Record {
+                    "anchor": Immutable.Record {
+                      "key": "2",
+                      "offset": 0,
+                      "path": Immutable.List [
+                        0,
+                        0,
+                      ],
+                    },
+                    "focus": Immutable.Record {
+                      "key": "2",
+                      "offset": 0,
+                      "path": Immutable.List [
+                        0,
+                        0,
+                      ],
+                    },
+                    "isFocused": false,
+                    "marks": null,
+                  },
+                },
+              },
+              "ref": [Function],
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Symbol(react.fragment),
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <button
+              className="standard-btn light save-entry-btn"
+              onClick={[Function]}
+            >
+              save entry
+            </button>,
+            "replace": false,
+            "to": "/todaymood",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "save entry",
+              "className": "standard-btn light save-entry-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "save entry",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

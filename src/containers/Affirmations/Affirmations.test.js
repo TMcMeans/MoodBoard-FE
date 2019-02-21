@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Affirmations from './Affirmations';
+import { Affirmations } from './Affirmations';
 
 describe('Affirmations', () => {
   let wrapper;

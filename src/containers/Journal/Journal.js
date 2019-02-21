@@ -39,7 +39,7 @@ let initialValue = Value.fromJSON({
   }
 });
 
-class Journal extends Component {
+export class Journal extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -50,6 +50,7 @@ class Journal extends Component {
   componentDidMount = async () => {
     const userID = 1;
     const url = `https://mood-board-be.herokuapp.com/api/v1/users/${userID}/journal_entries?date=today`;
+
     await this.props.getJournalEntry(url);
 
     const { entry_text } = await this.props.journal;
@@ -94,8 +95,6 @@ class Journal extends Component {
       case 'list-item': {
         return <li {...attributes}>{children}</li>;
       }
-
-      //ADD OPTION TO CENTER TEXT
       case 'underline': {
         return (
           <p {...attributes} className="underline">
@@ -230,12 +229,11 @@ class Journal extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  journal: state.journal,
-  user: state.user
+export const mapStateToProps = state => ({
+  journal: state.journal
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   getJournalEntry: url => dispatch(getJournalEntry(url)),
   patchJournalEntry: (url, entry_text) =>
     dispatch(patchJournalEntry(url, entry_text))
@@ -245,7 +243,6 @@ Journal.propTypes = {
   getJournalEntry: PropTypes.func,
   journal: PropTypes.object,
   patchJournalEntry: PropTypes.func,
-  user: PropTypes.object,
   value: PropTypes.object
 };
 
