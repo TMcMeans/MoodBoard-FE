@@ -5,6 +5,7 @@
 MoodBoard is a mobile-optimized daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day. Visit https://moodboard-1808.herokuapp.com/ for a live user experience.
 
 ## ⚙️ Initial Setup
+
 OS X & Linux:
 
 After cloning this repo:
@@ -13,7 +14,9 @@ After cloning this repo:
 npm install
 npm start
 ```
+
 ## Features
+
 The user writes and saves a daily journal entry.
 ![](journal_page.png)
 
@@ -33,6 +36,7 @@ The user can view all affirmations written during that month.
 ## Future Iterations
 
 Planned enhancements include:
+
 - A daily drill-down view into each calendar day, showing the journal entry and affirmations written on that date
 - Ability to track daily mood influencers like medications, hormone cycles
 - Customize self-positivity prompts / choose between writing affirmations, displaying a mantra, or other activities
@@ -40,11 +44,18 @@ Planned enhancements include:
 - Relevant metrics / statistics related to mood / tone
 
 ## 🏗 Tech Stack List
+
 - React
+- React Router 4
 - Redux
+- Redux Thunk Middleware
+- Jest
 - Enzyme
+- [SlateJS](https://www.slatejs.org/#/rich-text)
+- CSS
 
 ## 📥 How To Contribute
+
 1. Fork this repo
 2. Create your feature branch (`git checkout -b feature/thingamajig`)
 3. Commit your changes (`git commit -am 'Added a cool doodad!'`)
@@ -52,6 +63,7 @@ Planned enhancements include:
 5. Create a new Pull Request
 
 ## 🚀 Core Contributors
+
 **Ashton Bailey**
 Github:[https://github.com/ashtonkbailey/](https://github.com/ashtonkbailey/)
 
