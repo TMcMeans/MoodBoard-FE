@@ -58,12 +58,15 @@ ShallowWrapper {
         <h2>
           Already a user? Log in 
           <Link
-            className="login-link"
             replace={false}
-            to="/"
+            to="/home"
           >
-            here
+            <button
+              className="standard-btn light form-btn"
+            />
           </Link>
+        </form>,
+        <h2>
           .
         </h2>,
         <Link
@@ -221,6 +224,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+<<<<<<< HEAD
             "Already a user? Log in ",
             <Link
               className="login-link"
@@ -229,11 +233,16 @@ ShallowWrapper {
             >
               here
             </Link>,
+=======
+            undefined,
+            undefined,
+>>>>>>> add tests for journal component
             ".",
           ],
         },
         "ref": null,
         "rendered": Array [
+<<<<<<< HEAD
           "Already a user? Log in ",
           Object {
             "instance": null,
@@ -249,6 +258,10 @@ ShallowWrapper {
             "rendered": "here",
             "type": [Function],
           },
+=======
+          undefined,
+          undefined,
+>>>>>>> add tests for journal component
           ".",
         ],
         "type": "h2",
@@ -318,6 +331,7 @@ ShallowWrapper {
               placeholder="password"
               type="password"
             />
+<<<<<<< HEAD
             <Link
               replace={false}
               to="/home"
@@ -329,13 +343,18 @@ ShallowWrapper {
           </form>,
           <h2>
             Already a user? Log in 
+=======
+>>>>>>> add tests for journal component
             <Link
-              className="login-link"
               replace={false}
-              to="/"
+              to="/home"
             >
-              here
+              <button
+                className="standard-btn light form-btn"
+              />
             </Link>
+          </form>,
+          <h2>
             .
           </h2>,
           <Link
@@ -493,6 +512,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+<<<<<<< HEAD
               "Already a user? Log in ",
               <Link
                 className="login-link"
@@ -501,11 +521,16 @@ ShallowWrapper {
               >
                 here
               </Link>,
+=======
+              undefined,
+              undefined,
+>>>>>>> add tests for journal component
               ".",
             ],
           },
           "ref": null,
           "rendered": Array [
+<<<<<<< HEAD
             "Already a user? Log in ",
             Object {
               "instance": null,
@@ -521,6 +546,10 @@ ShallowWrapper {
               "rendered": "here",
               "type": [Function],
             },
+=======
+            undefined,
+            undefined,
+>>>>>>> add tests for journal component
             ".",
           ],
           "type": "h2",

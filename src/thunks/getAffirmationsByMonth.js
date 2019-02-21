@@ -8,7 +8,7 @@ export const getAffirmationsByMonth = url => {
         throw Error(response.statusText);
       }
       const affirmations = await response.json();
-      //await dispatch??
+      //await dispatch of affirmations action??
     } catch (error) {
       dispatch(hasErrored(error.message));
     }

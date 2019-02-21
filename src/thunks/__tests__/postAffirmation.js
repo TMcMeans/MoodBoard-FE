@@ -43,17 +43,4 @@ describe('postAffirmation', () => {
       Actions.hasErrored('an error has occurred')
     );
   });
-
-  // it('should return a status code if response is ok', async () => {
-  //   window.fetch = jest.fn().mockImplementation(() => {
-  //     return Promise.resolve({
-  //       ok: true,
-  //       status: 201
-  //     });
-  //   });
-
-  //   const thunk = postAffirmation(mockUrl, mockAffirmationText);
-  //   await thunk(mockDispatch);
-  //   expect(mockDispatch).toHaveBeenCalled();
-  // });
 });
