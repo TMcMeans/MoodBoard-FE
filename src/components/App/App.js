@@ -6,7 +6,7 @@ import DailyView from '../../containers/DailyView/DailyView';
 import Home from '../../containers/Home/Home';
 import Journal from '../../containers/Journal/Journal';
 import TodayMood from '../../containers/TodayMood/TodayMood';
-import UserForm from '../../containers/UserForm/UserForm';
+import UserForm from '../UserForm/UserForm';
 import WriteAffirmation from '../../containers/WriteAffirmation/WriteAffirmation';
 import Info from '../Info/Info.js';
 

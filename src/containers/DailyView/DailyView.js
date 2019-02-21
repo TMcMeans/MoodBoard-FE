@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../components/Logo/Logo';
-
 import './DailyView.css';
 
-export class DailyView extends Component {
-  constructor() {
+class DailyView extends Component {
+  constructor(props) {
     super();
     this.state = {};
   }
@@ -30,9 +30,11 @@ export class DailyView extends Component {
         </div>
         <div className="btn-wrapper">
           <button className="standard-btn dark left-arrow">&#60;</button>
-          <button className="standard-btn dark back-to-calendar-btn">
-            calendar
-          </button>
+          <Link to="/calendarview">
+            <button className="standard-btn dark back-to-calendar-btn">
+              calendar
+            </button>
+          </Link>
           <button className="standard-btn dark right-arrow">&#62;</button>
         </div>
       </div>
@@ -40,4 +42,12 @@ export class DailyView extends Component {
   }
 }
 
-export default DailyView;
+const mapStateToProps = state => ({
+
+})
+
+const mapDispatchToProps = dispatch => ({
+
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(DailyView);
