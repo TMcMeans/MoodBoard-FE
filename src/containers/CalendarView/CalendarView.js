@@ -29,18 +29,48 @@ export class CalendarView extends Component {
   };
 
   render() {
+    const prevDays = [28, 29, 30, 31];
+    const days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28];
+    const nextDays = [1, 2, 3];
+    const prevDayBtns = prevDays.map((day) => {
+      return (
+        <button className="calendar-day-prev">{day}</button>
+      )
+    });
+    const dayBtns = days.map((day) => {
+      return (
+        <button className="calendar-day">{day}</button>
+      )
+    });
+    const nextDayBtns = nextDays.map((day) => {
+      return (
+        <button className="calendar-day-next">{day}</button>
+      )
+    });
+        // <Logo />
     return (
       <div className="calendar">
-        <Logo />
+        <div className="calendar-container">
+          <div className="calendar-nav-btns">
+            <button className="nav-arrow">&#60;</button>
+            <button className="nav-label">February 2019</button>
+            <button className="nav-arrow">&#62;</button>
+          </div>
+          <div className="month-container">
+            {prevDayBtns}
+            {dayBtns}
+            {nextDayBtns}
+          </div>
+        </div>
         <Calendar value={this.state.value} onChange={this.onChange} />
-        <Link to="/affirmations">
-          <button className="standard-btn light affirmations-btn">
-            your affirmations
-          </button>
-        </Link>
       </div>
     );
   }
+        // <Link to="/affirmations">
+        //   <button className="standard-btn light affirmations-btn">
+        //     your affirmations
+        //   </button>
+        // </Link>
 }
 
 const mapDispatchToProps = dispatch => ({

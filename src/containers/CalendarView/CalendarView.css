@@ -6,7 +6,13 @@
 
 /*CALENDAR*/
 .react-calendar {
-  height: 55vh;
+  height: 40vh;
+  margin: auto;
+  width: 95%;
+}
+
+.calendar-container {
+  height: 50vh;
   margin: auto;
   margin-top: 2rem;
   width: 95%;
@@ -36,6 +42,22 @@
   width: 1.5rem;
 }
 
+.nav-arrow {
+  background: #daa520;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.25),
+    inset 5px 10px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10%;
+  color: #ffffff;
+  font-size: 2rem;
+  height: 1.5rem;
+  line-height: 0px;
+  margin: auto;
+  padding: 2px;
+  padding-bottom: 8px;
+  width: 1.5rem;
+}
+
 .react-calendar__navigation__prev2-button,
 .react-calendar__navigation__next2-button {
   display: none;
@@ -43,6 +65,12 @@
 
 /*NAVIGATION MONTH*/
 .react-calendar__navigation__label {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-label {
   font-size: 2rem;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -61,7 +89,21 @@
   text-shadow: 2px 2px 2px #DAA520;
 }
 
+.calendar-day-prev,
+.calendar-day,
+.calendar-day-next {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #DAA520;
+}
+
 .react-calendar__month-view__days__day--neighboringMonth {
+  color: #2a2a2a;
+}
+
+.calendar-day-prev,
+.calendar-day-next {
   color: #2a2a2a;
 }
 
