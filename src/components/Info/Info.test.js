@@ -1,13 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Home } from './Home';
+import { Info } from './Info';
 
-describe('Home', () => {
-  let wrapper;
-  beforeEach(() => {
-    wrapper = shallow(<Home />);
-  });
+describe('Info', () => {
   it('should render a snapshot with correct data passed in', () => {
+    const wrapper = shallow(<Info />);
     expect(wrapper).toMatchSnapshot();
   });
 });

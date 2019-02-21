@@ -15,8 +15,6 @@ export const postAffirmation = (url, affirmation_text) => {
       if (!response.ok) {
         throw Error(response.statusText);
       }
-
-      //dispatch status code action??
     } catch (error) {
       dispatch(hasErrored(error.message));
     }

@@ -65,14 +65,11 @@ ShallowWrapper {
           render={[Function]}
         />
         <Route
-<<<<<<< HEAD
           exact={true}
           path="/info"
           render={[Function]}
         />
         <Route
-=======
->>>>>>> add tests for journal component
           path=""
           render={[Function]}
         />
@@ -132,14 +129,11 @@ ShallowWrapper {
             render={[Function]}
           />,
           <Route
-<<<<<<< HEAD
             exact={true}
             path="/info"
             render={[Function]}
           />,
           <Route
-=======
->>>>>>> add tests for journal component
             path=""
             render={[Function]}
           />,
@@ -269,7 +263,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-<<<<<<< HEAD
             "exact": true,
             "path": "/info",
             "render": [Function],
@@ -283,8 +276,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-=======
->>>>>>> add tests for journal component
             "path": "",
             "render": [Function],
           },
@@ -350,14 +341,11 @@ ShallowWrapper {
             render={[Function]}
           />
           <Route
-<<<<<<< HEAD
             exact={true}
             path="/info"
             render={[Function]}
           />
           <Route
-=======
->>>>>>> add tests for journal component
             path=""
             render={[Function]}
           />
@@ -417,14 +405,11 @@ ShallowWrapper {
               render={[Function]}
             />,
             <Route
-<<<<<<< HEAD
               exact={true}
               path="/info"
               render={[Function]}
             />,
             <Route
-=======
->>>>>>> add tests for journal component
               path=""
               render={[Function]}
             />,
@@ -554,7 +539,6 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-<<<<<<< HEAD
               "exact": true,
               "path": "/info",
               "render": [Function],
@@ -568,8 +552,6 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-=======
->>>>>>> add tests for journal component
               "path": "",
               "render": [Function],
             },

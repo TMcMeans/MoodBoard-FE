@@ -3,7 +3,7 @@
 exports[`Home should render a snapshot with correct data passed in 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__unrendered__): <Connect(Home) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,395 +16,59 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <Logo />,
-        <h1
-          className="welcome"
-        >
-          Welcome, 
-          Ash
-          !
-        </h1>,
-        <h3
-          className="this-month"
-        >
-          This month...
-        </h3>,
-        <div
-          className="bubbles"
-        />,
-        <div
-          className="home-btns-container"
-        >
-          <Link
-            replace={false}
-            to="/journal"
-          >
-            <button
-              className="standard-btn light home-btns"
-            >
-              journal
-            </button>
-          </Link>
-          <Link
-            replace={false}
-            to="/calendarView"
-          >
-            <button
-              className="standard-btn light home-btns"
-            >
-              calendar
-            </button>
-          </Link>
-        </div>,
-      ],
-      "className": "home",
+      "children": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Welcome, ",
-            "Ash",
-            "!",
-          ],
-          "className": "welcome",
+    "rendered": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.context),
+      "_calculateChangedBits": null,
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": [Circular],
         },
-        "ref": null,
-        "rendered": Array [
-          "Welcome, ",
-          "Ash",
-          "!",
-        ],
-        "type": "h1",
+        "_calculateChangedBits": null,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": null,
+        "_currentValue2": null,
+        "_threadCount": 0,
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "This month...",
-          "className": "this-month",
-        },
-        "ref": null,
-        "rendered": "This month...",
-        "type": "h3",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "bubbles",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <Link
-              replace={false}
-              to="/journal"
-            >
-              <button
-                className="standard-btn light home-btns"
-              >
-                journal
-              </button>
-            </Link>,
-            <Link
-              replace={false}
-              to="/calendarView"
-            >
-              <button
-                className="standard-btn light home-btns"
-              >
-                calendar
-              </button>
-            </Link>,
-          ],
-          "className": "home-btns-container",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <button
-                className="standard-btn light home-btns"
-              >
-                journal
-              </button>,
-              "replace": false,
-              "to": "/journal",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "journal",
-                "className": "standard-btn light home-btns",
-              },
-              "ref": null,
-              "rendered": "journal",
-              "type": "button",
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <button
-                className="standard-btn light home-btns"
-              >
-                calendar
-              </button>,
-              "replace": false,
-              "to": "/calendarView",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "calendar",
-                "className": "standard-btn light home-btns",
-              },
-              "ref": null,
-              "rendered": "calendar",
-              "type": "button",
-            },
-            "type": [Function],
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <Logo />,
-          <h1
-            className="welcome"
-          >
-            Welcome, 
-            Ash
-            !
-          </h1>,
-          <h3
-            className="this-month"
-          >
-            This month...
-          </h3>,
-          <div
-            className="bubbles"
-          />,
-          <div
-            className="home-btns-container"
-          >
-            <Link
-              replace={false}
-              to="/journal"
-            >
-              <button
-                className="standard-btn light home-btns"
-              >
-                journal
-              </button>
-            </Link>
-            <Link
-              replace={false}
-              to="/calendarView"
-            >
-              <button
-                className="standard-btn light home-btns"
-              >
-                calendar
-              </button>
-            </Link>
-          </div>,
-        ],
-        "className": "home",
+        "children": [Function],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Welcome, ",
-              "Ash",
-              "!",
-            ],
-            "className": "welcome",
+      "rendered": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.context),
+        "_calculateChangedBits": null,
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": Object {
+            "$$typeof": Symbol(react.provider),
+            "_context": [Circular],
           },
-          "ref": null,
-          "rendered": Array [
-            "Welcome, ",
-            "Ash",
-            "!",
-          ],
-          "type": "h1",
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": null,
+          "_currentValue2": null,
+          "_threadCount": 0,
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "This month...",
-            "className": "this-month",
-          },
-          "ref": null,
-          "rendered": "This month...",
-          "type": "h3",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "bubbles",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/journal"
-              >
-                <button
-                  className="standard-btn light home-btns"
-                >
-                  journal
-                </button>
-              </Link>,
-              <Link
-                replace={false}
-                to="/calendarView"
-              >
-                <button
-                  className="standard-btn light home-btns"
-                >
-                  calendar
-                </button>
-              </Link>,
-            ],
-            "className": "home-btns-container",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <button
-                  className="standard-btn light home-btns"
-                >
-                  journal
-                </button>,
-                "replace": false,
-                "to": "/journal",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "journal",
-                  "className": "standard-btn light home-btns",
-                },
-                "ref": null,
-                "rendered": "journal",
-                "type": "button",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <button
-                  className="standard-btn light home-btns"
-                >
-                  calendar
-                </button>,
-                "replace": false,
-                "to": "/calendarView",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "calendar",
-                  "className": "standard-btn light home-btns",
-                },
-                "ref": null,
-                "rendered": "calendar",
-                "type": "button",
-              },
-              "type": [Function],
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
