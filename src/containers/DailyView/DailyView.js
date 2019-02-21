@@ -89,7 +89,7 @@ export const mapDispatchToProps = dispatch => ({
   getJournalEntryByDate: url => dispatch(getJournalEntryByDate(url))
 });
 
-DailyView.PropTypes = {
+DailyView.propTypes = {
   journal: PropTypes.object,
   getJournalEntryByDate: PropTypes.func
 };
