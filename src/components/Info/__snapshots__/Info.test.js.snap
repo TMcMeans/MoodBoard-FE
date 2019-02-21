@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info should render a snapshot with correct data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Info />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Logo />,
+        <h1
+          className="info-heading"
+        >
+           About 
+        </h1>,
+        <p
+          className="info-paragraph"
+        >
+           
+          MoodBoard is a daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day.
+           
+        </p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " About ",
+          "className": "info-heading",
+        },
+        "ref": null,
+        "rendered": " About ",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            "MoodBoard is a daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day.",
+            " ",
+          ],
+          "className": "info-paragraph",
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          "MoodBoard is a daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day.",
+          " ",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Logo />,
+          <h1
+            className="info-heading"
+          >
+             About 
+          </h1>,
+          <p
+            className="info-paragraph"
+          >
+             
+            MoodBoard is a daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day.
+             
+          </p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " About ",
+            "className": "info-heading",
+          },
+          "ref": null,
+          "rendered": " About ",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              "MoodBoard is a daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day.",
+              " ",
+            ],
+            "className": "info-paragraph",
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            "MoodBoard is a daily journaling tool, record of personal reflections, and long-term reference for a user’s projected mood on any given day.",
+            " ",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

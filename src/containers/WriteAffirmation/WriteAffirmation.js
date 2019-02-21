@@ -38,7 +38,7 @@ let initialValue = Value.fromJSON({
   }
 });
 
-class WriteAffirmation extends Component {
+export class WriteAffirmation extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,6 +49,7 @@ class WriteAffirmation extends Component {
 
   componentDidMount = () => {
     const { primary_tone } = this.props.journal.tones;
+
     const promptTone = prompts[primary_tone];
     const promptIndex = Math.round(Math.random() * (promptTone.length - 1));
     let prompt = promptTone[promptIndex];
@@ -171,11 +172,11 @@ class WriteAffirmation extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   journal: state.journal
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   postAffirmation: (url, affirmation_text) =>
     dispatch(postAffirmation(url, affirmation_text))
 });

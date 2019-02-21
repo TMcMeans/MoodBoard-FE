@@ -7,7 +7,7 @@ import Logo from '../../components/Logo/Logo';
 import { getTonesByMonth } from '../../thunks/getTonesByMonth';
 import './Home.css';
 
-class Home extends Component {
+export class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -25,13 +25,13 @@ class Home extends Component {
     }
 
     return year.toString() + '-' + month;
-  }
+  };
 
   componentDidMount = async () => {
     const urlDate = this.formatDate();
     const url = `https://mood-board-be.herokuapp.com/api/v1/users/1/tone_responses?date=${urlDate}`;
     await this.props.getTonesByMonth(url);
-  }
+  };
 
   render() {
     const name = 'Ash';
@@ -54,12 +54,20 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   tones: state.tones
-})
+});
 
-const mapDispatchToProps = dispatch => ({
-  getTonesByMonth: (url) => dispatch(getTonesByMonth(url))
-})
+export const mapDispatchToProps = dispatch => ({
+  getTonesByMonth: url => dispatch(getTonesByMonth(url))
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+Home.propTypes = {
+  tones: PropTypes.array,
+  getTonesByMonth: PropTypes.func
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);

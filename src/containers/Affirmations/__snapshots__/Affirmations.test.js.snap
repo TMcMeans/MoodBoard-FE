@@ -23,7 +23,7 @@ ShallowWrapper {
         <h1
           className="month"
         >
-          June
+          Febuary
            Affirmations
         </h1>,
         <ul
@@ -39,7 +39,7 @@ ShallowWrapper {
             <span
               className="affirmation-text"
             >
-              6/3: "You got this."
+              2/3: "You got this."
             </span>
           </li>
           <li
@@ -52,7 +52,7 @@ ShallowWrapper {
             <span
               className="affirmation-text"
             >
-              6/3: "You got this."
+              2/4: "You are not alone."
             </span>
           </li>
           <li
@@ -65,7 +65,7 @@ ShallowWrapper {
             <span
               className="affirmation-text"
             >
-              6/3: "You got this."
+              2/5: "You can pull through."
             </span>
           </li>
           <li
@@ -78,7 +78,7 @@ ShallowWrapper {
             <span
               className="affirmation-text"
             >
-              6/3: "You got this."
+              2/6: "Practice self care."
             </span>
           </li>
         </ul>,
@@ -107,14 +107,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "June",
+            "Febuary",
             " Affirmations",
           ],
           "className": "month",
         },
         "ref": null,
         "rendered": Array [
-          "June",
+          "Febuary",
           " Affirmations",
         ],
         "type": "h1",
@@ -135,7 +135,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/3: "You got this."
               </span>
             </li>,
             <li
@@ -148,7 +148,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/4: "You are not alone."
               </span>
             </li>,
             <li
@@ -161,7 +161,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/5: "You can pull through."
               </span>
             </li>,
             <li
@@ -174,7 +174,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/6: "Practice self care."
               </span>
             </li>,
           ],
@@ -194,7 +194,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/3: "You got this."
                 </span>,
               ],
               "className": "single-affirmation",
@@ -218,11 +218,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "6/3: \\"You got this.\\"",
+                  "children": "2/3: \\"You got this.\\"",
                   "className": "affirmation-text",
                 },
                 "ref": null,
-                "rendered": "6/3: \\"You got this.\\"",
+                "rendered": "2/3: \\"You got this.\\"",
                 "type": "span",
               },
             ],
@@ -240,7 +240,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/4: "You are not alone."
                 </span>,
               ],
               "className": "single-affirmation",
@@ -264,11 +264,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "6/3: \\"You got this.\\"",
+                  "children": "2/4: \\"You are not alone.\\"",
                   "className": "affirmation-text",
                 },
                 "ref": null,
-                "rendered": "6/3: \\"You got this.\\"",
+                "rendered": "2/4: \\"You are not alone.\\"",
                 "type": "span",
               },
             ],
@@ -286,7 +286,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/5: "You can pull through."
                 </span>,
               ],
               "className": "single-affirmation",
@@ -310,11 +310,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "6/3: \\"You got this.\\"",
+                  "children": "2/5: \\"You can pull through.\\"",
                   "className": "affirmation-text",
                 },
                 "ref": null,
-                "rendered": "6/3: \\"You got this.\\"",
+                "rendered": "2/5: \\"You can pull through.\\"",
                 "type": "span",
               },
             ],
@@ -332,7 +332,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/6: "Practice self care."
                 </span>,
               ],
               "className": "single-affirmation",
@@ -356,11 +356,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "6/3: \\"You got this.\\"",
+                  "children": "2/6: \\"Practice self care.\\"",
                   "className": "affirmation-text",
                 },
                 "ref": null,
-                "rendered": "6/3: \\"You got this.\\"",
+                "rendered": "2/6: \\"Practice self care.\\"",
                 "type": "span",
               },
             ],
@@ -395,7 +395,7 @@ ShallowWrapper {
           <h1
             className="month"
           >
-            June
+            Febuary
              Affirmations
           </h1>,
           <ul
@@ -411,7 +411,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/3: "You got this."
               </span>
             </li>
             <li
@@ -424,7 +424,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/4: "You are not alone."
               </span>
             </li>
             <li
@@ -437,7 +437,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/5: "You can pull through."
               </span>
             </li>
             <li
@@ -450,7 +450,7 @@ ShallowWrapper {
               <span
                 className="affirmation-text"
               >
-                6/3: "You got this."
+                2/6: "Practice self care."
               </span>
             </li>
           </ul>,
@@ -479,14 +479,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "June",
+              "Febuary",
               " Affirmations",
             ],
             "className": "month",
           },
           "ref": null,
           "rendered": Array [
-            "June",
+            "Febuary",
             " Affirmations",
           ],
           "type": "h1",
@@ -507,7 +507,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/3: "You got this."
                 </span>
               </li>,
               <li
@@ -520,7 +520,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/4: "You are not alone."
                 </span>
               </li>,
               <li
@@ -533,7 +533,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/5: "You can pull through."
                 </span>
               </li>,
               <li
@@ -546,7 +546,7 @@ ShallowWrapper {
                 <span
                   className="affirmation-text"
                 >
-                  6/3: "You got this."
+                  2/6: "Practice self care."
                 </span>
               </li>,
             ],
@@ -566,7 +566,7 @@ ShallowWrapper {
                   <span
                     className="affirmation-text"
                   >
-                    6/3: "You got this."
+                    2/3: "You got this."
                   </span>,
                 ],
                 "className": "single-affirmation",
@@ -590,11 +590,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "6/3: \\"You got this.\\"",
+                    "children": "2/3: \\"You got this.\\"",
                     "className": "affirmation-text",
                   },
                   "ref": null,
-                  "rendered": "6/3: \\"You got this.\\"",
+                  "rendered": "2/3: \\"You got this.\\"",
                   "type": "span",
                 },
               ],
@@ -612,7 +612,7 @@ ShallowWrapper {
                   <span
                     className="affirmation-text"
                   >
-                    6/3: "You got this."
+                    2/4: "You are not alone."
                   </span>,
                 ],
                 "className": "single-affirmation",
@@ -636,11 +636,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "6/3: \\"You got this.\\"",
+                    "children": "2/4: \\"You are not alone.\\"",
                     "className": "affirmation-text",
                   },
                   "ref": null,
-                  "rendered": "6/3: \\"You got this.\\"",
+                  "rendered": "2/4: \\"You are not alone.\\"",
                   "type": "span",
                 },
               ],
@@ -658,7 +658,7 @@ ShallowWrapper {
                   <span
                     className="affirmation-text"
                   >
-                    6/3: "You got this."
+                    2/5: "You can pull through."
                   </span>,
                 ],
                 "className": "single-affirmation",
@@ -682,11 +682,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "6/3: \\"You got this.\\"",
+                    "children": "2/5: \\"You can pull through.\\"",
                     "className": "affirmation-text",
                   },
                   "ref": null,
-                  "rendered": "6/3: \\"You got this.\\"",
+                  "rendered": "2/5: \\"You can pull through.\\"",
                   "type": "span",
                 },
               ],
@@ -704,7 +704,7 @@ ShallowWrapper {
                   <span
                     className="affirmation-text"
                   >
-                    6/3: "You got this."
+                    2/6: "Practice self care."
                   </span>,
                 ],
                 "className": "single-affirmation",
@@ -728,11 +728,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "6/3: \\"You got this.\\"",
+                    "children": "2/6: \\"Practice self care.\\"",
                     "className": "affirmation-text",
                   },
                   "ref": null,
-                  "rendered": "6/3: \\"You got this.\\"",
+                  "rendered": "2/6: \\"Practice self care.\\"",
                   "type": "span",
                 },
               ],

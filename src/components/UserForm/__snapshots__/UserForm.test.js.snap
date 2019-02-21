@@ -61,21 +61,26 @@ ShallowWrapper {
           </Link>
         </form>,
         <h2>
-          First time at MoodBoard? Sign up 
+          Already a user? Log in 
           <Link
             className="login-link"
             replace={false}
-            to="/signup"
+            to="/"
           >
             here
           </Link>
           .
         </h2>,
-        <button
-          className="info-btn"
+        <Link
+          replace={false}
+          to="/info"
         >
-          i
-        </button>,
+          <button
+            className="info-btn"
+          >
+            i
+          </button>
+        </Link>,
       ],
       "className": "user-form",
     },
@@ -225,11 +230,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "First time at MoodBoard? Sign up ",
+            "Already a user? Log in ",
             <Link
               className="login-link"
               replace={false}
-              to="/signup"
+              to="/"
             >
               here
             </Link>,
@@ -238,7 +243,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "First time at MoodBoard? Sign up ",
+          "Already a user? Log in ",
           Object {
             "instance": null,
             "key": undefined,
@@ -247,7 +252,7 @@ ShallowWrapper {
               "children": "here",
               "className": "login-link",
               "replace": false,
-              "to": "/signup",
+              "to": "/",
             },
             "ref": null,
             "rendered": "here",
@@ -260,14 +265,30 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": "i",
-          "className": "info-btn",
+          "children": <button
+            className="info-btn"
+          >
+            i
+          </button>,
+          "replace": false,
+          "to": "/info",
         },
         "ref": null,
-        "rendered": "i",
-        "type": "button",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "i",
+            "className": "info-btn",
+          },
+          "ref": null,
+          "rendered": "i",
+          "type": "button",
+        },
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -319,21 +340,26 @@ ShallowWrapper {
             </Link>
           </form>,
           <h2>
-            First time at MoodBoard? Sign up 
+            Already a user? Log in 
             <Link
               className="login-link"
               replace={false}
-              to="/signup"
+              to="/"
             >
               here
             </Link>
             .
           </h2>,
-          <button
-            className="info-btn"
+          <Link
+            replace={false}
+            to="/info"
           >
-            i
-          </button>,
+            <button
+              className="info-btn"
+            >
+              i
+            </button>
+          </Link>,
         ],
         "className": "user-form",
       },
@@ -483,11 +509,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "First time at MoodBoard? Sign up ",
+              "Already a user? Log in ",
               <Link
                 className="login-link"
                 replace={false}
-                to="/signup"
+                to="/"
               >
                 here
               </Link>,
@@ -496,7 +522,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "First time at MoodBoard? Sign up ",
+            "Already a user? Log in ",
             Object {
               "instance": null,
               "key": undefined,
@@ -505,7 +531,7 @@ ShallowWrapper {
                 "children": "here",
                 "className": "login-link",
                 "replace": false,
-                "to": "/signup",
+                "to": "/",
               },
               "ref": null,
               "rendered": "here",
@@ -518,14 +544,30 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": "i",
-            "className": "info-btn",
+            "children": <button
+              className="info-btn"
+            >
+              i
+            </button>,
+            "replace": false,
+            "to": "/info",
           },
           "ref": null,
-          "rendered": "i",
-          "type": "button",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "i",
+              "className": "info-btn",
+            },
+            "ref": null,
+            "rendered": "i",
+            "type": "button",
+          },
+          "type": [Function],
         },
       ],
       "type": "div",
@@ -618,15 +660,12 @@ ShallowWrapper {
         <h2>
           Already a user? Log in 
           <Link
+            className="login-link"
             replace={false}
-            to="/home"
+            to="/"
           >
-            <button
-              className="standard-btn light form-btn"
-            />
+            here
           </Link>
-        </form>,
-        <h2>
           .
         </h2>,
         <Link
@@ -788,10 +827,6 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> add tests for userform and todaymood
             "Already a user? Log in ",
             <Link
               className="login-link"
@@ -800,22 +835,11 @@ ShallowWrapper {
             >
               here
             </Link>,
-<<<<<<< HEAD
-=======
-            undefined,
-            undefined,
->>>>>>> add tests for journal component
-=======
->>>>>>> add tests for userform and todaymood
             ".",
           ],
         },
         "ref": null,
         "rendered": Array [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> add tests for userform and todaymood
           "Already a user? Log in ",
           Object {
             "instance": null,
@@ -831,13 +855,6 @@ ShallowWrapper {
             "rendered": "here",
             "type": [Function],
           },
-<<<<<<< HEAD
-=======
-          undefined,
-          undefined,
->>>>>>> add tests for journal component
-=======
->>>>>>> add tests for userform and todaymood
           ".",
         ],
         "type": "h2",
@@ -908,20 +925,6 @@ ShallowWrapper {
               placeholder="password"
               type="password"
             />
-<<<<<<< HEAD
-            <Link
-              replace={false}
-              to="/home"
-            >
-              <button
-                className="standard-btn light form-btn"
-              />
-            </Link>
-          </form>,
-          <h2>
-            Already a user? Log in 
-=======
->>>>>>> add tests for journal component
             <Link
               replace={false}
               to="/home"
@@ -1103,10 +1106,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> add tests for userform and todaymood
               "Already a user? Log in ",
               <Link
                 className="login-link"
@@ -1115,22 +1114,11 @@ ShallowWrapper {
               >
                 here
               </Link>,
-<<<<<<< HEAD
-=======
-              undefined,
-              undefined,
->>>>>>> add tests for journal component
-=======
->>>>>>> add tests for userform and todaymood
               ".",
             ],
           },
           "ref": null,
           "rendered": Array [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> add tests for userform and todaymood
             "Already a user? Log in ",
             Object {
               "instance": null,
@@ -1146,13 +1134,6 @@ ShallowWrapper {
               "rendered": "here",
               "type": [Function],
             },
-<<<<<<< HEAD
-=======
-            undefined,
-            undefined,
->>>>>>> add tests for journal component
-=======
->>>>>>> add tests for userform and todaymood
             ".",
           ],
           "type": "h2",

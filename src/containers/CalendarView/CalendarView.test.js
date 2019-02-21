@@ -8,7 +8,9 @@ jest.mock('../../thunks/getTonesByMonth');
 describe('CalendarView', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<CalendarView />);
+    wrapper = shallow(
+      <CalendarView tones={['sadness', 'confident', 'anger']} />
+    );
   });
 
   it('should render a snapshot with correct data passed in', () => {

@@ -55,7 +55,7 @@ export class Journal extends Component {
 
     const { entry_text } = await this.props.journal;
 
-    if (entry_text.length) {
+    if (entry_text !== null) {
       initialValue = Value.fromJSON({
         document: {
           nodes: [
