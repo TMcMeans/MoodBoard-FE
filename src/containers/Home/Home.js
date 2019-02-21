@@ -31,9 +31,6 @@ class Home extends Component {
     const urlDate = this.formatDate();
     const url = `https://mood-board-be.herokuapp.com/api/v1/users/1/tone_responses?date=${urlDate}`;
     await this.props.getTonesByMonth(url);
-    // set the tones to colors
-    
-    // assign colors to individual days (by the day's value)
   }
 
   render() {
