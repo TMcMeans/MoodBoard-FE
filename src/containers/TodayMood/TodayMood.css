@@ -37,7 +37,8 @@
 
 /*TITLE*/
 .today-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-top: 0;
 }
 
 /*TODAY'S TONE*/
@@ -107,7 +108,9 @@
 }
 
 .go-home-btn {
+  font-size: 1.4rem;
   height: 3rem;
   line-height: 1rem;
   margin-top: 2rem;
+  width: 6rem;
 }
