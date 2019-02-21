@@ -8,7 +8,7 @@ import { inspirationalQuotes } from '../../helper/inspirationalQuotes';
 import './TodayMood.css';
 import Journal from '../Journal/Journal';
 
-class TodayMood extends Component {
+export class TodayMood extends Component {
   constructor() {
     super();
     this.state = {};
@@ -105,21 +105,12 @@ class TodayMood extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  isLoading: state.isLoading,
+export const mapStateToProps = state => ({
   journal: state.journal
 });
 
-const mapDispatchToProps = dispatch => ({
-  // will need to dispatch isLoading
-});
-
 Journal.propTypes = {
-  isLoading: PropTypes.func,
   journal: PropTypes.object
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TodayMood);
+export default connect(mapStateToProps)(TodayMood);

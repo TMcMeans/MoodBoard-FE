@@ -17,7 +17,10 @@ describe('Journal', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should setState of value to a journal entry on componentDidMount', () => {});
+  it('should setState of value to a journal entry on componentDidMount', () => {
+    wrapper.instance().componentDidMount();
+    expect(wrapper.state()).toHaveProperty('value');
+  });
 
   it('mapStateToProps should return a journal object', () => {
     const mockState = { journal: { entry_text: 'I am so sad.' } };

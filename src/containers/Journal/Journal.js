@@ -95,8 +95,6 @@ export class Journal extends Component {
       case 'list-item': {
         return <li {...attributes}>{children}</li>;
       }
-
-      //ADD OPTION TO CENTER TEXT
       case 'underline': {
         return (
           <p {...attributes} className="underline">
