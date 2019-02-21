@@ -15,10 +15,10 @@
   color: #ffffff;
 }
 
-/*ANIMATION*/
+/*image*/
 .bubbles {
-  background-color: white;
-  height: 40vh;
+  background-image: url("../../assets/bubbles.png");
+  height: 45vh;
   margin-bottom: 2em;
   width: 95%;
 }
