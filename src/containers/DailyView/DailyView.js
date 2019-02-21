@@ -7,25 +7,28 @@ import Logo from '../../components/Logo/Logo';
 import { getJournalEntryByDate } from '../../thunks/getJournalEntryByDate';
 import './DailyView.css';
 
-class DailyView extends Component {
+export class DailyView extends Component {
   constructor(props) {
     super();
     this.state = {};
   }
 
   componentDidMount = async () => {
-    const url = 'https://mood-board-be.herokuapp.com/api/v1/users/1/calendar?date=2019-02-17';
+    const url =
+      'https://mood-board-be.herokuapp.com/api/v1/users/1/calendar?date=2019-02-17';
     await this.props.getJournalEntryByDate(url);
-  }
+  };
 
   render() {
-  //   const { primary_tone } = this.props.journal.tones;
-  //   const { entry_text } = this.props.journal;
+    //   const { primary_tone } = this.props.journal.tones;
+    //   const { entry_text } = this.props.journal;
     const { primary_tone, journal_entry_text } = this.props.journal;
     let affirm;
-    console.log(this.props.journal.affirmations)
+    console.log(this.props.journal.affirmations);
     if (this.props.journal.affirmations) {
-      affirm = this.props.journal.affirmations.map((affirmation) => affirmation.affirmation_text);
+      affirm = this.props.journal.affirmations.map(
+        affirmation => affirmation.affirmation_text
+      );
     }
 
     let componentClass;
@@ -78,12 +81,20 @@ class DailyView extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   journal: state.journal
-})
+});
 
-const mapDispatchToProps = dispatch => ({
-  getJournalEntryByDate: (url) => dispatch(getJournalEntryByDate(url))
-})
+export const mapDispatchToProps = dispatch => ({
+  getJournalEntryByDate: url => dispatch(getJournalEntryByDate(url))
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(DailyView);
+DailyView.PropTypes = {
+  journal: PropTypes.object,
+  getJournalEntryByDate: PropTypes.func
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(DailyView);
