@@ -1,8 +1,8 @@
 /*COMPONENT STYLES*/
 .home {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /*TITLE*/
