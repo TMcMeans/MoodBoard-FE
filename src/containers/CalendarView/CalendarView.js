@@ -22,7 +22,7 @@ export class CalendarView extends Component {
 
   componentDidMount = async () => {
     // get the date (mo, yr)
-    console.log(this.state.date);
+    // console.log(this.state.date);
     // get the tones
     // set the tones to colors
     // assign colors to individual days (by the day's value)
