@@ -1,0 +1,18 @@
+.Info {
+  background-color: #2A2A2A;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  margin: 0;
+  color: red;
+  text-align: center;
+}
+.info-heading{
+  color: white;
+}
+
+.info-paragraph{
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
