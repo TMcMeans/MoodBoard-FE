@@ -13,7 +13,9 @@ describe('WriteAffirmation', () => {
   let wrapper;
   let mockJournal = {
     entry_text: 'I am angry',
-    tones: { primary_tone: 'anger' }
+    tones: {
+      primary_tone: 'anger'
+    }
   };
   beforeEach(() => {
     wrapper = shallow(<WriteAffirmation journal={mockJournal} />);

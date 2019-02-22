@@ -24,7 +24,7 @@ export class DailyView extends Component {
     //   const { entry_text } = this.props.journal;
     const { primary_tone, journal_entry_text } = this.props.journal;
     let affirm;
-    console.log(this.props.journal.affirmations);
+
     if (this.props.journal.affirmations) {
       affirm = this.props.journal.affirmations.map(
         affirmation => affirmation.affirmation_text

@@ -34,7 +34,7 @@ ShallowWrapper {
         >
           PROMPT:
           <br />
-          I forgive myself for not being perfect.
+          Feelings are just visitors. Let them come and go.
         </h2>,
         <React.Fragment>
           <FormatToolbar>
@@ -390,7 +390,7 @@ ShallowWrapper {
           "children": Array [
             "PROMPT:",
             <br />,
-            "I forgive myself for not being perfect.",
+            "Feelings are just visitors. Let them come and go.",
           ],
           "className": "prompt",
         },
@@ -406,7 +406,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "br",
           },
-          "I forgive myself for not being perfect.",
+          "Feelings are just visitors. Let them come and go.",
         ],
         "type": "h2",
       },
@@ -1671,7 +1671,7 @@ ShallowWrapper {
           >
             PROMPT:
             <br />
-            I forgive myself for not being perfect.
+            Feelings are just visitors. Let them come and go.
           </h2>,
           <React.Fragment>
             <FormatToolbar>
@@ -2027,7 +2027,7 @@ ShallowWrapper {
             "children": Array [
               "PROMPT:",
               <br />,
-              "I forgive myself for not being perfect.",
+              "Feelings are just visitors. Let them come and go.",
             ],
             "className": "prompt",
           },
@@ -2043,7 +2043,7 @@ ShallowWrapper {
               "rendered": null,
               "type": "br",
             },
-            "I forgive myself for not being perfect.",
+            "Feelings are just visitors. Let them come and go.",
           ],
           "type": "h2",
         },

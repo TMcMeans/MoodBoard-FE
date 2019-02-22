@@ -7,8 +7,12 @@ jest.mock('../../thunks/getJournalEntryByDate');
 
 describe('DailyView', () => {
   let wrapper;
+  let mockJournal = {
+    journal_entry_text: 'I am angry',
+    primary_tone: 'angry'
+  };
   beforeEach(() => {
-    wrapper = shallow(<DailyView />);
+    wrapper = shallow(<DailyView journal={mockJournal} />);
   });
 
   it('should render a snapshot with correct data passed in', () => {
