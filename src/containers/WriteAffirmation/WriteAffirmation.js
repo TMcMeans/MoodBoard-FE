@@ -51,6 +51,7 @@ export class WriteAffirmation extends Component {
     const { primary_tone } = this.props.journal.tones;
 
     const promptTone = prompts[primary_tone];
+
     const promptIndex = Math.round(Math.random() * (promptTone.length - 1));
     let prompt = promptTone[promptIndex];
     this.setState({ prompt });

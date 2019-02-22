@@ -11,10 +11,14 @@ jest.mock('../../thunks/postAffirmation');
 
 describe('WriteAffirmation', () => {
   let wrapper;
-  let mockJournal = { entry_text: 'I am angry', tones: 'anger' };
+  let mockJournal = {
+    entry_text: 'I am angry',
+    tones: { primary_tone: 'anger' }
+  };
   beforeEach(() => {
     wrapper = shallow(<WriteAffirmation journal={mockJournal} />);
   });
+
   it('should render a snapshot with correct data passed in', () => {
     expect(wrapper).toMatchSnapshot();
   });

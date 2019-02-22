@@ -60,12 +60,14 @@ ShallowWrapper {
             </button>
           </Link>
         </form>,
-        <h2>
-          Already a user? Log in 
+        <h2
+          className="form-msg"
+        >
+          First time at MoodBoard? Sign up 
           <Link
             className="login-link"
             replace={false}
-            to="/"
+            to="/signup"
           >
             here
           </Link>
@@ -230,20 +232,21 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Already a user? Log in ",
+            "First time at MoodBoard? Sign up ",
             <Link
               className="login-link"
               replace={false}
-              to="/"
+              to="/signup"
             >
               here
             </Link>,
             ".",
           ],
+          "className": "form-msg",
         },
         "ref": null,
         "rendered": Array [
-          "Already a user? Log in ",
+          "First time at MoodBoard? Sign up ",
           Object {
             "instance": null,
             "key": undefined,
@@ -252,7 +255,7 @@ ShallowWrapper {
               "children": "here",
               "className": "login-link",
               "replace": false,
-              "to": "/",
+              "to": "/signup",
             },
             "ref": null,
             "rendered": "here",
@@ -339,12 +342,14 @@ ShallowWrapper {
               </button>
             </Link>
           </form>,
-          <h2>
-            Already a user? Log in 
+          <h2
+            className="form-msg"
+          >
+            First time at MoodBoard? Sign up 
             <Link
               className="login-link"
               replace={false}
-              to="/"
+              to="/signup"
             >
               here
             </Link>
@@ -509,20 +514,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Already a user? Log in ",
+              "First time at MoodBoard? Sign up ",
               <Link
                 className="login-link"
                 replace={false}
-                to="/"
+                to="/signup"
               >
                 here
               </Link>,
               ".",
             ],
+            "className": "form-msg",
           },
           "ref": null,
           "rendered": Array [
-            "Already a user? Log in ",
+            "First time at MoodBoard? Sign up ",
             Object {
               "instance": null,
               "key": undefined,
@@ -531,7 +537,7 @@ ShallowWrapper {
                 "children": "here",
                 "className": "login-link",
                 "replace": false,
-                "to": "/",
+                "to": "/signup",
               },
               "ref": null,
               "rendered": "here",
@@ -657,7 +663,9 @@ ShallowWrapper {
             </button>
           </Link>
         </form>,
-        <h2>
+        <h2
+          className="form-msg"
+        >
           Already a user? Log in 
           <Link
             className="login-link"
@@ -837,6 +845,7 @@ ShallowWrapper {
             </Link>,
             ".",
           ],
+          "className": "form-msg",
         },
         "ref": null,
         "rendered": Array [
@@ -936,7 +945,9 @@ ShallowWrapper {
               </button>
             </Link>
           </form>,
-          <h2>
+          <h2
+            className="form-msg"
+          >
             Already a user? Log in 
             <Link
               className="login-link"
@@ -1116,6 +1127,7 @@ ShallowWrapper {
               </Link>,
               ".",
             ],
+            "className": "form-msg",
           },
           "ref": null,
           "rendered": Array [

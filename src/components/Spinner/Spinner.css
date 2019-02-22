@@ -1,0 +1,15 @@
+.spinner-wrapper {
+  width: 100wh;
+  height: 100vh;
+  background: white;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.spinner {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 0 auto;
+}

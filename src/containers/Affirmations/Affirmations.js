@@ -3,6 +3,7 @@ import { FaCircle } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import { Spinner } from '../../components/Spinner/Spinner';
 import Logo from '../../components/Logo/Logo';
 import { getAffirmationsByMonth } from '../../thunks/getAffirmationsByMonth';
 
@@ -28,6 +29,7 @@ export class Affirmations extends Component {
   }
 
   render() {
+    const { isLoading } = this.props;
     const monthText = 'Febuary';
     const affirmations = this.state.affirmations.map((affirmation, i) => {
       return (
@@ -39,21 +41,27 @@ export class Affirmations extends Component {
         </li>
       );
     });
-    return (
-      <div className="month-affirmations">
-        <Logo />
-        <h1 className="month">{monthText} Affirmations</h1>
-        <ul className="affirmation-list">{affirmations}</ul>
-        <button className="standard-btn light back-to-calendar-btn">
-          calendar
-        </button>
-      </div>
-    );
+
+    if (isLoading) {
+      return <Spinner />;
+    } else {
+      return (
+        <div className="month-affirmations">
+          <Logo text="Loading your affirmations..." />
+          <h1 className="month">{monthText} Affirmations</h1>
+          <ul className="affirmation-list">{affirmations}</ul>
+          <button className="standard-btn light back-to-calendar-btn">
+            calendar
+          </button>
+        </div>
+      );
+    }
   }
 }
 
 export const mapStateToProps = state => ({
-  affirmations: state.affirmations
+  affirmations: state.affirmations,
+  isLoading: state.isLoading
 });
 
 export const mapDispatchToProps = dispatch => ({
