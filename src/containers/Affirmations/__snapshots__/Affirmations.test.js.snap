@@ -19,7 +19,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Logo />,
+        <Logo
+          text="Loading your affirmations..."
+        />,
         <h1
           className="month"
         >
@@ -43,7 +45,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "text": "Loading your affirmations...",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -100,7 +104,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Logo />,
+          <Logo
+            text="Loading your affirmations..."
+          />,
           <h1
             className="month"
           >
@@ -124,7 +130,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "text": "Loading your affirmations...",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

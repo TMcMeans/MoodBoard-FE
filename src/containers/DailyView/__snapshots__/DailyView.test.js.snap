@@ -1,3 +1,477 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DailyView should render a snapshot with correct data passed in 1`] = `undefined`;
+exports[`DailyView should render a snapshot with correct data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DailyView
+    journal={
+      Object {
+        "journal_entry_text": "I am angry",
+        "primary_tone": "angry",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Logo />,
+        <h2
+          className="daily-date"
+        >
+          February 17, 2019
+        </h2>,
+        <h1>
+          angry
+        </h1>,
+        <div
+          className="daily-entry"
+        >
+          I am angry
+        </div>,
+        <div
+          className="daily-affirmation"
+        >
+          <p
+            className="daily-affirmation-text"
+          />
+        </div>,
+        <div
+          className="btn-wrapper"
+        >
+          <button
+            className="standard-btn dark left-arrow"
+          >
+            &lt;
+          </button>
+          <Link
+            replace={false}
+            to="/calendarview"
+          >
+            <button
+              className="standard-btn dark back-to-calendar-btn"
+            >
+              calendar
+            </button>
+          </Link>
+          <button
+            className="standard-btn dark right-arrow"
+          >
+            &gt;
+          </button>
+        </div>,
+      ],
+      "className": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "February 17, 2019",
+          "className": "daily-date",
+        },
+        "ref": null,
+        "rendered": "February 17, 2019",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "angry",
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": "angry",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "I am angry",
+          "className": "daily-entry",
+        },
+        "ref": null,
+        "rendered": "I am angry",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p
+            className="daily-affirmation-text"
+          />,
+          "className": "daily-affirmation",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "daily-affirmation-text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="standard-btn dark left-arrow"
+            >
+              &lt;
+            </button>,
+            <Link
+              replace={false}
+              to="/calendarview"
+            >
+              <button
+                className="standard-btn dark back-to-calendar-btn"
+              >
+                calendar
+              </button>
+            </Link>,
+            <button
+              className="standard-btn dark right-arrow"
+            >
+              &gt;
+            </button>,
+          ],
+          "className": "btn-wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "<",
+              "className": "standard-btn dark left-arrow",
+            },
+            "ref": null,
+            "rendered": "<",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="standard-btn dark back-to-calendar-btn"
+              >
+                calendar
+              </button>,
+              "replace": false,
+              "to": "/calendarview",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "calendar",
+                "className": "standard-btn dark back-to-calendar-btn",
+              },
+              "ref": null,
+              "rendered": "calendar",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": ">",
+              "className": "standard-btn dark right-arrow",
+            },
+            "ref": null,
+            "rendered": ">",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Logo />,
+          <h2
+            className="daily-date"
+          >
+            February 17, 2019
+          </h2>,
+          <h1>
+            angry
+          </h1>,
+          <div
+            className="daily-entry"
+          >
+            I am angry
+          </div>,
+          <div
+            className="daily-affirmation"
+          >
+            <p
+              className="daily-affirmation-text"
+            />
+          </div>,
+          <div
+            className="btn-wrapper"
+          >
+            <button
+              className="standard-btn dark left-arrow"
+            >
+              &lt;
+            </button>
+            <Link
+              replace={false}
+              to="/calendarview"
+            >
+              <button
+                className="standard-btn dark back-to-calendar-btn"
+              >
+                calendar
+              </button>
+            </Link>
+            <button
+              className="standard-btn dark right-arrow"
+            >
+              &gt;
+            </button>
+          </div>,
+        ],
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "February 17, 2019",
+            "className": "daily-date",
+          },
+          "ref": null,
+          "rendered": "February 17, 2019",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "angry",
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": "angry",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "I am angry",
+            "className": "daily-entry",
+          },
+          "ref": null,
+          "rendered": "I am angry",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p
+              className="daily-affirmation-text"
+            />,
+            "className": "daily-affirmation",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "daily-affirmation-text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="standard-btn dark left-arrow"
+              >
+                &lt;
+              </button>,
+              <Link
+                replace={false}
+                to="/calendarview"
+              >
+                <button
+                  className="standard-btn dark back-to-calendar-btn"
+                >
+                  calendar
+                </button>
+              </Link>,
+              <button
+                className="standard-btn dark right-arrow"
+              >
+                &gt;
+              </button>,
+            ],
+            "className": "btn-wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "<",
+                "className": "standard-btn dark left-arrow",
+              },
+              "ref": null,
+              "rendered": "<",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="standard-btn dark back-to-calendar-btn"
+                >
+                  calendar
+                </button>,
+                "replace": false,
+                "to": "/calendarview",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "calendar",
+                  "className": "standard-btn dark back-to-calendar-btn",
+                },
+                "ref": null,
+                "rendered": "calendar",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": ">",
+                "className": "standard-btn dark right-arrow",
+              },
+              "ref": null,
+              "rendered": ">",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
