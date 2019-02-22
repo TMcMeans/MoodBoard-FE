@@ -34,7 +34,7 @@ ShallowWrapper {
         >
           PROMPT:
           <br />
-          Feelings are just visitors. Let them come and go.
+          It's okay to be mad at something or someone that hurts you.
         </h2>,
         <React.Fragment>
           <FormatToolbar>
@@ -390,7 +390,7 @@ ShallowWrapper {
           "children": Array [
             "PROMPT:",
             <br />,
-            "Feelings are just visitors. Let them come and go.",
+            "It's okay to be mad at something or someone that hurts you.",
           ],
           "className": "prompt",
         },
@@ -406,7 +406,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "br",
           },
-          "Feelings are just visitors. Let them come and go.",
+          "It's okay to be mad at something or someone that hurts you.",
         ],
         "type": "h2",
       },
@@ -1671,7 +1671,7 @@ ShallowWrapper {
           >
             PROMPT:
             <br />
-            Feelings are just visitors. Let them come and go.
+            It's okay to be mad at something or someone that hurts you.
           </h2>,
           <React.Fragment>
             <FormatToolbar>
@@ -2027,7 +2027,7 @@ ShallowWrapper {
             "children": Array [
               "PROMPT:",
               <br />,
-              "Feelings are just visitors. Let them come and go.",
+              "It's okay to be mad at something or someone that hurts you.",
             ],
             "className": "prompt",
           },
@@ -2043,7 +2043,7 @@ ShallowWrapper {
               "rendered": null,
               "type": "br",
             },
-            "Feelings are just visitors. Let them come and go.",
+            "It's okay to be mad at something or someone that hurts you.",
           ],
           "type": "h2",
         },
