@@ -39,7 +39,7 @@ ShallowWrapper {
         <h1
           className="date"
         >
-          February 22, 2019
+          February 27, 2019
         </h1>,
         <React.Fragment>
           <FormatToolbar>
@@ -392,11 +392,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "February 22, 2019",
+          "children": "February 27, 2019",
           "className": "date",
         },
         "ref": null,
-        "rendered": "February 22, 2019",
+        "rendered": "February 27, 2019",
         "type": "h1",
       },
       Object {
@@ -1658,7 +1658,7 @@ ShallowWrapper {
           <h1
             className="date"
           >
-            February 22, 2019
+            February 27, 2019
           </h1>,
           <React.Fragment>
             <FormatToolbar>
@@ -2011,11 +2011,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "February 22, 2019",
+            "children": "February 27, 2019",
             "className": "date",
           },
           "ref": null,
-          "rendered": "February 22, 2019",
+          "rendered": "February 27, 2019",
           "type": "h1",
         },
         Object {
