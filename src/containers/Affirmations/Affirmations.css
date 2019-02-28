@@ -14,20 +14,16 @@
 /*AFFIRMATIONS*/
 .affirmation-list {
   height: 55%;
+  overflow: scroll;
   padding: 0;
+  text-align: left;
 }
 
 .single-affirmation {
   color: #fff;
-  display: flex;
-  flex-direction: row;
   font-size: 1.5em;
-  justify-content: center;
+  list-style: none;
   margin: 1rem;
-}
-
-.circle {
-  color: #4BCE8F;
 }
 
 .affirmation-text {

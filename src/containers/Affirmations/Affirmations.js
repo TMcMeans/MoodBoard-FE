@@ -31,12 +31,32 @@ export class Affirmations extends Component {
   render() {
     const { isLoading } = this.props;
     const monthText = 'Febuary';
+    let colorClass;
+
     const affirmations = this.state.affirmations.map((affirmation, i) => {
+      let date = affirmation.date.slice(-5);
+
+      if (affirmation.tone === 'anger') {
+        colorClass = 'anger';
+      } else if (affirmation.tone === 'sadness') {
+        colorClass = 'sadness';
+      } else if (affirmation.tone === 'tentative') {
+        colorClass = 'tentative';
+      } else if (affirmation.tone === 'fear') {
+        colorClass = 'fear';
+      } else if (affirmation.tone === 'joy') {
+        colorClass = 'joy';
+      } else if (affirmation.tone === 'confident') {
+        colorClass = 'confident';
+      } else if (affirmation.tone === 'analytical') {
+        colorClass = 'analytical';
+      }
+
       return (
-        <li className="single-affirmation" id={i}>
-          <FaCircle className="circle" />
+        <li className="single-affirmation" key={i}>
+          <FaCircle className={colorClass} />
           <span className="affirmation-text">
-            {affirmation.date}: {affirmation.affirmation_text}
+            {date}: {affirmation.affirmation_text}
           </span>
         </li>
       );
