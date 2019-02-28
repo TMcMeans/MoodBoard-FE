@@ -15,6 +15,11 @@ class UserForm extends Component {
     };
   }
 
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value })
+  }
+
   render() {
     const { name, email } = this.state;
     const { type } = this.props;
@@ -46,16 +51,20 @@ class UserForm extends Component {
         <h1 className="form-title">{text}!</h1>
         <form action="" className="user-info">
           <input
+            name="name"
             type="text"
             placeholder="name"
             className="user-input"
             value={this.state.name}
+            onChange={this.handleChange}
           />
           <input
+            name="email"
             type="text"
             placeholder="email"
             className="user-input"
             value={this.state.email}
+            onChange={this.handleChange}
           />
           <input
             type="password"
