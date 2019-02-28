@@ -32,11 +32,13 @@ export class Affirmations extends Component {
     const { isLoading } = this.props;
     const monthText = 'Febuary';
     const affirmations = this.state.affirmations.map((affirmation, i) => {
+      let date = affirmation.date.slice(-5);
+
       return (
-        <li className="single-affirmation" id={i}>
+        <li className="single-affirmation" key={i}>
           <FaCircle className="circle" />
           <span className="affirmation-text">
-            {affirmation.date}: {affirmation.affirmation_text}
+            {date}: {affirmation.affirmation_text}
           </span>
         </li>
       );
