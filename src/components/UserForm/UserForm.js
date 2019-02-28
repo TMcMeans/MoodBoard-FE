@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 import Logo from '../../components/Logo/Logo';
 
@@ -55,7 +54,7 @@ class UserForm extends Component {
             type="text"
             placeholder="name"
             className="user-input"
-            value={this.state.name}
+            value={name}
             onChange={this.handleChange}
           />
           <input
@@ -63,7 +62,7 @@ class UserForm extends Component {
             type="text"
             placeholder="email"
             className="user-input"
-            value={this.state.email}
+            value={email}
             onChange={this.handleChange}
           />
           <input

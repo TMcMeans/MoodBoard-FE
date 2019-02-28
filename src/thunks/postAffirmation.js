@@ -1,4 +1,4 @@
-import { hasErrored, isLoading } from '../actions';
+import { hasErrored } from '../actions';
 
 export const postAffirmation = (url, affirmation_text) => {
   return async dispatch => {
